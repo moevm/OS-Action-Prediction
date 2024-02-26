@@ -1,0 +1,158 @@
+16:00:05.544900 set_robust_list(0x7f604e7b7a20, 24) = 0
+16:00:05.544932 getpid()                = 49059
+16:00:05.544952 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+16:00:05.544976 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f604e7fc520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f604e7fc520}, 8) = 0
+16:00:05.544994 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f604e7fc520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f604e7fc520}, 8) = 0
+16:00:05.545012 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f604e7fc520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f604e7fc520}, 8) = 0
+16:00:05.545030 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f604e7fc520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f604e7fc520}, 8) = 0
+16:00:05.545049 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f604e7fc520}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f604e7fc520}, 8) = 0
+16:00:05.545066 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f604e7fc520}, {sa_handler=0x55e8006acd10, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f604e7fc520}, 8) = 0
+16:00:05.545116 openat(AT_FDCWD, "debian/debian.env", O_RDONLY) = 3
+16:00:05.545137 dup2(3, 0)              = 0
+16:00:05.545154 close(3)                = 0
+16:00:05.545171 execve("/usr/bin/awk", ["awk", "-F=", "($1 == \"DEBIAN\") { print $2 }"], 0x55e800e0dc70 /* 21 vars */) = 0
+16:00:05.545302 brk(NULL)               = 0x558c09c22000
+16:00:05.545325 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc471103b0) = -1 EINVAL (Недопустимый аргумент)
+16:00:05.545354 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe4725fe000
+16:00:05.545373 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.545393 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.545411 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=109215, ...}, AT_EMPTY_PATH) = 0
+16:00:05.545430 mmap(NULL, 109215, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe4725e3000
+16:00:05.545446 close(3)                = 0
+16:00:05.545465 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsigsegv.so.2", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.545483 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+16:00:05.545501 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=18680, ...}, AT_EMPTY_PATH) = 0
+16:00:05.545520 mmap(NULL, 20728, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe4725dd000
+16:00:05.545536 mmap(0x7fe4725de000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fe4725de000
+16:00:05.545553 mmap(0x7fe4725e0000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fe4725e0000
+16:00:05.545570 mmap(0x7fe4725e1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fe4725e1000
+16:00:05.545592 close(3)                = 0
+16:00:05.545609 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libreadline.so.8", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.545628 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+16:00:05.545645 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=335936, ...}, AT_EMPTY_PATH) = 0
+16:00:05.545663 mmap(NULL, 343488, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe472589000
+16:00:05.545678 mprotect(0x7fe47259d000, 225280, PROT_NONE) = 0
+16:00:05.545694 mmap(0x7fe47259d000, 180224, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7fe47259d000
+16:00:05.545710 mmap(0x7fe4725c9000, 40960, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x40000) = 0x7fe4725c9000
+16:00:05.545726 mmap(0x7fe4725d4000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4a000) = 0x7fe4725d4000
+16:00:05.545749 mmap(0x7fe4725dc000, 3520, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe4725dc000
+16:00:05.545772 close(3)                = 0
+16:00:05.545788 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmpfr.so.6", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.545806 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+16:00:05.545830 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2808496, ...}, AT_EMPTY_PATH) = 0
+16:00:05.545849 mmap(NULL, 2810272, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe4722da000
+16:00:05.545866 mmap(0x7fe4722e6000, 593920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7fe4722e6000
+16:00:05.545883 mmap(0x7fe472377000, 2121728, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9d000) = 0x7fe472377000
+16:00:05.545900 mmap(0x7fe47257d000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a2000) = 0x7fe47257d000
+16:00:05.545924 close(3)                = 0
+16:00:05.545941 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgmp.so.10", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.545960 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+16:00:05.545977 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=526896, ...}, AT_EMPTY_PATH) = 0
+16:00:05.545995 mmap(NULL, 528912, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe472258000
+16:00:05.546011 mmap(0x7fe472262000, 389120, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7fe472262000
+16:00:05.546030 mmap(0x7fe4722c1000, 94208, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x69000) = 0x7fe4722c1000
+16:00:05.546048 mmap(0x7fe4722d8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7f000) = 0x7fe4722d8000
+16:00:05.546071 close(3)                = 0
+16:00:05.546087 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.546105 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+16:00:05.546122 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+16:00:05.546140 mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe472171000
+16:00:05.546157 mmap(0x7fe47217f000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fe47217f000
+16:00:05.546176 mmap(0x7fe4721fb000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7fe4721fb000
+16:00:05.546194 mmap(0x7fe472256000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7fe472256000
+16:00:05.546218 close(3)                = 0
+16:00:05.546234 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.546252 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+16:00:05.546269 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+16:00:05.546286 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+16:00:05.546303 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+16:00:05.546318 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+16:00:05.546335 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe47216f000
+16:00:05.546351 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+16:00:05.546369 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe471f46000
+16:00:05.546386 mprotect(0x7fe471f6e000, 2023424, PROT_NONE) = 0
+16:00:05.546404 mmap(0x7fe471f6e000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fe471f6e000
+16:00:05.546422 mmap(0x7fe472103000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fe472103000
+16:00:05.546438 mmap(0x7fe47215c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fe47215c000
+16:00:05.546457 mmap(0x7fe472162000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe472162000
+16:00:05.546483 close(3)                = 0
+16:00:05.546502 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.546520 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+16:00:05.546537 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=200136, ...}, AT_EMPTY_PATH) = 0
+16:00:05.546555 mmap(NULL, 203040, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe471f14000
+16:00:05.546572 mmap(0x7fe471f22000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fe471f22000
+16:00:05.546589 mmap(0x7fe471f33000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7fe471f33000
+16:00:05.546605 mmap(0x7fe471f41000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7fe471f41000
+16:00:05.546628 close(3)                = 0
+16:00:05.546656 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe471f11000
+16:00:05.546674 arch_prctl(ARCH_SET_FS, 0x7fe471f11ac0) = 0
+16:00:05.546689 set_tid_address(0x7fe471f11d90) = 49059
+16:00:05.546703 set_robust_list(0x7fe471f11da0, 24) = 0
+16:00:05.546718 rseq(0x7fe471f12460, 0x20, 0, 0x53053053) = 0
+16:00:05.546762 mprotect(0x7fe47215c000, 16384, PROT_READ) = 0
+16:00:05.546808 mprotect(0x7fe471f41000, 16384, PROT_READ) = 0
+16:00:05.546835 mprotect(0x7fe472256000, 4096, PROT_READ) = 0
+16:00:05.546859 mprotect(0x7fe4722d8000, 4096, PROT_READ) = 0
+16:00:05.546900 mprotect(0x7fe47257d000, 8192, PROT_READ) = 0
+16:00:05.546956 mprotect(0x7fe4725d4000, 8192, PROT_READ) = 0
+16:00:05.546973 mprotect(0x7fe4725e1000, 4096, PROT_READ) = 0
+16:00:05.547041 mprotect(0x558c081f5000, 16384, PROT_READ) = 0
+16:00:05.547062 mprotect(0x7fe472638000, 8192, PROT_READ) = 0
+16:00:05.547086 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+16:00:05.547109 munmap(0x7fe4725e3000, 109215) = 0
+16:00:05.547167 fcntl(2, F_GETFL)       = 0x402 (flags O_RDWR|O_APPEND)
+16:00:05.547191 getrandom("\x4f\xcc\x81\x22\x99\xfa\x66\xa6", 8, GRND_NONBLOCK) = 8
+16:00:05.547209 brk(NULL)               = 0x558c09c22000
+16:00:05.547224 brk(0x558c09c43000)     = 0x558c09c43000
+16:00:05.547242 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.547260 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+16:00:05.547279 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe47199c000
+16:00:05.547299 close(3)                = 0
+16:00:05.547343 rt_sigaction(SIGFPE, {sa_handler=0x558c081ad4c0, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fe471f88520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+16:00:05.547363 rt_sigaction(SIGBUS, {sa_handler=0x558c081ad4c0, sa_mask=[BUS], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fe471f88520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+16:00:05.547381 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fe471f88520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+16:00:05.547401 rt_sigaction(SIGSEGV, {sa_handler=0x7fe4725df190, sa_mask=[HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7fe471f88520}, NULL, 8) = 0
+16:00:05.547420 openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 3
+16:00:05.547448 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe4725fc000
+16:00:05.547464 lseek(3, 0, SEEK_SET)   = 0
+16:00:05.547480 read(3, "558c0814d000-558c08158000 r--p 0"..., 8192) = 4054
+16:00:05.547511 munmap(0x7fe4725fc000, 8192) = 0
+16:00:05.547530 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe4725fa000
+16:00:05.547546 lseek(3, 0, SEEK_SET)   = 0
+16:00:05.547562 read(3, "558c0814d000-558c08158000 r--p 0"..., 16384) = 4054
+16:00:05.547589 read(3, "7fe4725d3000-7fe4725d4000 ---p 0"..., 12330) = 1972
+16:00:05.547611 read(3, "", 10358)      = 0
+16:00:05.547630 close(3)                = 0
+16:00:05.547652 munmap(0x7fe4725fa000, 16384) = 0
+16:00:05.547670 sigaltstack({ss_sp=0x558c09c23790, ss_flags=0, ss_size=16384}, NULL) = 0
+16:00:05.547687 rt_sigaction(SIGSEGV, {sa_handler=0x7fe4725df190, sa_mask=[HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7fe471f88520}, NULL, 8) = 0
+16:00:05.547710 newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_EMPTY_PATH) = 0
+16:00:05.547729 newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+16:00:05.547747 newfstatat(2, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x4), ...}, AT_EMPTY_PATH) = 0
+16:00:05.547786 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+16:00:05.547807 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+16:00:05.547826 mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x7fe4725f7000
+16:00:05.547843 close(3)                = 0
+16:00:05.547859 futex(0x7fe472161a6c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+16:00:05.547881 getgroups(0, NULL)      = 1
+16:00:05.547905 getgroups(1, [0])       = 1
+16:00:05.547957 getpgrp()               = 48992
+16:00:05.547976 getpid()                = 49059
+16:00:05.547991 getppid()               = 49058
+16:00:05.548006 getuid()                = 0
+16:00:05.548021 geteuid()               = 0
+16:00:05.548035 getgid()                = 0
+16:00:05.548048 getegid()               = 0
+16:00:05.548073 ioctl(1, TCGETS, 0x7ffc47110270) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+16:00:05.548139 newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_EMPTY_PATH) = 0
+16:00:05.548160 ioctl(0, TCGETS, 0x7ffc47110160) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+16:00:05.548177 newfstatat(0, "", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_EMPTY_PATH) = 0
+16:00:05.548198 read(0, "DEBIAN=debian.master\n", 21) = 21
+16:00:05.548219 newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+16:00:05.548240 read(0, "", 21)         = 0
+16:00:05.548256 openat(AT_FDCWD, "/dev/null", O_RDWR) = 3
+16:00:05.548276 dup2(3, 0)              = 0
+16:00:05.548292 close(3)                = 0
+16:00:05.548309 write(1, "debian.master\n", 14) = 14
+16:00:05.548345 exit_group(0)           = ?
+16:00:05.548452 +++ exited with 0 +++

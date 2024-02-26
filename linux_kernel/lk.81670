@@ -1,0 +1,28 @@
+18:04:12.985416 set_robust_list(0x7fe4a49dda20, 24) = 0
+18:04:12.985471 close(10)               = 0
+18:04:12.985513 close(3)                = 0
+18:04:12.985552 dup2(4, 1)              = 1
+18:04:12.985592 close(4)                = 0
+18:04:12.985642 newfstatat(AT_FDCWD, "/usr/local/sbin/basename", 0x7ffed1fea9c0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:12.985676 newfstatat(AT_FDCWD, "/usr/local/bin/basename", 0x7ffed1fea9c0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:12.985713 newfstatat(AT_FDCWD, "/usr/sbin/basename", 0x7ffed1fea9c0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:12.985743 newfstatat(AT_FDCWD, "/usr/bin/basename", {st_mode=S_IFREG|0755, st_size=35328, ...}, 0) = 0
+18:04:12.985784 pipe2([3, 4], 0)        = 0
+18:04:12.985812 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe4a49dda10) = 81671
+18:04:12.985950 close(4)                = 0
+18:04:12.985982 newfstatat(AT_FDCWD, "/usr/local/sbin/sed", 0x7ffed1fea9c0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:12.986022 newfstatat(AT_FDCWD, "/usr/local/bin/sed", 0x7ffed1fea9c0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:12.986063 newfstatat(AT_FDCWD, "/usr/sbin/sed", 0x7ffed1fea9c0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:12.986105 newfstatat(AT_FDCWD, "/usr/bin/sed", {st_mode=S_IFREG|0755, st_size=113224, ...}, 0) = 0
+18:04:12.986157 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe4a49dda10) = 81672
+18:04:12.986277 close(3)                = 0
+18:04:12.986320 close(-1)               = -1 EBADF (Неправильный дескриптор файла)
+18:04:12.986376 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 81671
+18:04:12.989007 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=81671, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:12.989038 rt_sigreturn({mask=[]}) = 81671
+18:04:12.989092 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 81672
+18:04:12.991485 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=81672, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:12.991513 rt_sigreturn({mask=[]}) = 81672
+18:04:12.991552 wait4(-1, 0x7ffed1fea91c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:04:12.991596 exit_group(0)           = ?
+18:04:12.991670 +++ exited with 0 +++

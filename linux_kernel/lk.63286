@@ -1,0 +1,115 @@
+17:52:29.144580 set_robust_list(0x7fb371296a20, 24) = 0
+17:52:29.144622 close(3)                = 0
+17:52:29.144637 dup2(4, 1)              = 1
+17:52:29.144652 close(4)                = 0
+17:52:29.144678 openat(AT_FDCWD, "/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+17:52:29.144703 fcntl(2, F_DUPFD, 10)   = 10
+17:52:29.144739 close(2)                = 0
+17:52:29.144764 fcntl(10, F_SETFD, FD_CLOEXEC) = 0
+17:52:29.144785 dup2(3, 2)              = 2
+17:52:29.144799 close(3)                = 0
+17:52:29.144814 execve("/usr/bin/find", ["find", "debian/linux-headers-5.15.0-97/u"..., "-type", "d", "-a", "-true", "-a", "-true", "-print0"], 0x55f94b624bc0 /* 23 vars */) = 0
+17:52:29.144929 brk(NULL)               = 0x560c711a5000
+17:52:29.144960 arch_prctl(0x3001 /* ARCH_??? */, 0x7fff1c254170) = -1 EINVAL (Недопустимый аргумент)
+17:52:29.144985 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2626ce2000
+17:52:29.145007 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+17:52:29.145027 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+17:52:29.145055 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+17:52:29.145072 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2626cc7000
+17:52:29.145086 close(3)                = 0
+17:52:29.145116 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+17:52:29.145133 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+17:52:29.145150 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+17:52:29.145167 mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2626c9b000
+17:52:29.145191 mprotect(0x7f2626ca1000, 139264, PROT_NONE) = 0
+17:52:29.145216 mmap(0x7f2626ca1000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f2626ca1000
+17:52:29.145240 mmap(0x7f2626cbb000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f2626cbb000
+17:52:29.145258 mmap(0x7f2626cc3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f2626cc3000
+17:52:29.145275 mmap(0x7f2626cc5000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2626cc5000
+17:52:29.145294 close(3)                = 0
+17:52:29.145311 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+17:52:29.145330 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+17:52:29.145350 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+17:52:29.145370 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+17:52:29.145386 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+17:52:29.145401 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+17:52:29.145422 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+17:52:29.145438 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2626a72000
+17:52:29.145460 mprotect(0x7f2626a9a000, 2023424, PROT_NONE) = 0
+17:52:29.145482 mmap(0x7f2626a9a000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f2626a9a000
+17:52:29.145502 mmap(0x7f2626c2f000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f2626c2f000
+17:52:29.145519 mmap(0x7f2626c88000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f2626c88000
+17:52:29.145542 mmap(0x7f2626c8e000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2626c8e000
+17:52:29.145570 close(3)                = 0
+17:52:29.145590 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+17:52:29.145611 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+17:52:29.145632 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+17:52:29.145654 mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f26269db000
+17:52:29.145675 mmap(0x7f26269dd000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f26269dd000
+17:52:29.145701 mmap(0x7f2626a48000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7f2626a48000
+17:52:29.145722 mmap(0x7f2626a70000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7f2626a70000
+17:52:29.145755 close(3)                = 0
+17:52:29.145781 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f26269d9000
+17:52:29.145803 arch_prctl(ARCH_SET_FS, 0x7f26269d9c40) = 0
+17:52:29.145819 set_tid_address(0x7f26269d9f10) = 63286
+17:52:29.145835 set_robust_list(0x7f26269d9f20, 24) = 0
+17:52:29.145852 rseq(0x7f26269da5e0, 0x20, 0, 0x53053053) = 0
+17:52:29.145897 mprotect(0x7f2626c88000, 16384, PROT_READ) = 0
+17:52:29.145921 mprotect(0x7f2626a70000, 4096, PROT_READ) = 0
+17:52:29.145960 mprotect(0x7f2626cc3000, 4096, PROT_READ) = 0
+17:52:29.146001 mprotect(0x560c70962000, 8192, PROT_READ) = 0
+17:52:29.146021 mprotect(0x7f2626d1c000, 8192, PROT_READ) = 0
+17:52:29.146044 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+17:52:29.146067 munmap(0x7f2626cc7000, 110235) = 0
+17:52:29.146105 statfs("/sys/fs/selinux", 0x7fff1c2541b0) = -1 ENOENT (Нет такого файла или каталога)
+17:52:29.146129 statfs("/selinux", 0x7fff1c2541b0) = -1 ENOENT (Нет такого файла или каталога)
+17:52:29.146149 getrandom("\x68\xf8\xa0\x84\x48\xa2\xe4\x7b", 8, GRND_NONBLOCK) = 8
+17:52:29.146166 brk(NULL)               = 0x560c711a5000
+17:52:29.146181 brk(0x560c711c6000)     = 0x560c711c6000
+17:52:29.146201 openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+17:52:29.146221 newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+17:52:29.146240 read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 414
+17:52:29.146271 read(3, "", 1024)       = 0
+17:52:29.146287 close(3)                = 0
+17:52:29.146303 access("/etc/selinux/config", F_OK) = -1 ENOENT (Нет такого файла или каталога)
+17:52:29.146330 openat(AT_FDCWD, ".", O_RDONLY|O_CLOEXEC) = 3
+17:52:29.146353 uname({sysname="Linux", nodename="master-Lenovo-ThinkBook-15-IIL", ...}) = 0
+17:52:29.146380 ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+17:52:29.146422 ioctl(1, TCGETS, 0x7fff1c253fc0) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+17:52:29.146454 newfstatat(AT_FDCWD, "debian/linux-headers-5.15.0-97/usr/share/doc", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+17:52:29.146476 newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+17:52:29.146497 openat(AT_FDCWD, "debian/linux-headers-5.15.0-97/usr/share/doc", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 4
+17:52:29.146515 newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+17:52:29.146534 fcntl(4, F_GETFL)       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+17:52:29.146549 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:52:29.146565 newfstatat(AT_FDCWD, "debian/linux-headers-5.15.0-97/usr/share/doc", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+17:52:29.146582 fcntl(4, F_DUPFD_CLOEXEC, 3) = 5
+17:52:29.146597 getdents64(4, 0x560c711a9040 /* 3 entries */, 32768) = 96
+17:52:29.146618 getdents64(4, 0x560c711a9040 /* 0 entries */, 32768) = 0
+17:52:29.146633 close(4)                = 0
+17:52:29.146648 newfstatat(5, "linux-headers-5.15.0-97", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+17:52:29.146667 fcntl(5, F_DUPFD_CLOEXEC, 0) = 4
+17:52:29.146683 openat(5, "linux-headers-5.15.0-97", O_RDONLY|O_NOCTTY|O_NONBLOCK|O_NOFOLLOW|O_CLOEXEC|O_DIRECTORY) = 6
+17:52:29.146698 newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+17:52:29.146719 fcntl(6, F_GETFL)       = 0x38800 (flags O_RDONLY|O_NONBLOCK|O_LARGEFILE|O_NOFOLLOW|O_DIRECTORY)
+17:52:29.146734 fcntl(6, F_SETFD, FD_CLOEXEC) = 0
+17:52:29.146749 newfstatat(5, "linux-headers-5.15.0-97", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+17:52:29.146768 fstatfs(6, {f_type=EXT2_SUPER_MAGIC, f_bsize=4096, f_blocks=61241415, f_bfree=28786062, f_bavail=25656962, f_files=15630336, f_ffree=14124623, f_fsid={val=[0xd46f4a7a, 0xcc075251]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+17:52:29.146789 fcntl(6, F_DUPFD_CLOEXEC, 3) = 7
+17:52:29.146805 getdents64(6, 0x560c711b11a0 /* 4 entries */, 32768) = 120
+17:52:29.146824 getdents64(6, 0x560c711b11a0 /* 0 entries */, 32768) = 0
+17:52:29.146839 close(6)                = 0
+17:52:29.146852 close(4)                = 0
+17:52:29.146866 fcntl(7, F_DUPFD_CLOEXEC, 0) = 4
+17:52:29.146882 close(7)                = 0
+17:52:29.146895 close(4)                = 0
+17:52:29.146910 fcntl(5, F_DUPFD_CLOEXEC, 0) = 4
+17:52:29.146924 close(5)                = 0
+17:52:29.146938 close(4)                = 0
+17:52:29.146954 fchdir(3)               = 0
+17:52:29.146968 close(3)                = 0
+17:52:29.146982 write(1, "debian/linux-headers-5.15.0-97/u"..., 114) = 114
+17:52:29.147002 close(1)                = 0
+17:52:29.147034 close(2)                = 0
+17:52:29.147068 exit_group(0)           = ?
+17:52:29.147133 +++ exited with 0 +++

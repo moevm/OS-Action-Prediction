@@ -1,0 +1,61 @@
+18:04:16.260658 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:16.260703 execve("scripts/basic/fixdep", ["scripts/basic/fixdep", "scripts/genksyms/.lex.lex.o.d", "scripts/genksyms/lex.lex.o", "gcc -Wp,-MMD,scripts/genksyms/.l"...], 0x56521d39e378 /* 129 vars */) = 0
+18:04:16.260892 brk(NULL)               = 0x55e5f7970000
+18:04:16.260923 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdf827a330) = -1 EINVAL (Недопустимый аргумент)
+18:04:16.260961 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb80ba94000
+18:04:16.260990 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:16.261017 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:16.261040 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:16.261067 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb80ba79000
+18:04:16.261093 close(3)                = 0
+18:04:16.261121 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:16.261144 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:16.261166 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:16.261192 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:16.261216 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:16.261235 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:16.261260 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:16.261283 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb80b850000
+18:04:16.261305 mprotect(0x7fb80b878000, 2023424, PROT_NONE) = 0
+18:04:16.261330 mmap(0x7fb80b878000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fb80b878000
+18:04:16.261354 mmap(0x7fb80ba0d000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fb80ba0d000
+18:04:16.261377 mmap(0x7fb80ba66000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fb80ba66000
+18:04:16.261411 mmap(0x7fb80ba6c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb80ba6c000
+18:04:16.261444 close(3)                = 0
+18:04:16.261481 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb80b84d000
+18:04:16.261507 arch_prctl(ARCH_SET_FS, 0x7fb80b84d740) = 0
+18:04:16.261529 set_tid_address(0x7fb80b84da10) = 82219
+18:04:16.261550 set_robust_list(0x7fb80b84da20, 24) = 0
+18:04:16.261574 rseq(0x7fb80b84e0e0, 0x20, 0, 0x53053053) = 0
+18:04:16.261635 mprotect(0x7fb80ba66000, 16384, PROT_READ) = 0
+18:04:16.261666 mprotect(0x55e5f5a71000, 4096, PROT_READ) = 0
+18:04:16.261690 mprotect(0x7fb80bace000, 8192, PROT_READ) = 0
+18:04:16.261727 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:16.261761 munmap(0x7fb80ba79000, 110235) = 0
+18:04:16.261830 newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:04:16.261859 getrandom("\x1b\xa3\xfa\xf5\xfd\x13\x4f\xf0", 8, GRND_NONBLOCK) = 8
+18:04:16.261882 brk(NULL)               = 0x55e5f7970000
+18:04:16.261902 brk(0x55e5f7991000)     = 0x55e5f7991000
+18:04:16.261934 openat(AT_FDCWD, "scripts/genksyms/.lex.lex.o.d", O_RDONLY) = 3
+18:04:16.261968 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=126, ...}, AT_EMPTY_PATH) = 0
+18:04:16.261994 read(3, "lex.lex.o: scripts/genksyms/lex."..., 126) = 126
+18:04:16.262018 close(3)                = 0
+18:04:16.262037 openat(AT_FDCWD, "scripts/genksyms/lex.lex.c", O_RDONLY) = 3
+18:04:16.262060 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=57685, ...}, AT_EMPTY_PATH) = 0
+18:04:16.262084 read(3, "\n#define  YY_INT_ALIGNED short i"..., 57685) = 57685
+18:04:16.262133 close(3)                = 0
+18:04:16.262157 openat(AT_FDCWD, "scripts/genksyms/genksyms.h", O_RDONLY) = 3
+18:04:16.262189 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2100, ...}, AT_EMPTY_PATH) = 0
+18:04:16.262215 read(3, "/* SPDX-License-Identifier: GPL-"..., 2100) = 2100
+18:04:16.262238 close(3)                = 0
+18:04:16.262259 openat(AT_FDCWD, "scripts/genksyms/parse.tab.h", O_RDONLY) = 3
+18:04:16.262280 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4995, ...}, AT_EMPTY_PATH) = 0
+18:04:16.262304 read(3, "/* A Bison parser, made by GNU B"..., 4995) = 4995
+18:04:16.262328 close(3)                = 0
+18:04:16.262349 openat(AT_FDCWD, "scripts/genksyms/keywords.c", O_RDONLY) = 3
+18:04:16.262373 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2251, ...}, AT_EMPTY_PATH) = 0
+18:04:16.262397 read(3, "// SPDX-License-Identifier: GPL-"..., 2251) = 2251
+18:04:16.262419 close(3)                = 0
+18:04:16.262445 write(1, "cmd_scripts/genksyms/lex.lex.o :"..., 548) = 548
+18:04:16.262478 exit_group(0)           = ?
+18:04:16.262572 +++ exited with 0 +++

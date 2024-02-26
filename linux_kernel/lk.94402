@@ -1,0 +1,19 @@
+18:07:30.242980 set_robust_list(0x7fb237888a20, 24) = 0
+18:07:30.243120 close(3)                = 0
+18:07:30.243178 dup2(4, 1)              = 1
+18:07:30.243231 close(4)                = 0
+18:07:30.243313 pipe2([3, 4], 0)        = 0
+18:07:30.243372 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fb237888a10) = 94403
+18:07:30.243659 close(4)                = 0
+18:07:30.243728 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fb237888a10) = 94404
+18:07:30.244127 close(3)                = 0
+18:07:30.244351 close(-1)               = -1 EBADF (Неправильный дескриптор файла)
+18:07:30.244435 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 94403
+18:07:30.244835 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=94403, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:07:30.244864 rt_sigreturn({mask=[]}) = 94403
+18:07:30.244925 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 94404
+18:07:30.251629 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=94404, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:07:30.251656 rt_sigreturn({mask=[]}) = 94404
+18:07:30.251704 wait4(-1, 0x7ffe3bb71d9c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:07:30.251843 exit_group(0)           = ?
+18:07:30.252013 +++ exited with 0 +++

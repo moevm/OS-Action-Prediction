@@ -1,0 +1,65 @@
+18:04:21.407056 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:21.407098 execve("scripts/basic/fixdep", ["scripts/basic/fixdep", "scripts/mod/.file2alias.o.d", "scripts/mod/file2alias.o", "gcc -Wp,-MMD,scripts/mod/.file2a"...], 0x557a0462d328 /* 129 vars */) = 0
+18:04:21.407317 brk(NULL)               = 0x559201857000
+18:04:21.407385 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe869074a0) = -1 EINVAL (Недопустимый аргумент)
+18:04:21.407436 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8d1545a000
+18:04:21.407469 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:21.407507 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:21.407558 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:21.407598 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8d1543f000
+18:04:21.407638 close(3)                = 0
+18:04:21.407676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:21.407707 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:21.407741 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:21.407784 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:21.407820 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:21.407856 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:21.407893 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:21.407933 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8d15216000
+18:04:21.407979 mprotect(0x7f8d1523e000, 2023424, PROT_NONE) = 0
+18:04:21.408024 mmap(0x7f8d1523e000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f8d1523e000
+18:04:21.408062 mmap(0x7f8d153d3000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f8d153d3000
+18:04:21.408092 mmap(0x7f8d1542c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f8d1542c000
+18:04:21.408134 mmap(0x7f8d15432000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8d15432000
+18:04:21.408176 close(3)                = 0
+18:04:21.408215 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8d15213000
+18:04:21.408275 arch_prctl(ARCH_SET_FS, 0x7f8d15213740) = 0
+18:04:21.408300 set_tid_address(0x7f8d15213a10) = 82580
+18:04:21.408343 set_robust_list(0x7f8d15213a20, 24) = 0
+18:04:21.408370 rseq(0x7f8d152140e0, 0x20, 0, 0x53053053) = 0
+18:04:21.408454 mprotect(0x7f8d1542c000, 16384, PROT_READ) = 0
+18:04:21.408499 mprotect(0x559200f2a000, 4096, PROT_READ) = 0
+18:04:21.408544 mprotect(0x7f8d15494000, 8192, PROT_READ) = 0
+18:04:21.408593 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:21.408638 munmap(0x7f8d1543f000, 110235) = 0
+18:04:21.408705 newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:04:21.408745 getrandom("\xad\x61\x24\xfe\x21\xda\xac\xc7", 8, GRND_NONBLOCK) = 8
+18:04:21.408782 brk(NULL)               = 0x559201857000
+18:04:21.408816 brk(0x559201878000)     = 0x559201878000
+18:04:21.408845 openat(AT_FDCWD, "scripts/mod/.file2alias.o.d", O_RDONLY) = 3
+18:04:21.408881 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=175, ...}, AT_EMPTY_PATH) = 0
+18:04:21.408923 read(3, "file2alias.o: scripts/mod/file2a"..., 175) = 175
+18:04:21.408955 close(3)                = 0
+18:04:21.408985 openat(AT_FDCWD, "scripts/mod/file2alias.c", O_RDONLY) = 3
+18:04:21.409017 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=46014, ...}, AT_EMPTY_PATH) = 0
+18:04:21.409056 read(3, "/* Simple code to turn various t"..., 46014) = 46014
+18:04:21.409108 close(3)                = 0
+18:04:21.409150 openat(AT_FDCWD, "scripts/mod/modpost.h", O_RDONLY) = 3
+18:04:21.409200 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5723, ...}, AT_EMPTY_PATH) = 0
+18:04:21.409231 read(3, "/* SPDX-License-Identifier: GPL-"..., 5723) = 5723
+18:04:21.409270 close(3)                = 0
+18:04:21.409295 openat(AT_FDCWD, "scripts/mod/elfconfig.h", O_RDONLY) = 3
+18:04:21.409332 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=136, ...}, AT_EMPTY_PATH) = 0
+18:04:21.409366 read(3, "#define KERNEL_ELFCLASS ELFCLASS"..., 136) = 136
+18:04:21.409402 close(3)                = 0
+18:04:21.409432 openat(AT_FDCWD, "scripts/mod/devicetable-offsets.h", O_RDONLY) = 3
+18:04:21.409475 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=16319, ...}, AT_EMPTY_PATH) = 0
+18:04:21.409506 read(3, "#ifndef __DEVICETABLE_OFFSETS_H_"..., 16319) = 16319
+18:04:21.409544 close(3)                = 0
+18:04:21.409580 openat(AT_FDCWD, "scripts/mod/../../include/linux/mod_devicetable.h", O_RDONLY) = 3
+18:04:21.409619 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23983, ...}, AT_EMPTY_PATH) = 0
+18:04:21.409659 read(3, "/* SPDX-License-Identifier: GPL-"..., 23983) = 23983
+18:04:21.409695 close(3)                = 0
+18:04:21.409735 write(1, "cmd_scripts/mod/file2alias.o := "..., 556) = 556
+18:04:21.409788 exit_group(0)           = ?
+18:04:21.409903 +++ exited with 0 +++

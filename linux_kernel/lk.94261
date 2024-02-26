@@ -1,0 +1,53 @@
+18:07:29.807656 set_robust_list(0x7fb237888a20, 24) = 0
+18:07:29.807828 dup2(3, 0)              = 0
+18:07:29.807999 close(3)                = 0
+18:07:29.808115 execve("/usr/bin/tr", ["tr", "A-Z", "a-z"], 0x56126f898f38 /* 129 vars */) = 0
+18:07:29.808658 brk(NULL)               = 0x55ab4ee5a000
+18:07:29.808767 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd655300d0) = -1 EINVAL (Недопустимый аргумент)
+18:07:29.808875 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2dfcd2f000
+18:07:29.808938 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:07:29.808998 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:07:29.809058 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:07:29.809119 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2dfcd14000
+18:07:29.809171 close(3)                = 0
+18:07:29.809250 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:07:29.809307 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:07:29.809362 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:07:29.809415 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:07:29.809472 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:07:29.809540 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:07:29.809604 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:07:29.809658 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2dfcaeb000
+18:07:29.809719 mprotect(0x7f2dfcb13000, 2023424, PROT_NONE) = 0
+18:07:29.809786 mmap(0x7f2dfcb13000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f2dfcb13000
+18:07:29.809861 mmap(0x7f2dfcca8000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f2dfcca8000
+18:07:29.809916 mmap(0x7f2dfcd01000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f2dfcd01000
+18:07:29.809982 mmap(0x7f2dfcd07000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2dfcd07000
+18:07:29.810085 close(3)                = 0
+18:07:29.810150 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2dfcae8000
+18:07:29.810220 arch_prctl(ARCH_SET_FS, 0x7f2dfcae8740) = 0
+18:07:29.810267 set_tid_address(0x7f2dfcae8a10) = 94261
+18:07:29.810313 set_robust_list(0x7f2dfcae8a20, 24) = 0
+18:07:29.810369 rseq(0x7f2dfcae90e0, 0x20, 0, 0x53053053) = 0
+18:07:29.810496 mprotect(0x7f2dfcd01000, 16384, PROT_READ) = 0
+18:07:29.810596 mprotect(0x55ab4e796000, 4096, PROT_READ) = 0
+18:07:29.810660 mprotect(0x7f2dfcd69000, 8192, PROT_READ) = 0
+18:07:29.810760 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:07:29.810849 munmap(0x7f2dfcd14000, 110235) = 0
+18:07:29.810980 getrandom("\x3c\x12\x0a\x33\x67\xc6\xd6\xc8", 8, GRND_NONBLOCK) = 8
+18:07:29.811036 brk(NULL)               = 0x55ab4ee5a000
+18:07:29.811086 brk(0x55ab4ee7b000)     = 0x55ab4ee7b000
+18:07:29.811139 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+18:07:29.811203 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+18:07:29.811266 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2dfc573000
+18:07:29.811336 close(3)                = 0
+18:07:29.811464 fadvise64(0, 0, 0, POSIX_FADV_SEQUENTIAL) = -1 ESPIPE (Недопустимая операция смещения)
+18:07:29.811516 read(0, "\"FLUSH_L1D\"\n", 8192) = 12
+18:07:29.811600 newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:07:29.811658 read(0, "", 8192)       = 0
+18:07:29.811701 close(0)                = 0
+18:07:29.811764 write(1, "\"flush_l1d\"\n", 12) = 12
+18:07:29.811875 close(1)                = 0
+18:07:29.811925 close(2)                = 0
+18:07:29.811988 exit_group(0)           = ?
+18:07:29.812206 +++ exited with 0 +++

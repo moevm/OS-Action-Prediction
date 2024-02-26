@@ -1,0 +1,85 @@
+17:52:12.368992 set_robust_list(0x7fc06aaafe60, 24) = 0
+17:52:12.369038 close(5)                = 0
+17:52:12.369057 dup2(4, 1)              = 1
+17:52:12.369072 close(4)                = 0
+17:52:12.369087 close(3)                = 0
+17:52:12.369131 rt_sigaction(SIGFPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc06ab2d520}, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fc06ab2d520}, 8) = 0
+17:52:12.369159 execve("/usr/local/sbin/gcc", ["gcc", "-dumpmachine"], 0x563fee9652c0 /* 23 vars */) = -1 ENOENT (Нет такого файла или каталога)
+17:52:12.369200 execve("/usr/local/bin/gcc", ["gcc", "-dumpmachine"], 0x563fee9652c0 /* 23 vars */) = -1 ENOENT (Нет такого файла или каталога)
+17:52:12.369231 execve("/usr/sbin/gcc", ["gcc", "-dumpmachine"], 0x563fee9652c0 /* 23 vars */) = -1 ENOENT (Нет такого файла или каталога)
+17:52:12.369258 execve("/usr/bin/gcc", ["gcc", "-dumpmachine"], 0x563fee9652c0 /* 23 vars */) = 0
+17:52:12.369500 brk(NULL)               = 0x1707000
+17:52:12.369525 arch_prctl(0x3001 /* ARCH_??? */, 0x7fffdc0b4f40) = -1 EINVAL (Недопустимый аргумент)
+17:52:12.369552 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f006dcd4000
+17:52:12.369574 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+17:52:12.369596 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+17:52:12.369614 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+17:52:12.369632 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f006dcb9000
+17:52:12.369647 close(3)                = 0
+17:52:12.369668 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+17:52:12.369686 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+17:52:12.369705 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+17:52:12.369722 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+17:52:12.369738 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+17:52:12.369754 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+17:52:12.369771 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+17:52:12.369786 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f006da90000
+17:52:12.369803 mprotect(0x7f006dab8000, 2023424, PROT_NONE) = 0
+17:52:12.369823 mmap(0x7f006dab8000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f006dab8000
+17:52:12.369841 mmap(0x7f006dc4d000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f006dc4d000
+17:52:12.369858 mmap(0x7f006dca6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f006dca6000
+17:52:12.369878 mmap(0x7f006dcac000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f006dcac000
+17:52:12.369902 close(3)                = 0
+17:52:12.369932 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f006da8d000
+17:52:12.369950 arch_prctl(ARCH_SET_FS, 0x7f006da8d740) = 0
+17:52:12.369965 set_tid_address(0x7f006da8da10) = 63072
+17:52:12.369980 set_robust_list(0x7f006da8da20, 24) = 0
+17:52:12.369995 rseq(0x7f006da8e0e0, 0x20, 0, 0x53053053) = 0
+17:52:12.370039 mprotect(0x7f006dca6000, 16384, PROT_READ) = 0
+17:52:12.370061 mprotect(0x4e0000, 8192, PROT_READ) = 0
+17:52:12.370080 mprotect(0x7f006dd0e000, 8192, PROT_READ) = 0
+17:52:12.370104 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+17:52:12.370127 munmap(0x7f006dcb9000, 110235) = 0
+17:52:12.370175 getrandom("\x37\x65\x72\x14\xa9\x74\x93\x5a", 8, GRND_NONBLOCK) = 8
+17:52:12.370193 brk(NULL)               = 0x1707000
+17:52:12.370208 brk(0x1728000)          = 0x1728000
+17:52:12.370240 brk(0x174a000)          = 0x174a000
+17:52:12.370299 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+17:52:12.370323 ioctl(0, TIOCGWINSZ, {ws_row=63, ws_col=189, ws_xpixel=0, ws_ypixel=0}) = 0
+17:52:12.370341 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+17:52:12.370358 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+17:52:12.370378 rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:52:12.370397 rt_sigaction(SIGINT, {sa_handler=0x413cd1, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, 8) = 0
+17:52:12.370415 rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:52:12.370433 rt_sigaction(SIGHUP, {sa_handler=0x413cd1, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, 8) = 0
+17:52:12.370450 rt_sigaction(SIGTERM, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:52:12.370467 rt_sigaction(SIGTERM, {sa_handler=0x413cd1, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, 8) = 0
+17:52:12.370484 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:52:12.370501 rt_sigaction(SIGPIPE, {sa_handler=0x413cd1, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, 8) = 0
+17:52:12.370518 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f006dad2520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:52:12.370537 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+17:52:12.370553 prlimit64(0, RLIMIT_STACK, {rlim_cur=65536*1024, rlim_max=RLIM64_INFINITY}, NULL) = 0
+17:52:12.370576 access("/usr/local/sbin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+17:52:12.370595 access("/usr/local/bin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+17:52:12.370612 access("/usr/sbin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+17:52:12.370629 access("/usr/bin/gcc", X_OK) = 0
+17:52:12.370647 newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+17:52:12.370671 readlink("/usr", 0x7fffdc0b3380, 1023) = -1 EINVAL (Недопустимый аргумент)
+17:52:12.370689 readlink("/usr/bin", 0x7fffdc0b3380, 1023) = -1 EINVAL (Недопустимый аргумент)
+17:52:12.370706 readlink("/usr/bin/gcc", "gcc-11", 1023) = 6
+17:52:12.370727 readlink("/usr/bin/gcc-11", "x86_64-linux-gnu-gcc-11", 1023) = 23
+17:52:12.370745 readlink("/usr/bin/x86_64-linux-gnu-gcc-11", 0x7fffdc0b3380, 1023) = -1 EINVAL (Недопустимый аргумент)
+17:52:12.370764 access("/usr/local/sbin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+17:52:12.370781 access("/usr/local/bin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+17:52:12.370798 access("/usr/sbin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+17:52:12.370813 access("/usr/bin/gcc", X_OK) = 0
+17:52:12.370829 newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+17:52:12.370845 readlink("/usr", 0x7fffdc0b3380, 1023) = -1 EINVAL (Недопустимый аргумент)
+17:52:12.370864 readlink("/usr/bin", 0x7fffdc0b3380, 1023) = -1 EINVAL (Недопустимый аргумент)
+17:52:12.370880 readlink("/usr/bin/gcc", "gcc-11", 1023) = 6
+17:52:12.370897 readlink("/usr/bin/gcc-11", "x86_64-linux-gnu-gcc-11", 1023) = 23
+17:52:12.370913 readlink("/usr/bin/x86_64-linux-gnu-gcc-11", 0x7fffdc0b3380, 1023) = -1 EINVAL (Недопустимый аргумент)
+17:52:12.370933 newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+17:52:12.370955 write(1, "x86_64-linux-gnu\n", 17) = 17
+17:52:12.370975 exit_group(0)           = ?
+17:52:12.371046 +++ exited with 0 +++

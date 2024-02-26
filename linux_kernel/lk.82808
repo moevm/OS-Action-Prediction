@@ -1,0 +1,103 @@
+18:04:24.724670 set_robust_list(0x7f656335ca20, 24) = 0
+18:04:24.724714 close(10)               = 0
+18:04:24.724733 close(3)                = 0
+18:04:24.724749 dup2(4, 1)              = 1
+18:04:24.724770 close(4)                = 0
+18:04:24.724799 pipe2([3, 4], 0)        = 0
+18:04:24.724821 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f656335ca10) = 82809
+18:04:24.724916 close(4)                = 0
+18:04:24.724941 read(3, "./scripts\n", 128) = 10
+18:04:24.726216 read(3, "", 128)        = 0
+18:04:24.726260 close(3)                = 0
+18:04:24.726279 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82809
+18:04:24.726320 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82809, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:24.726342 rt_sigreturn({mask=[]}) = 82809
+18:04:24.726360 wait4(-1, 0x7ffff41e36fc, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:04:24.726384 execve("./scripts/pahole-version.sh", ["./scripts/pahole-version.sh", "pahole"], 0x557fb8a90668 /* 15 vars */) = 0
+18:04:24.726488 brk(NULL)               = 0x55c7ae45f000
+18:04:24.726509 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffda63aa140) = -1 EINVAL (Недопустимый аргумент)
+18:04:24.726532 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f276877d000
+18:04:24.726547 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:24.726565 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:24.726580 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:24.726597 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2768762000
+18:04:24.726614 close(3)                = 0
+18:04:24.726630 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:24.726650 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:24.726668 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:24.726683 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:24.726700 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:24.726718 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:24.726734 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:24.726750 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2768539000
+18:04:24.726766 mprotect(0x7f2768561000, 2023424, PROT_NONE) = 0
+18:04:24.726784 mmap(0x7f2768561000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f2768561000
+18:04:24.726802 mmap(0x7f27686f6000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f27686f6000
+18:04:24.726817 mmap(0x7f276874f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f276874f000
+18:04:24.726855 mmap(0x7f2768755000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2768755000
+18:04:24.726877 close(3)                = 0
+18:04:24.726898 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2768536000
+18:04:24.726915 arch_prctl(ARCH_SET_FS, 0x7f2768536740) = 0
+18:04:24.726931 set_tid_address(0x7f2768536a10) = 82808
+18:04:24.726945 set_robust_list(0x7f2768536a20, 24) = 0
+18:04:24.726959 rseq(0x7f27685370e0, 0x20, 0, 0x53053053) = 0
+18:04:24.726995 mprotect(0x7f276874f000, 16384, PROT_READ) = 0
+18:04:24.727025 mprotect(0x55c7ae332000, 8192, PROT_READ) = 0
+18:04:24.727043 mprotect(0x7f27687b7000, 8192, PROT_READ) = 0
+18:04:24.727077 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:24.727104 munmap(0x7f2768762000, 110235) = 0
+18:04:24.727140 getuid()                = 0
+18:04:24.727157 getgid()                = 0
+18:04:24.727175 getpid()                = 82808
+18:04:24.727198 rt_sigaction(SIGCHLD, {sa_handler=0x55c7ae328aa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f276857b520}, NULL, 8) = 0
+18:04:24.727218 geteuid()               = 0
+18:04:24.727237 getrandom("\xe3\x1f\xa4\x91\x3f\x26\x92\x99", 8, GRND_NONBLOCK) = 8
+18:04:24.727256 brk(NULL)               = 0x55c7ae45f000
+18:04:24.727270 brk(0x55c7ae480000)     = 0x55c7ae480000
+18:04:24.727291 getppid()               = 82805
+18:04:24.727321 newfstatat(AT_FDCWD, "/root/linux-5.15.0", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:04:24.727341 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:04:24.727360 openat(AT_FDCWD, "./scripts/pahole-version.sh", O_RDONLY) = 3
+18:04:24.727377 fcntl(3, F_DUPFD, 10)   = 10
+18:04:24.727392 close(3)                = 0
+18:04:24.727407 fcntl(10, F_SETFD, FD_CLOEXEC) = 0
+18:04:24.727423 geteuid()               = 0
+18:04:24.727437 getegid()               = 0
+18:04:24.727452 rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:04:24.727471 rt_sigaction(SIGINT, {sa_handler=0x55c7ae328aa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f276857b520}, NULL, 8) = 0
+18:04:24.727489 rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:04:24.727512 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f276857b520}, NULL, 8) = 0
+18:04:24.727535 rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:04:24.727553 rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f276857b520}, NULL, 8) = 0
+18:04:24.727581 read(10, "#!/bin/sh\n# SPDX-License-Identif"..., 8192) = 269
+18:04:24.727609 pipe2([3, 4], 0)        = 0
+18:04:24.727633 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f2768536a10) = 82810
+18:04:24.727733 close(4)                = 0
+18:04:24.727758 read(3, "/usr/bin/pahole\n", 128) = 16
+18:04:24.728015 read(3, "", 128)        = 0
+18:04:24.728073 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82810, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:24.728113 rt_sigreturn({mask=[]}) = 0
+18:04:24.728140 close(3)                = 0
+18:04:24.728166 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82810
+18:04:24.728189 wait4(-1, 0x7ffda63a9bcc, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:04:24.728217 faccessat2(AT_FDCWD, "/usr/bin/pahole", X_OK, AT_EACCESS) = 0
+18:04:24.728257 pipe2([3, 4], 0)        = 0
+18:04:24.728284 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f2768536a10) = 82811
+18:04:24.728382 close(4)                = 0
+18:04:24.728414 newfstatat(AT_FDCWD, "/usr/local/sbin/sed", 0x7ffda63a9eb0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:24.728444 newfstatat(AT_FDCWD, "/usr/local/bin/sed", 0x7ffda63a9eb0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:24.728479 newfstatat(AT_FDCWD, "/usr/sbin/sed", 0x7ffda63a9eb0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:24.728510 newfstatat(AT_FDCWD, "/usr/bin/sed", {st_mode=S_IFREG|0755, st_size=113224, ...}, 0) = 0
+18:04:24.728557 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f2768536a10) = 82812
+18:04:24.728686 close(3)                = 0
+18:04:24.728711 close(-1)               = -1 EBADF (Неправильный дескриптор файла)
+18:04:24.728741 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82811
+18:04:24.743290 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82811, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:24.743323 rt_sigreturn({mask=[]}) = 82811
+18:04:24.743379 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82812
+18:04:24.743552 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82812, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:24.743589 rt_sigreturn({mask=[]}) = 82812
+18:04:24.743640 wait4(-1, 0x7ffda63a9e0c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:04:24.743689 read(10, "", 8192)      = 0
+18:04:24.743744 exit_group(0)           = ?
+18:04:24.743906 +++ exited with 0 +++

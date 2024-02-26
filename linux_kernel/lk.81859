@@ -1,0 +1,55 @@
+18:04:14.184407 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:14.184440 execve("/usr/bin/cat", ["cat", "include/config/kernel.release"], 0x558ea12e0728 /* 14 vars */) = 0
+18:04:14.184555 brk(NULL)               = 0x55cc94c84000
+18:04:14.184588 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc9af1e9d0) = -1 EINVAL (Недопустимый аргумент)
+18:04:14.184622 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f789a790000
+18:04:14.184649 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:14.184673 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:14.184707 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:14.184730 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f789a775000
+18:04:14.184752 close(3)                = 0
+18:04:14.184777 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:14.184800 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:14.184822 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:14.184844 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:14.184867 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:14.184888 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:14.184912 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:14.184933 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f789a54c000
+18:04:14.184954 mprotect(0x7f789a574000, 2023424, PROT_NONE) = 0
+18:04:14.184981 mmap(0x7f789a574000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f789a574000
+18:04:14.185008 mmap(0x7f789a709000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f789a709000
+18:04:14.185043 mmap(0x7f789a762000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f789a762000
+18:04:14.185068 mmap(0x7f789a768000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f789a768000
+18:04:14.185104 close(3)                = 0
+18:04:14.185136 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f789a549000
+18:04:14.185163 arch_prctl(ARCH_SET_FS, 0x7f789a549740) = 0
+18:04:14.185193 set_tid_address(0x7f789a549a10) = 81859
+18:04:14.185213 set_robust_list(0x7f789a549a20, 24) = 0
+18:04:14.185234 rseq(0x7f789a54a0e0, 0x20, 0, 0x53053053) = 0
+18:04:14.185285 mprotect(0x7f789a762000, 16384, PROT_READ) = 0
+18:04:14.185318 mprotect(0x55cc94c2d000, 4096, PROT_READ) = 0
+18:04:14.185343 mprotect(0x7f789a7ca000, 8192, PROT_READ) = 0
+18:04:14.185383 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:14.185421 munmap(0x7f789a775000, 110235) = 0
+18:04:14.185478 getrandom("\x70\x5b\x8f\xa5\x26\x65\x39\x09", 8, GRND_NONBLOCK) = 8
+18:04:14.185499 brk(NULL)               = 0x55cc94c84000
+18:04:14.185520 brk(0x55cc94ca5000)     = 0x55cc94ca5000
+18:04:14.185546 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+18:04:14.185583 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+18:04:14.185611 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7899fd4000
+18:04:14.185638 close(3)                = 0
+18:04:14.185686 newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:04:14.185711 openat(AT_FDCWD, "include/config/kernel.release", O_RDONLY) = 3
+18:04:14.185734 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=9, ...}, AT_EMPTY_PATH) = 0
+18:04:14.185756 fadvise64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+18:04:14.185778 mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7899fb2000
+18:04:14.185807 read(3, "5.15.136\n", 131072) = 9
+18:04:14.185835 write(1, "5.15.136\n", 9) = 9
+18:04:14.185870 read(3, "", 131072)     = 0
+18:04:14.185892 munmap(0x7f7899fb2000, 139264) = 0
+18:04:14.185920 close(3)                = 0
+18:04:14.185946 close(1)                = 0
+18:04:14.185966 close(2)                = 0
+18:04:14.185987 exit_group(0)           = ?
+18:04:14.186054 +++ exited with 0 +++

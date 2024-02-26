@@ -1,0 +1,61 @@
+18:04:30.860827 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:30.860956 execve("arch/x86/entry/vdso/vdso2c", ["arch/x86/entry/vdso/vdso2c", "arch/x86/entry/vdso/vdso32.so.db"..., "arch/x86/entry/vdso/vdso32.so", "arch/x86/entry/vdso/vdso-image-3"...], 0x5643bce0ae38 /* 129 vars */) = 0
+18:04:30.861407 brk(NULL)               = 0x556915c2f000
+18:04:30.861465 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc0a9271b0) = -1 EINVAL (Недопустимый аргумент)
+18:04:30.861525 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f047229a000
+18:04:30.861587 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:30.861665 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:30.861719 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:30.861771 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f047227f000
+18:04:30.861815 close(3)                = 0
+18:04:30.861861 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:30.861910 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:30.861950 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:30.861999 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:30.862042 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:30.862079 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:30.862124 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:30.862168 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0472056000
+18:04:30.862215 mprotect(0x7f047207e000, 2023424, PROT_NONE) = 0
+18:04:30.862271 mmap(0x7f047207e000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f047207e000
+18:04:30.862324 mmap(0x7f0472213000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f0472213000
+18:04:30.862370 mmap(0x7f047226c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f047226c000
+18:04:30.862417 mmap(0x7f0472272000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0472272000
+18:04:30.862467 close(3)                = 0
+18:04:30.862513 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0472053000
+18:04:30.862549 arch_prctl(ARCH_SET_FS, 0x7f0472053740) = 0
+18:04:30.862580 set_tid_address(0x7f0472053a10) = 83351
+18:04:30.862611 set_robust_list(0x7f0472053a20, 24) = 0
+18:04:30.862661 rseq(0x7f04720540e0, 0x20, 0, 0x53053053) = 0
+18:04:30.862745 mprotect(0x7f047226c000, 16384, PROT_READ) = 0
+18:04:30.862794 mprotect(0x5569155a6000, 4096, PROT_READ) = 0
+18:04:30.862858 mprotect(0x7f04722d4000, 8192, PROT_READ) = 0
+18:04:30.862909 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:30.863005 munmap(0x7f047227f000, 110235) = 0
+18:04:30.863069 getrandom("\x0f\x70\x49\x70\xfd\xf3\xce\x25", 8, GRND_NONBLOCK) = 8
+18:04:30.863114 brk(NULL)               = 0x556915c2f000
+18:04:30.863151 brk(0x556915c50000)     = 0x556915c50000
+18:04:30.863194 openat(AT_FDCWD, "arch/x86/entry/vdso/vdso32.so.dbg", O_RDONLY) = 3
+18:04:30.863231 lseek(3, 0, SEEK_END)   = 35008
+18:04:30.863267 mmap(NULL, 35008, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f0472291000
+18:04:30.863303 close(3)                = 0
+18:04:30.863338 openat(AT_FDCWD, "arch/x86/entry/vdso/vdso32.so", O_RDONLY) = 3
+18:04:30.863374 lseek(3, 0, SEEK_END)   = 5624
+18:04:30.863411 mmap(NULL, 5624, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f047228f000
+18:04:30.863446 close(3)                = 0
+18:04:30.863492 openat(AT_FDCWD, "arch/x86/entry/vdso/vdso-image-32.c", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+18:04:30.863574 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:04:30.863720 write(3, "/* AUTOMATICALLY GENERATED -- DO"..., 4096) = 4096
+18:04:30.863901 write(3, "65, 0x36, \n\t0x34, 0x00, 0x5F, 0x"..., 4096) = 4096
+18:04:30.864018 write(3, "0x01, \n\t0x06, 0x10, 0x00, 0x03, "..., 4096) = 4096
+18:04:30.864191 write(3, ", \n\t0x8B, 0x45, 0xE8, 0x8B, 0x55"..., 4096) = 4096
+18:04:30.864394 write(3, "0x89, 0x45, 0xD4, 0x0F, 0x85, 0x"..., 4096) = 4096
+18:04:30.864541 write(3, ", 0x19, 0xD6, 0x72, 0xED, 0x03, "..., 4096) = 4096
+18:04:30.864645 write(3, "E9, 0x57, 0xFF, 0xFF, 0xFF, 0x8B"..., 4096) = 4096
+18:04:30.864742 write(3, "0x24, 0xC3, 0x8B, 0x14, 0x24, 0x"..., 4096) = 4096
+18:04:30.864818 munmap(0x7f0472291000, 35008) = 0
+18:04:30.864954 munmap(0x7f047228f000, 5624) = 0
+18:04:30.865031 write(3, ", 0x00, 0x00, 0x00, 0x04, 0x00, "..., 2775) = 2775
+18:04:30.865088 close(3)                = 0
+18:04:30.865154 exit_group(0)           = ?
+18:04:30.865321 +++ exited with 0 +++

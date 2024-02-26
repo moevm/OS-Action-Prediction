@@ -1,0 +1,55 @@
+18:04:23.193245 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:23.193302 execve("/usr/bin/cat", ["cat", "/root/linux-5.15.0/tools/bpf/res"...], 0x55a65bab1868 /* 144 vars */) = 0
+18:04:23.193523 brk(NULL)               = 0x5599a7a29000
+18:04:23.193558 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffccbb78ea0) = -1 EINVAL (Недопустимый аргумент)
+18:04:23.193594 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6b1502a000
+18:04:23.193628 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:23.193659 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:23.193687 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:23.193715 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6b1500f000
+18:04:23.193749 close(3)                = 0
+18:04:23.193777 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:23.193814 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:23.193836 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:23.193861 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:23.193881 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:23.193906 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:23.193928 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:23.193952 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6b14de6000
+18:04:23.193988 mprotect(0x7f6b14e0e000, 2023424, PROT_NONE) = 0
+18:04:23.194021 mmap(0x7f6b14e0e000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f6b14e0e000
+18:04:23.194047 mmap(0x7f6b14fa3000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f6b14fa3000
+18:04:23.194072 mmap(0x7f6b14ffc000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f6b14ffc000
+18:04:23.194107 mmap(0x7f6b15002000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6b15002000
+18:04:23.194142 close(3)                = 0
+18:04:23.194175 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6b14de3000
+18:04:23.194213 arch_prctl(ARCH_SET_FS, 0x7f6b14de3740) = 0
+18:04:23.194236 set_tid_address(0x7f6b14de3a10) = 82730
+18:04:23.194258 set_robust_list(0x7f6b14de3a20, 24) = 0
+18:04:23.194280 rseq(0x7f6b14de40e0, 0x20, 0, 0x53053053) = 0
+18:04:23.194361 mprotect(0x7f6b14ffc000, 16384, PROT_READ) = 0
+18:04:23.194416 mprotect(0x5599a5df6000, 4096, PROT_READ) = 0
+18:04:23.194452 mprotect(0x7f6b15064000, 8192, PROT_READ) = 0
+18:04:23.194499 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:23.194547 munmap(0x7f6b1500f000, 110235) = 0
+18:04:23.194620 getrandom("\xe2\x1b\x05\x2b\xff\x44\xbc\xbf", 8, GRND_NONBLOCK) = 8
+18:04:23.194646 brk(NULL)               = 0x5599a7a29000
+18:04:23.194676 brk(0x5599a7a4a000)     = 0x5599a7a4a000
+18:04:23.194705 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+18:04:23.194734 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+18:04:23.194758 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6b1486e000
+18:04:23.194792 close(3)                = 0
+18:04:23.194854 newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=117, ...}, AT_EMPTY_PATH) = 0
+18:04:23.194880 openat(AT_FDCWD, "/root/linux-5.15.0/tools/bpf/resolve_btfids/libbpf/staticobjs/.btf.o.d", O_RDONLY) = 3
+18:04:23.194909 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7525, ...}, AT_EMPTY_PATH) = 0
+18:04:23.194932 fadvise64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+18:04:23.194955 mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6b1484c000
+18:04:23.194980 read(3, "/root/linux-5.15.0/tools/bpf/res"..., 131072) = 7525
+18:04:23.195017 write(1, "/root/linux-5.15.0/tools/bpf/res"..., 7525) = 7525
+18:04:23.195054 read(3, "", 131072)     = 0
+18:04:23.195079 munmap(0x7f6b1484c000, 139264) = 0
+18:04:23.195112 close(3)                = 0
+18:04:23.195145 close(1)                = 0
+18:04:23.195171 close(2)                = 0
+18:04:23.195202 exit_group(0)           = ?
+18:04:23.195317 +++ exited with 0 +++

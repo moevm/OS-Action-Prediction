@@ -1,0 +1,22 @@
+18:06:57.383584 set_robust_list(0x7faa51e44a20, 24) = 0
+18:06:57.383717 rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7faa51e89520}, NULL, 8) = 0
+18:06:57.383823 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7faa51e89520}, NULL, 8) = 0
+18:06:57.383907 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7faa51e89520}, NULL, 8) = 0
+18:06:57.383968 rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7faa51e89520}, NULL, 8) = 0
+18:06:57.384024 rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7faa51e89520}, NULL, 8) = 0
+18:06:57.384078 close(3)                = 0
+18:06:57.384119 dup2(4, 1)              = 1
+18:06:57.384261 close(4)                = 0
+18:06:57.384396 newfstatat(AT_FDCWD, "/usr/local/sbin/cat", 0x7fff1938f3b0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:57.384532 newfstatat(AT_FDCWD, "/usr/local/bin/cat", 0x7fff1938f3b0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:57.384630 newfstatat(AT_FDCWD, "/usr/sbin/cat", 0x7fff1938f3b0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:57.384686 newfstatat(AT_FDCWD, "/usr/bin/cat", {st_mode=S_IFREG|0755, st_size=35280, ...}, 0) = 0
+18:06:57.384756 rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], NULL, 8) = 0
+18:06:57.384841 vfork()                 = 89390
+18:06:57.385231 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:06:57.385310 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 89390
+18:06:57.389611 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=89390, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:06:57.389658 rt_sigreturn({mask=[]}) = 89390
+18:06:57.389712 wait4(-1, 0x7fff1938f30c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:06:57.389788 exit_group(0)           = ?
+18:06:57.389938 +++ exited with 0 +++

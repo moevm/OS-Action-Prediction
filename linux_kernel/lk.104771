@@ -1,0 +1,53 @@
+18:11:33.647367 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:11:33.647582 execve("/usr/bin/cat", ["cat", "arch/x86/entry/modules.order"], 0x564f01bccc08 /* 129 vars */) = 0
+18:11:33.648095 brk(NULL)               = 0x55e8f621f000
+18:11:33.648270 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc12d65ca0) = -1 EINVAL (Недопустимый аргумент)
+18:11:33.648449 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f591de6f000
+18:11:33.648623 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:11:33.648798 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:11:33.648953 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:11:33.649179 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f591de54000
+18:11:33.649377 close(3)                = 0
+18:11:33.649583 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:11:33.649765 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:11:33.649946 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:11:33.650168 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:11:33.650344 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:11:33.650524 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:11:33.650730 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:11:33.650915 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f591dc2b000
+18:11:33.651108 mprotect(0x7f591dc53000, 2023424, PROT_NONE) = 0
+18:11:33.651287 mmap(0x7f591dc53000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f591dc53000
+18:11:33.651451 mmap(0x7f591dde8000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f591dde8000
+18:11:33.651642 mmap(0x7f591de41000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f591de41000
+18:11:33.651827 mmap(0x7f591de47000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f591de47000
+18:11:33.652090 close(3)                = 0
+18:11:33.652282 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f591dc28000
+18:11:33.652475 arch_prctl(ARCH_SET_FS, 0x7f591dc28740) = 0
+18:11:33.652670 set_tid_address(0x7f591dc28a10) = 104771
+18:11:33.652863 set_robust_list(0x7f591dc28a20, 24) = 0
+18:11:33.653039 rseq(0x7f591dc290e0, 0x20, 0, 0x53053053) = 0
+18:11:33.653253 mprotect(0x7f591de41000, 16384, PROT_READ) = 0
+18:11:33.653424 mprotect(0x55e8f61a4000, 4096, PROT_READ) = 0
+18:11:33.653612 mprotect(0x7f591dea9000, 8192, PROT_READ) = 0
+18:11:33.653786 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:11:33.653983 munmap(0x7f591de54000, 110235) = 0
+18:11:33.654210 getrandom("\xca\x41\xee\x2d\x0d\x11\x5d\xf6", 8, GRND_NONBLOCK) = 8
+18:11:33.654425 brk(NULL)               = 0x55e8f621f000
+18:11:33.654596 brk(0x55e8f6240000)     = 0x55e8f6240000
+18:11:33.654826 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+18:11:33.655029 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+18:11:33.655228 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f591d6b3000
+18:11:33.655457 close(3)                = 0
+18:11:33.655670 newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:11:33.655878 openat(AT_FDCWD, "arch/x86/entry/modules.order", O_RDONLY) = 3
+18:11:33.656090 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:11:33.656274 fadvise64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+18:11:33.656477 mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f591d691000
+18:11:33.656687 read(3, "", 131072)     = 0
+18:11:33.656885 munmap(0x7f591d691000, 139264) = 0
+18:11:33.657094 close(3)                = 0
+18:11:33.657290 close(1)                = 0
+18:11:33.657460 close(2)                = 0
+18:11:33.657641 exit_group(0)           = ?
+18:11:33.657926 +++ exited with 0 +++

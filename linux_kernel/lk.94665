@@ -1,0 +1,23 @@
+18:07:30.950051 set_robust_list(0x7fb237888a20, 24) = 0
+18:07:30.950187 close(3)                = 0
+18:07:30.950250 dup2(4, 1)              = 1
+18:07:30.950305 close(4)                = 0
+18:07:30.950385 pipe2([3, 4], 0)        = 0
+18:07:30.950459 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fb237888a10) = 94666
+18:07:30.950708 close(4)                = 0
+18:07:30.950797 newfstatat(AT_FDCWD, "/usr/local/sbin/wc", 0x7ffe3bb71d80, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:07:30.950930 newfstatat(AT_FDCWD, "/usr/local/bin/wc", 0x7ffe3bb71d80, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:07:30.951040 newfstatat(AT_FDCWD, "/usr/sbin/wc", 0x7ffe3bb71d80, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:07:30.951135 newfstatat(AT_FDCWD, "/usr/bin/wc", {st_mode=S_IFREG|0755, st_size=43432, ...}, 0) = 0
+18:07:30.951229 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fb237888a10) = 94667
+18:07:30.951507 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=94666, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:07:30.951542 rt_sigreturn({mask=[]}) = 94667
+18:07:30.951633 close(3)                = 0
+18:07:30.951721 close(-1)               = -1 EBADF (Неправильный дескриптор файла)
+18:07:30.951903 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 94666
+18:07:30.951972 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 94667
+18:07:30.956358 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=94667, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:07:30.956397 rt_sigreturn({mask=[]}) = 94667
+18:07:30.956435 wait4(-1, 0x7ffe3bb71cdc, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:07:30.956489 exit_group(0)           = ?
+18:07:30.956626 +++ exited with 0 +++

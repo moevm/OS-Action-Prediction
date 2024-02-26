@@ -1,0 +1,550 @@
+18:09:34.802248 set_robust_list(0x7f032ab5fa20, 24) = 0
+18:09:34.802385 rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f032aba4520}, NULL, 8) = 0
+18:09:34.802535 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f032aba4520}, NULL, 8) = 0
+18:09:34.802626 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f032aba4520}, NULL, 8) = 0
+18:09:34.802694 rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f032aba4520}, NULL, 8) = 0
+18:09:34.802775 rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f032aba4520}, NULL, 8) = 0
+18:09:34.802836 dup2(3, 0)              = 0
+18:09:34.802902 close(3)                = 0
+18:09:34.803004 openat(AT_FDCWD, "kernel/.tmp_stacktrace.ver", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+18:09:34.803099 fcntl(1, F_DUPFD, 10)   = 10
+18:09:34.803154 close(1)                = 0
+18:09:34.803193 fcntl(10, F_SETFD, FD_CLOEXEC) = 0
+18:09:34.803243 dup2(3, 1)              = 1
+18:09:34.803304 close(3)                = 0
+18:09:34.803361 execve("scripts/genksyms/genksyms", ["scripts/genksyms/genksyms", "-r", "/dev/null"], 0x55f90e75f328 /* 129 vars */) = 0
+18:09:34.803725 brk(NULL)               = 0x55a524141000
+18:09:34.803826 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd3456ae70) = -1 EINVAL (Недопустимый аргумент)
+18:09:34.803924 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcc80159000
+18:09:34.803995 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:09:34.804065 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:09:34.804136 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:09:34.804214 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fcc8013e000
+18:09:34.804288 close(3)                = 0
+18:09:34.804357 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:09:34.804429 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:09:34.804530 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:09:34.804598 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:09:34.804668 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:09:34.804739 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:09:34.804815 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:09:34.804886 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fcc7ff15000
+18:09:34.804949 mprotect(0x7fcc7ff3d000, 2023424, PROT_NONE) = 0
+18:09:34.805003 mmap(0x7fcc7ff3d000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fcc7ff3d000
+18:09:34.805083 mmap(0x7fcc800d2000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fcc800d2000
+18:09:34.805150 mmap(0x7fcc8012b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fcc8012b000
+18:09:34.805220 mmap(0x7fcc80131000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcc80131000
+18:09:34.805284 close(3)                = 0
+18:09:34.805351 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcc7ff12000
+18:09:34.805414 arch_prctl(ARCH_SET_FS, 0x7fcc7ff12740) = 0
+18:09:34.805492 set_tid_address(0x7fcc7ff12a10) = 99726
+18:09:34.805556 set_robust_list(0x7fcc7ff12a20, 24) = 0
+18:09:34.805624 rseq(0x7fcc7ff130e0, 0x20, 0, 0x53053053) = 0
+18:09:34.805749 mprotect(0x7fcc8012b000, 16384, PROT_READ) = 0
+18:09:34.805804 mprotect(0x55a524092000, 4096, PROT_READ) = 0
+18:09:34.805866 mprotect(0x7fcc80193000, 8192, PROT_READ) = 0
+18:09:34.805933 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:09:34.806018 munmap(0x7fcc8013e000, 110235) = 0
+18:09:34.806114 getrandom("\x8d\x21\xd7\x6f\x63\x49\xa6\x65", 8, GRND_NONBLOCK) = 8
+18:09:34.806165 brk(NULL)               = 0x55a524141000
+18:09:34.806224 brk(0x55a524162000)     = 0x55a524162000
+18:09:34.806285 openat(AT_FDCWD, "/dev/null", O_RDONLY) = 3
+18:09:34.806347 newfstatat(3, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}, AT_EMPTY_PATH) = 0
+18:09:34.806538 ioctl(3, TCGETS, 0x7ffd3456aa20) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+18:09:34.806644 read(3, "", 4096)       = 0
+18:09:34.806728 close(3)                = 0
+18:09:34.806813 ioctl(0, TCGETS, 0x7ffd3456a440) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+18:09:34.806889 newfstatat(0, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:09:34.806981 read(0, "# 0 \"kernel/stacktrace.c\"\n# 1 \"/"..., 8192) = 4096
+18:09:34.858507 read(0, "long_t __kernel_ssize_t;\ntypedef"..., 4096) = 4096
+18:09:34.859987 read(0, "attribute__((aligned(8))) stack_"..., 8192) = 4096
+18:09:34.862956 read(0, ", size_t size,\n          int typ"..., 4096) = 4096
+18:09:34.879223 read(0, "/x86/include/asm/extable_fixup_t"..., 8192) = 4096
+18:09:34.882560 read(0, ") __attribute__((__always_inline"..., 4096) = 4096
+18:09:34.883599 brk(0x55a524183000)     = 0x55a524183000
+18:09:34.884306 read(0, "__((__unused__)) __attribute__(("..., 8192) = 4096
+18:09:34.884868 read(0, "dr2, unsigned long nbits,\n  unsi"..., 4096) = 4096
+18:09:34.886814 read(0, "\n  return val == ~0UL ? size : f"..., 8192) = 4096
+18:09:34.891289 read(0, "de/asm/bitops.h\" 2\n\n# 1 \"./inclu"..., 4096) = 4096
+18:09:34.893729 read(0, "dr + ((nr) / 64), sizeof(long));"..., 8192) = 4096
+18:09:34.894599 read(0, "mented-lock.h\"\nstatic inline __a"..., 4096) = 4096
+18:09:34.900251 brk(0x55a5241a4000)     = 0x55a5241a4000
+18:09:34.900741 read(0, " __u32 __swab32p(const __u32 *p)"..., 8192) = 4096
+18:09:34.900897 read(0, "nt_function)) __attribute__((__a"..., 4096) = 4096
+18:09:34.903392 read(0, "igned long size)\n{\n return find_"..., 8192) = 4096
+18:09:34.904108 read(0, " & (1ULL << 1))) + (!!((((__u64)"..., 4096) = 4096
+18:09:34.905715 brk(0x55a5241c5000)     = 0x55a5241c5000
+18:09:34.906892 read(0, "__)) __attribute__((__unused__))"..., 8192) = 4096
+18:09:34.906969 read(0, "ne __attribute__((__gnu_inline__"..., 4096) = 4096
+18:09:34.908301 read(0, "d int);\nextern long simple_strto"..., 8192) = 4096
+18:09:34.912309 read(0, "\n\n\nstruct pt_regs;\n\nextern long "..., 4096) = 4096
+18:09:34.923254 read(0, "ed;\n   u8 pending;\n  };\n  struct"..., 8192) = 4096
+18:09:34.926064 read(0, "e, int write, void *buf,\n     si"..., 4096) = 4096
+18:09:34.928959 brk(0x55a5241e6000)     = 0x55a5241e6000
+18:09:34.929732 read(0, "_inline__)) __attribute__((__unu"..., 8192) = 4096
+18:09:34.929940 read(0, "id print_hex_dump(const char *le"..., 4096) = 4096
+18:09:34.932719 read(0, "_byte_pack_upper(char *buf, u8 b"..., 8192) = 4096
+18:09:34.937199 read(0, "[val] \"=\" \"q\" (pfo_val__) : [var"..., 4096) = 4096
+18:09:34.940828 brk(0x55a524207000)     = 0x55a524207000
+18:09:34.941744 read(0, " struct list_head * next)\n{\n nex"..., 8192) = 4096
+18:09:34.941832 read(0, "tic inline __attribute__((__gnu_"..., 4096) = 4096
+18:09:34.943588 read(0, "piletime_assert_10(void) __attri"..., 8192) = 4096
+18:09:34.943666 read(0, "list, head, head->next);\n  INIT_"..., 4096) = 4096
+18:09:34.945538 read(0, "ent_function)) void hlist_del(st"..., 8192) = 4096
+18:09:34.946108 read(0, "compiletime_assert_22(void) __at"..., 4096) = 4096
+18:09:34.949995 read(0, "ng_size(void)\n __attribute__((__"..., 8192) = 4096
+18:09:34.950993 read(0, "/atomic.h\"\nstatic inline __attri"..., 4096) = 4096
+18:09:34.953077 brk(0x55a524228000)     = 0x55a524228000
+18:09:34.953478 read(0, "n\" \".long 671f - .\\n\" \".popsecti"..., 8192) = 4096
+18:09:34.953638 read(0, " %[ptr]\" \"\\n\\t/* output conditio"..., 4096) = 4096
+18:09:34.955724 read(0, " (i); } while (0);\n}\n# 44 \"./arc"..., 8192) = 4096
+18:09:34.955893 read(0, ".balign 4\\n\" \".long 671f - .\\n\" "..., 4096) = 4096
+18:09:34.957196 read(0, "nter)); asm volatile(\".pushsecti"..., 8192) = 4096
+18:09:34.957309 read(0, "_t *v)\n{\n s64 val = arch_atomic6"..., 4096) = 4096
+18:09:34.959492 read(0, "_30(void) __attribute__((__error"..., 8192) = 4096
+18:09:34.959569 read(0, "ttribute__((__gnu_inline__)) __a"..., 4096) = 4096
+18:09:34.961023 read(0, "(__always_inline__)) s64\narch_at"..., 8192) = 4096
+18:09:34.961342 read(0, "ribute__((no_instrument_function"..., 4096) = 4096
+18:09:34.962027 brk(0x55a524249000)     = 0x55a524249000
+18:09:34.962832 read(0, "__((__gnu_inline__)) __attribute"..., 8192) = 4096
+18:09:34.964189 read(0, "ic_long_t *v)\n{\n return arch_ato"..., 4096) = 4096
+18:09:34.965395 read(0, "long i, atomic_long_t *v)\n{\n ret"..., 8192) = 4096
+18:09:34.965499 read(0, "attribute__((__unused__)) __attr"..., 4096) = 4096
+18:09:34.966261 brk(0x55a52426a000)     = 0x55a52426a000
+18:09:34.966610 read(0, "used__)) __attribute__((no_instr"..., 8192) = 4096
+18:09:34.966710 read(0, "\n}\n\nstatic inline __attribute__("..., 4096) = 4096
+18:09:34.969480 read(0, "te__((__gnu_inline__)) __attribu"..., 8192) = 4096
+18:09:34.969573 read(0, "_t *v)\n{\n instrument_atomic_read"..., 4096) = 4096
+18:09:34.970200 brk(0x55a52428b000)     = 0x55a52428b000
+18:09:34.970455 read(0, "attribute__((__always_inline__))"..., 8192) = 4096
+18:09:34.970552 read(0, "tribute__((__gnu_inline__)) __at"..., 4096) = 4096
+18:09:34.971530 read(0, "_acquire(atomic_t *v, int i)\n{\n "..., 8192) = 4096
+18:09:34.971687 read(0, "atomic_inc_and_test(v);\n}\n\nstati"..., 4096) = 4096
+18:09:34.972850 brk(0x55a5242ac000)     = 0x55a5242ac000
+18:09:34.973025 read(0, "_always_inline__)) s64\natomic64_"..., 8192) = 8192
+18:09:34.973949 read(0, "ibute__((__gnu_inline__)) __attr"..., 8192) = 8192
+18:09:34.974896 read(0, "w)\n{\n instrument_atomic_read_wri"..., 8192) = 8192
+18:09:34.975188 brk(0x55a5242cd000)     = 0x55a5242cd000
+18:09:34.975995 read(0, " i, atomic_long_t *v)\n{\n instrum"..., 8192) = 8192
+18:09:34.976918 read(0, "ute__((__gnu_inline__)) __attrib"..., 8192) = 8192
+18:09:34.977505 brk(0x55a5242ee000)     = 0x55a5242ee000
+18:09:34.978006 read(0, "o_instrument_function)) __attrib"..., 8192) = 4096
+18:09:34.978151 read(0, "ng_t *v, long a, long u)\n{\n inst"..., 4096) = 4096
+18:09:34.988915 read(0, "pm_bios.h\"\n# 1 \"./include/uapi/l"..., 8192) = 4096
+18:09:34.994812 read(0, "_u32 type;\n __u32 len;\n __u8 dat"..., 4096) = 4096
+18:09:34.996646 brk(0x55a52430f000)     = 0x55a52430f000
+18:09:34.997076 read(0, "bootdata(char *real_mode_data);\n"..., 8192) = 4096
+18:09:35.002587 read(0, "irect_thunk_r12;\nextern retpolin"..., 4096) = 4096
+18:09:35.005222 read(0, "rly_idt_handler_array[32][8];\n# "..., 8192) = 4096
+18:09:35.007171 read(0, "ude/asm/page_64_types.h\" 2\n# 47 "..., 4096) = 4096
+18:09:35.010509 read(0, "ttribute__((__gnu_inline__)) __a"..., 8192) = 4096
+18:09:35.010662 read(0, "t phys_mem_access_prot(struct fi"..., 4096) = 4096
+18:09:35.012222 brk(0x55a524330000)     = 0x55a524330000
+18:09:35.013121 read(0, "tries);\n unsigned long (*store_t"..., 8192) = 4096
+18:09:35.013283 read(0, "paravirt_patch(u8 type, void *in"..., 4096) = 4096
+18:09:35.025729 read(0, "__attribute__((no_instrument_fun"..., 8192) = 4096
+18:09:35.025883 read(0, " \"./include/linux/string.h\"\nexte"..., 4096) = 4096
+18:09:35.026740 brk(0x55a524351000)     = 0x55a524351000
+18:09:35.028381 read(0, "builtin_object_size(p, 1);\n\n\n if"..., 8192) = 8192
+18:09:35.029486 read(0, "ude/linux/bitmap.h\"\nunsigned lon"..., 8192) = 8192
+18:09:35.029915 brk(0x55a524372000)     = 0x55a524372000
+18:09:35.031040 read(0, "(((nbits) & ((typeof(nbits))(8) "..., 8192) = 8192
+18:09:35.032321 read(0, "include/linux/cpumask.h\"\nstatic "..., 8192) = 8192
+18:09:35.033059 brk(0x55a524393000)     = 0x55a524393000
+18:09:35.033597 read(0, "sk_parse(const char *buf, struct"..., 8192) = 4096
+18:09:35.033777 read(0, "t_cpu(cpu, ((const struct cpumas"..., 4096) = 4096
+18:09:35.036525 read(0, "slow_down_io(void)\n{\n pv_ops.cpu"..., 8192) = 4096
+18:09:35.036791 read(0, "\\n\" \".popsection\\n\" : \"=D\" (__ed"..., 4096) = 4096
+18:09:35.038114 read(0, "\\n\\t\" \"call *%c[paravirt_opptr];"..., 8192) = 4096
+18:09:35.038490 read(0, "ffsetof(struct paravirt_patch_te"..., 4096) = 4096
+18:09:35.040263 read(0, "t_opptr];\" \"\\n\" \"772:\\n\" \".pushs"..., 8192) = 4096
+18:09:35.040750 read(0, "void *))), [paravirt_opptr] \"i\" "..., 4096) = 4096
+18:09:35.042171 read(0, "uctions,\\\"a\\\"\\n\" \" .long 661b - "..., 8192) = 4096
+18:09:35.042689 read(0, "uct paravirt_patch_template, cpu"..., 4096) = 4096
+18:09:35.043698 brk(0x55a5243b4000)     = 0x55a5243b4000
+18:09:35.044458 read(0, "t_44(); } while (0); switch (siz"..., 8192) = 4096
+18:09:35.044616 read(0, "\" (__edi), \"=S\" (__esi), \"=d\" (_"..., 4096) = 4096
+18:09:35.045935 read(0, "t, unsigned cpu)\n{\n (void)({ uns"..., 8192) = 4096
+18:09:35.046249 read(0, "), [paravirt_clobber] \"i\" (((1 <"..., 4096) = 4096
+18:09:35.048078 read(0, "clobber]\" \"\\n\" \".popsection\\n\" :"..., 8192) = 4096
+18:09:35.048534 read(0, ";\n}\n\nstatic inline __attribute__"..., 4096) = 4096
+18:09:35.050108 read(0, "oid *))), [paravirt_opptr] \"i\" ("..., 8192) = 4096
+18:09:35.050431 read(0, "(__edi), \"=S\" (__esi), \"=d\" (__e"..., 4096) = 4096
+18:09:35.052367 read(0, ") > sizeof(unsigned long)))) __c"..., 8192) = 4096
+18:09:35.053117 read(0, "sizeof(pgdval_t)) { case 1: __ma"..., 4096) = 4096
+18:09:35.055049 read(0, " - 1)), \"D\" ((unsigned long)(pte"..., 8192) = 4096
+18:09:35.055790 read(0, "a\\\"\\n\" \" .long 661b - .\\n\" \" .lo"..., 4096) = 4096
+18:09:35.057573 read(0, "e 4: __mask = 0xffffffffUL; brea"..., 8192) = 4096
+18:09:35.058230 read(0, ".short \" \"%c[paravirt_clobber]\" "..., 4096) = 4096
+18:09:35.059967 read(0, "__edx), \"=c\" (__ecx), \"+r\" (curr"..., 8192) = 4096
+18:09:35.060488 read(0, "ecx), \"+r\" (current_stack_pointe"..., 4096) = 4096
+18:09:35.062138 read(0, "s.lock.queued_spin_unlock.func);"..., 8192) = 4096
+18:09:35.063108 read(0, "te \" \"%c[paravirt_typenum]\" \"\\n\""..., 4096) = 4096
+18:09:35.065220 read(0, "\".quad\" \" \" \" 999b\\n\\t\" \".popsec"..., 8192) = 4096
+18:09:35.065726 read(0, "  static inline __attribute__((_"..., 4096) = 4096
+18:09:35.072084 brk(0x55a5243d5000)     = 0x55a5243d5000
+18:09:35.072311 read(0, "l_s64_u64_shr(s64 a, u64 b, unsi"..., 8192) = 4096
+18:09:35.075457 read(0, ">= 1000000000L)\n  return false;\n"..., 4096) = 4096
+18:09:35.078971 read(0, "(\" \"665\"\"1\"\"f-\"\"664\"\"1\"\"f\" \") ^ "..., 8192) = 4096
+18:09:35.081707 read(0, " \"./include/asm-generic/getorder"..., 4096) = 4096
+18:09:35.089074 read(0, "_)) __attribute__((__unused__)) "..., 8192) = 4096
+18:09:35.089182 read(0, "ernel_nofault(&val, addr, sizeof"..., 4096) = 4096
+18:09:35.095930 brk(0x55a5243f6000)     = 0x55a5243f6000
+18:09:35.096553 read(0, "t cpu_sibling_setup_mask;\n\nexter"..., 8192) = 4096
+18:09:35.098606 read(0, "d, .Lfound+1\\n\" \".long \\\\type + "..., 4096) = 4096
+18:09:35.100406 read(0, " \"\\n\" \"664\"\"1\"\":\\n\\t\" \"lfence; r"..., 8192) = 4096
+18:09:35.101189 read(0, "atile(\".byte 0x0f,0x01,0xef\\n\\t\""..., 4096) = 4096
+18:09:35.103205 read(0, "x0f, 0x38, 0xf8, 0x02\"\n       : "..., 8192) = 4096
+18:09:35.103467 read(0, "user_xfeatures;\n\n\n u64 xfd;\n\n\n u"..., 4096) = 4096
+18:09:35.109408 brk(0x55a524417000)     = 0x55a524417000
+18:09:35.110211 read(0, ")(void *)((unsigned long)ptr) >="..., 8192) = 4096
+18:09:35.110289 read(0, " inline __attribute__((__gnu_inl"..., 4096) = 4096
+18:09:35.112113 read(0, "sm/processor.h\"\nstruct perf_even"..., 8192) = 4096
+18:09:35.112235 read(0, "nt_top_of_stack))(unsigned long)"..., 4096) = 4096
+18:09:35.113421 brk(0x55a524438000)     = 0x55a524438000
+18:09:35.114122 read(0, "4\"\"1\"\":\\n\\t\" \"prefetchnta %P1\" \""..., 8192) = 4096
+18:09:35.114207 read(0, "bit)\n{\n do { asm goto(\"# ALT: ol"..., 4096) = 4096
+18:09:35.116341 read(0, ") int test_and_clear_ti_thread_f"..., 8192) = 4096
+18:09:35.116589 read(0, ".reachable\\n\\t\" \".long 998b - .\\"..., 4096) = 4096
+18:09:35.118609 read(0, "te__((__always_inline__)) void _"..., 8192) = 4096
+18:09:35.122244 read(0, "lude/linux/smp.h\"\n# 1 \"./include"..., 4096) = 4096
+18:09:35.124819 brk(0x55a524459000)     = 0x55a524459000
+18:09:35.124996 read(0, " IRQ_WORK_CLAIMED = (IRQ_WORK_PE"..., 8192) = 4096
+18:09:35.125118 read(0, "u_apicid_early_map[];\n\n\n\n\nstruct"..., 4096) = 4096
+18:09:35.127116 read(0, "ibute__((__externally_visible__)"..., 8192) = 4096
+18:09:35.127563 read(0, "((no_instrument_function)) void\n"..., 4096) = 4096
+18:09:35.130152 brk(0x55a52447a000)     = 0x55a52447a000
+18:09:35.130301 read(0, "nt rcutree_prepare_cpu(unsigned "..., 8192) = 4096
+18:09:35.130439 read(0, "oid)\n{\n do { } while (0 && (!rcu"..., 4096) = 4096
+18:09:35.132051 read(0, " (uintptr_t)(new); ; if (__built"..., 8192) = 4096
+18:09:35.132898 read(0, "uintptr_t)((void *)0)) do { do {"..., 4096) = 4096
+18:09:35.136041 read(0, "t)))) == sizeof(short) || sizeof"..., 8192) = 4096
+18:09:35.136935 read(0, "xtern void __compiletime_assert_"..., 4096) = 4096
+18:09:35.139585 read(0, "peof(left->first))_r_a_p__v)); }"..., 8192) = 4096
+18:09:35.140592 read(0, " hlist_node **)(&(h)->first)))))"..., 4096) = 4096
+18:09:35.142671 brk(0x55a52449b000)     = 0x55a52449b000
+18:09:35.143500 read(0, "ode **)(&(last)->next)))) == siz"..., 8192) = 4096
+18:09:35.144341 read(0, " sizeof(next->pprev) == sizeof(s"..., 4096) = 4096
+18:09:35.150560 read(0, "lock.h\" 2\n# 94 \"./include/linux/"..., 8192) = 4096
+18:09:35.154640 read(0, "nction)) __attribute__((__always"..., 4096) = 4096
+18:09:35.158068 read(0, "__volatile__(\"\": : :\"memory\"); d"..., 8192) = 4096
+18:09:35.160558 read(0, "k_irqsave(raw_spinlock_t *lock)\n"..., 4096) = 4096
+18:09:35.162980 read(0, "(__section__(\".spinlock.text\")))"..., 8192) = 4096
+18:09:35.163461 read(0, "bute__((no_instrument_function))"..., 4096) = 4096
+18:09:35.165286 read(0, "ttribute__((__unused__)) __attri"..., 8192) = 4096
+18:09:35.165459 read(0, "t_queue_head *wq_head, const cha"..., 4096) = 4096
+18:09:35.167399 read(0, "wq_head, wq_entry);\n}\n\nstatic in"..., 8192) = 4096
+18:09:35.168150 read(0, "d__)) __attribute__((no_instrume"..., 4096) = 4096
+18:09:35.169196 brk(0x55a5244bc000)     = 0x55a5244bc000
+18:09:35.170048 read(0, "TYPE_SID,\n PIDTYPE_MAX,\n};\n# 54 "..., 8192) = 4096
+18:09:35.175505 read(0, "dgid.h\"\nstatic inline __attribut"..., 4096) = 4096
+18:09:35.181570 read(0, "trument_function)) bool osq_is_l"..., 8192) = 4096
+18:09:35.187387 read(0, " int tm_hour;\n\n int tm_mday;\n\n i"..., 4096) = 4096
+18:09:35.193967 brk(0x55a5244dd000)     = 0x55a5244dd000
+18:09:35.194671 read(0, "4))&31) & 0 )) || (((( 0*32+ 4))"..., 8192) = 4096
+18:09:35.195016 read(0, "__attribute__((__gnu_inline__)) "..., 4096) = 4096
+18:09:35.197454 brk(0x55a5244fe000)     = 0x55a5244fe000
+18:09:35.198905 read(0, "((( 0*32+ 4))>>5)==(3) && (1UL<<"..., 8192) = 4096
+18:09:35.203690 read(0, "jiffies.h\" 2\n# 1 \"./arch/x86/inc"..., 4096) = 4096
+18:09:35.208274 read(0, "_UNIQUE_ID___x117) : (__UNIQUE_I"..., 8192) = 4096
+18:09:35.209424 read(0, "__gnu_inline__)) __attribute__(("..., 4096) = 4096
+18:09:35.215092 read(0, "line__)) __attribute__((__unused"..., 8192) = 4096
+18:09:35.218533 read(0, "\n struct clocksource *cs;\n};\n\n\n\n"..., 4096) = 4096
+18:09:35.221380 read(0, ")) void init_timer_on_stack_key("..., 8192) = 4096
+18:09:35.221569 read(0, "ct work;\n struct callback_head r"..., 4096) = 4096
+18:09:35.223836 read(0, "ool queue_rcu_work(struct workqu"..., 8192) = 4096
+18:09:35.224084 read(0, "q_watchdog_touch(int cpu) { }\n\n\n"..., 4096) = 4096
+18:09:35.235752 brk(0x55a52451f000)     = 0x55a52451f000
+18:09:35.236740 read(0, "g_t __unused3;\n __kernel_ulong_t"..., 8192) = 4096
+18:09:35.242144 read(0, "list.h\"\nstatic inline __attribut"..., 4096) = 4096
+18:09:35.250074 read(0, "compiletime_assert_124(void) __a"..., 8192) = 4096
+18:09:35.250373 read(0, "ine__)) struct rb_node *\nrb_find"..., 4096) = 4096
+18:09:35.256420 brk(0x55a524540000)     = 0x55a524540000
+18:09:35.256509 read(0, "e, size_t align);\nextern void fr"..., 8192) = 4096
+18:09:35.276851 read(0, "36 \"./include/linux/ww_mutex.h\"\n"..., 4096) = 4096
+18:09:35.280541 read(0, "attribute__((__always_inline__))"..., 8192) = 4096
+18:09:35.282564 read(0, "rted access size for {READ,WRITE"..., 4096) = 4096
+18:09:35.285823 read(0, "ine__)) void __seqprop_rwlock_as"..., 8192) = 4096
+18:09:35.287991 read(0, ": (signed short)0, unsigned int:"..., 4096) = 4096
+18:09:35.291293 read(0, ")) __attribute__((no_instrument_"..., 8192) = 4096
+18:09:35.292045 read(0, ") & 1) cpu_relax(); kcsan_atomic"..., 4096) = 4096
+18:09:35.294024 read(0, "c inline __attribute__((__gnu_in"..., 8192) = 4096
+18:09:35.301098 read(0, "_attribute__((__gnu_inline__)) _"..., 4096) = 4096
+18:09:35.302373 brk(0x55a524561000)     = 0x55a524561000
+18:09:35.303541 read(0, " inline __attribute__((__gnu_inl"..., 8192) = 4096
+18:09:35.304784 read(0, "t which_clock,\n      enum hrtime"..., 4096) = 4096
+18:09:35.312574 read(0, " schedule_hrtimeout_range(ktime_"..., 8192) = 4096
+18:09:35.340773 read(0, "sizeof(long) * 8)) - 1) / ((size"..., 4096) = 4096
+18:09:35.341994 brk(0x55a524582000)     = 0x55a524582000
+18:09:35.342645 read(0, "{\n return bitmap_empty(srcp->bit"..., 8192) = 4096
+18:09:35.343506 read(0, ")) < ((unsigned int)(find_first_"..., 4096) = 4096
+18:09:35.345473 read(0, "_)) __attribute__((__unused__)) "..., 8192) = 4096
+18:09:35.362237 read(0, "oid *sival_ptr;\n} sigval_t;\n# 37"..., 4096) = 4096
+18:09:35.368930 read(0, "x/alarmtimer.h\" 1\n# 9 \"./include"..., 8192) = 4096
+18:09:35.374225 read(0, "\n}\n\nstatic inline __attribute__("..., 4096) = 4096
+18:09:35.379548 brk(0x55a5245a3000)     = 0x55a5245a3000
+18:09:35.380932 read(0, "size.h\" 2\n# 38 \"./include/linux/"..., 8192) = 4096
+18:09:35.381065 read(0, " 1;\n unsigned int dl_yielded : 1"..., 4096) = 4096
+18:09:35.382452 brk(0x55a5245c4000)     = 0x55a5245c4000
+18:09:35.382666 read(0, "struct prev_cputime prev_cputime"..., 8192) = 8192
+18:09:35.384081 read(0, "eof(short) || sizeof((tsk->real_"..., 8192) = 4096
+18:09:35.384281 read(0, "+ 1) << 1)) <= 4) ? __ilog2_u32("..., 4096) = 4096
+18:09:35.387389 read(0, "orce_disable(struct task_struct "..., 8192) = 4096
+18:09:35.387531 read(0, " 0)) / sizeof(unsigned long)];\n\n"..., 4096) = 4096
+18:09:35.388767 brk(0x55a5245e5000)     = 0x55a5245e5000
+18:09:35.389395 read(0, "lude/linux/sched.h\"\nstatic inlin"..., 8192) = 4096
+18:09:35.389466 read(0, " __set_bit(RSEQ_EVENT_MIGRATE_BI"..., 4096) = 4096
+18:09:35.393253 read(0, "n void proc_sched_show_task(stru"..., 8192) = 4096
+18:09:35.402172 read(0, ") {}\nstatic inline __attribute__"..., 4096) = 4096
+18:09:35.410519 brk(0x55a524606000)     = 0x55a524606000
+18:09:35.410808 read(0, "unsigned long srcu_gp_seq_needed"..., 8192) = 4096
+18:09:35.411001 read(0, "# 144 \"./include/linux/notifier."..., 4096) = 4096
+18:09:35.412731 read(0, "n int uprobe_register(struct ino"..., 8192) = 4096
+18:09:35.414151 read(0, "uct mm_struct *pt_mm;\n    atomic"..., 4096) = 4096
+18:09:35.416428 read(0, "spinlock_t ioctx_lock;\n  struct "..., 8192) = 4096
+18:09:35.417586 read(0, "r vmlinux_build_id[20];\nvoid ini"..., 4096) = 4096
+18:09:35.422557 brk(0x55a524627000)     = 0x55a524627000
+18:09:35.423814 read(0, " page *page)\n{\n return test_bit("..., 8192) = 4096
+18:09:35.424154 read(0, ")(sizeof(( long)(PagePoisoned((("..., 4096) = 4096
+18:09:35.426347 read(0, "static inline __attribute__((__g"..., 8192) = 4096
+18:09:35.426558 read(0, "f(page))_compound_head(page)))))"..., 4096) = 4096
+18:09:35.432039 brk(0x55a524648000)     = 0x55a524648000
+18:09:35.433740 read(0, "eChecked(struct page *page) { se"..., 8192) = 4096
+18:09:35.434154 read(0, "ment_function)) __attribute__((_"..., 4096) = 4096
+18:09:35.436729 read(0, "(sizeof(( long)(PagePoisoned(((t"..., 8192) = 4096
+18:09:35.436837 read(0, ") __attribute__((__always_inline"..., 4096) = 4096
+18:09:35.438490 read(0, "c inline __attribute__((__gnu_in"..., 8192) = 4096
+18:09:35.438950 read(0, "({ ((void)(sizeof(( long)(PagePo"..., 4096) = 4096
+18:09:35.440694 brk(0x55a524669000)     = 0x55a524669000
+18:09:35.441398 read(0, " __attribute__((__unused__)) __a"..., 8192) = 4096
+18:09:35.441540 read(0, "e(struct page *page) { clear_bit"..., 4096) = 4096
+18:09:35.443152 read(0, "t page *page) { clear_bit(PG_upt"..., 8192) = 4096
+18:09:35.443326 read(0, ");\n}\n\n\n\n\n\nint PageHuge(struct pa"..., 4096) = 4096
+18:09:35.445280 read(0, "(no_instrument_function)) __attr"..., 8192) = 4096
+18:09:35.445411 read(0, "page->page_type &= ~0x00000400; "..., 4096) = 4096
+18:09:35.447933 brk(0x55a52468a000)     = 0x55a52468a000
+18:09:35.448805 read(0, "ic inline __attribute__((__gnu_i"..., 8192) = 4096
+18:09:35.448926 read(0, "NRECLAIMABLE_B);\n}\n# 266 \"./incl"..., 4096) = 4096
+18:09:35.450962 read(0, "fn)\n{\n return zone->zone_start_p"..., 8192) = 4096
+18:09:35.452693 read(0, "nstrument_function)) void zone_s"..., 4096) = 4096
+18:09:35.453533 brk(0x55a5246ab000)     = 0x55a5246ab000
+18:09:35.454626 read(0, "nused__)) __attribute__((no_inst"..., 8192) = 4096
+18:09:35.454696 read(0, "trument_function)) bool populate"..., 4096) = 4096
+18:09:35.459614 read(0, "ong section_nr_to_pfn(unsigned l"..., 8192) = 4096
+18:09:35.461428 read(0, "))&31) & 0 )) || ((((16*32+16))>"..., 4096) = 4096
+18:09:35.464555 brk(0x55a5246cc000)     = 0x55a5246cc000
+18:09:35.465470 brk(0x55a5246ed000)     = 0x55a5246ed000
+18:09:35.466393 read(0, "te__((no_instrument_function)) i"..., 8192) = 4096
+18:09:35.466575 read(0, "5)==(2) && (1UL<<(((16*32+16))&3"..., 4096) = 4096
+18:09:35.468446 read(0, "((16*32+16))&31) & ((1<<(( 3*32+"..., 8192) = 4096
+18:09:35.469519 read(0, "31) & 0 )) || ((((16*32+16))>>5)"..., 4096) = 4096
+18:09:35.473964 read(0, ")((void *)0); (void)__vpp_verify"..., 8192) = 4096
+18:09:35.475928 read(0, "it_mem_mapping)(void);\n void (*i"..., 4096) = 4096
+18:09:35.478804 read(0, "__reserved_2[3];\n } ldr;\n\n      "..., 8192) = 4096
+18:09:35.478952 read(0, "IT = 5,\n APIC_DELIVERY_MODE_EXTI"..., 4096) = 4096
+18:09:35.481381 read(0, "ogy_update_package_map(unsigned "..., 8192) = 4096
+18:09:35.481517 read(0, "(void *)0); (void)__vpp_verify; "..., 4096) = 4096
+18:09:35.484520 read(0, ");\n}\n# 380 \"./include/linux/gfp."..., 8192) = 4096
+18:09:35.484665 read(0, "unsigned int order)\n{\n if (nid ="..., 4096) = 4096
+18:09:35.487115 brk(0x55a52470e000)     = 0x55a52470e000
+18:09:35.487509 read(0, "ile (0);\n}\n\nstatic inline __attr"..., 8192) = 4096
+18:09:35.487635 read(0, "oid (percpu_ref_func_t)(struct p"..., 4096) = 4096
+18:09:35.489538 read(0, " case 2: do { const int pao_ID__"..., 8192) = 4096
+18:09:35.490097 read(0, " = ((u16)(((unsigned long) nr) &"..., 4096) = 4096
+18:09:35.492721 read(0, "pu_count)) pao_tmp__; pao_tmp__ "..., 8192) = 4096
+18:09:35.494074 read(0, "gs\"\":\" \"%\" \"[var]\" : [var] \"+m\" "..., 4096) = 4096
+18:09:35.496835 brk(0x55a52472f000)     = 0x55a52472f000
+18:09:35.497497 read(0, "          struct shrink_control "..., 8192) = 4096
+18:09:35.500674 read(0, "_page_ref_mod_and_return;\nextern"..., 4096) = 4096
+18:09:35.502354 read(0, "turn ret;\n}\n\nstatic inline __att"..., 8192) = 4096
+18:09:35.503256 read(0, "gned long resource_type(const st"..., 4096) = 4096
+18:09:35.505785 read(0, "uct resource *new);\n\n\n\n\n\n\nextern"..., 8192) = 4096
+18:09:35.506084 read(0, "(factor1); typeof(factor2) __b ="..., 4096) = 4096
+18:09:35.514154 brk(0x55a524750000)     = 0x55a524750000
+18:09:35.514446 read(0, "(( 0*32+25) & 31))|(1<<(( 0*32+2"..., 8192) = 4096
+18:09:35.514536 read(0, "3*32+ 3) & 31))|(1<<(( 3*32+ 1) "..., 4096) = 4096
+18:09:35.519258 brk(0x55a524771000)     = 0x55a524771000
+18:09:35.520389 read(0, "(16*32+ 4))&31) & 0 )) || ((((16"..., 8192) = 4096
+18:09:35.520514 read(0, "16) && (1UL<<(((16*32+ 4))&31) &"..., 4096) = 4096
+18:09:35.523721 read(0, "(!0)\n  local_bh_disable();\n else"..., 8192) = 4096
+18:09:35.524135 read(0, "_)) __attribute__((__unused__)) "..., 4096) = 4096
+18:09:35.526497 read(0, ") )) || (((( 0*32+ 3))>>5)==(2) "..., 8192) = 4096
+18:09:35.526747 read(0, "e_mkdirty(pte_t pte)\n{\n return p"..., 4096) = 4096
+18:09:35.528157 read(0, "ribute__((__unused__)) __attribu"..., 8192) = 4096
+18:09:35.528400 read(0, "ic inline __attribute__((__gnu_i"..., 4096) = 4096
+18:09:35.529823 read(0, ") | (((pteval_t)(1)) << 9) | ((("..., 8192) = 4096
+18:09:35.530604 read(0, "))>>5)==(19) && (1UL<<((( 7*32+1"..., 4096) = 4096
+18:09:35.535937 brk(0x55a524792000)     = 0x55a524792000
+18:09:35.536518 read(0, "hys, pgprot_t flags);\n# 182 \"./a"..., 8192) = 4096
+18:09:35.537483 read(0, "*32+16))&31) & 0 )) || ((((16*32"..., 4096) = 4096
+18:09:35.540882 read(0, "|| ((((16*32+16))>>5)==(13) && ("..., 8192) = 4096
+18:09:35.540957 read(0, "%1\\n\" : \"+q\" (__ret), \"+m\" (*((_"..., 4096) = 4096
+18:09:35.545571 brk(0x55a5247b3000)     = 0x55a5247b3000
+18:09:35.547846 read(0, "0*32+ 8) & 31))|0|(1<<(( 0*32+24"..., 8192) = 8192
+18:09:35.549425 read(0, "L<<(((16*32+16))&31) & 0 )) || ("..., 8192) = 4096
+18:09:35.550262 read(0, "dval, u64 val, u64 mask)\n{\n\n\n\n\n\n"..., 4096) = 4096
+18:09:35.552424 read(0, "((__unused__)) __attribute__((no"..., 8192) = 4096
+18:09:35.552793 read(0, "L<<(((16*32+16))&31) & 0 )) || ("..., 4096) = 4096
+18:09:35.555851 read(0, ">5)==(0) && (1UL<<(((16*32+16))&"..., 8192) = 4096
+18:09:35.556863 read(0, "6*32+16))>>5)==(6) && (1UL<<(((1"..., 4096) = 4096
+18:09:35.561560 read(0, "32+16))&31) & 0 )) || ((((16*32+"..., 8192) = 4096
+18:09:35.561716 read(0, " )) || ((((16*32+16))>>5)==(11) "..., 4096) = 4096
+18:09:35.565215 read(0, ">5)==(18) && (1UL<<(((16*32+16))"..., 8192) = 4096
+18:09:35.565330 read(0, "signed long addr, pmd_t *pmdp);\n"..., 4096) = 4096
+18:09:35.566868 read(0, "no_instrument_function)) pgd_t *"..., 8192) = 4096
+18:09:35.569578 read(0, "11))&31) & 0 )) || (((( 7*32+11)"..., 4096) = 4096
+18:09:35.574564 read(0, "pmd_swp_mkuffd_wp(pmd_t pmd)\n{\n "..., 8192) = 4096
+18:09:35.574778 read(0, "& (1UL<<(((((21*32 + (18)))))&31"..., 4096) = 4096
+18:09:35.577616 read(0, ": (signed long)0, unsigned long "..., 8192) = 4096
+18:09:35.577754 read(0, ") __attribute__((__unused__)) __"..., 4096) = 4096
+18:09:35.579429 read(0, "bute__((__gnu_inline__)) __attri"..., 8192) = 4096
+18:09:35.580955 read(0, "turn 0;\n}\nstatic inline __attrib"..., 4096) = 4096
+18:09:35.583855 read(0, "atic inline __attribute__((__gnu"..., 8192) = 4096
+18:09:35.584046 read(0, "cy;\nstruct anon_vma;\nstruct anon"..., 4096) = 4096
+18:09:35.585710 brk(0x55a5247d4000)     = 0x55a5247d4000
+18:09:35.586573 read(0, "D = 1 << 5,\n FAULT_FLAG_USER = 1"..., 8192) = 4096
+18:09:35.588550 read(0, "lue);\n\n\n\n\n\n\nstatic inline __attr"..., 4096) = 4096
+18:09:35.592666 read(0, "_attribute__((__unused__)) __att"..., 8192) = 4096
+18:09:35.594749 read(0, "e__((no_instrument_function)) __"..., 4096) = 4096
+18:09:35.599365 brk(0x55a5247f5000)     = 0x55a5247f5000
+18:09:35.599903 read(0, "_bl_node *n)\n{\n struct hlist_bl_"..., 8192) = 4096
+18:09:35.599990 read(0, "___p1 = (typeof(*(h->first)) *)("..., 4096) = 4096
+18:09:35.604400 read(0, "rn (prevhash + (c << 4) + (c >> "..., 8192) = 4096
+18:09:35.604562 read(0, "une_aliases(struct inode *);\n\nex"..., 4096) = 4096
+18:09:35.606264 read(0, "turn dentry->d_flags & 0x0070000"..., 8192) = 4096
+18:09:35.606484 read(0, "{\n return dentry->d_inode;\n}\n# 5"..., 4096) = 4096
+18:09:35.611004 brk(0x55a524816000)     = 0x55a524816000
+18:09:35.611907 read(0, "unsigned short st_uid;\n unsigned"..., 8192) = 4096
+18:09:35.613600 read(0, "cb isolate, void *cb_arg,\n      "..., 4096) = 4096
+18:09:35.618213 read(0, "te__((__gnu_inline__)) __attribu"..., 8192) = 8192
+18:09:35.619344 brk(0x55a524837000)     = 0x55a524837000
+18:09:35.619723 read(0, " __attribute__((no_instrument_fu"..., 8192) = 4096
+18:09:35.619843 read(0, ": 6))) + (64) - 1) / (64))];\n };"..., 4096) = 4096
+18:09:35.621189 read(0, "long)) || sizeof((node->parent))"..., 8192) = 8192
+18:09:35.622510 read(0, "set != (xas->xa_index & ((1UL <<"..., 8192) = 4096
+18:09:35.622609 read(0, ".\"))); if (!((sizeof((*slot)) =="..., 4096) = 4096
+18:09:35.623773 brk(0x55a524858000)     = 0x55a524858000
+18:09:35.624588 read(0, "80 \"./include/linux/radix-tree.h"..., 8192) = 4096
+18:09:35.626334 read(0, "or (__capi = 0; __capi < 2; ++__"..., 4096) = 4096
+18:09:35.628378 read(0, "user_namespace *ns, int cap);\nex"..., 8192) = 4096
+18:09:35.640029 read(0, "rom)\n{\n memcpy(to, from, sizeof("..., 4096) = 4096
+18:09:35.642846 read(0, " = ((a2) & (b2)); __attribute__("..., 8192) = 4096
+18:09:35.643025 read(0, "ong sig)\n{\n return sig <= 64 ? 1"..., 4096) = 4096
+18:09:35.647919 brk(0x55a524879000)     = 0x55a524879000
+18:09:35.648508 read(0, "\n\n asm __inline volatile (\"# ALT"..., 8192) = 4096
+18:09:35.648952 read(0, "er_nocheck_2(void);\nextern void "..., 4096) = 4096
+18:09:35.651734 read(0, "ze_t offset,\n      size_t len);\n"..., 8192) = 4096
+18:09:35.651850 read(0, "sed_result__)) unsigned long\n_co"..., 4096) = 4096
+18:09:35.653847 read(0, "eachable\\n\\t\" \".long 998b - .\\n\\"..., 8192) = 4096
+18:09:35.654049 read(0, "all_rcu(&t->rcu, __put_task_stru"..., 4096) = 4096
+18:09:35.657331 brk(0x55a52489a000)     = 0x55a52489a000
+18:09:35.659222 read(0, "34,\n VM_MIN_SLAB=35,\n};\n\n\n\nenum\n"..., 8192) = 8192
+18:09:35.660987 read(0, "RVAL=4,\n NET_IPV6_ROUTE_GC_TIMEO"..., 8192) = 8192
+18:09:35.662525 brk(0x55a5248bb000)     = 0x55a5248bb000
+18:09:35.662833 read(0, "\nint proc_do_static_key(struct c"..., 8192) = 8192
+18:09:35.664642 read(0, " key_type *type,\n        const c"..., 8192) = 4096
+18:09:35.664793 read(0, "_error__(\"Unsupported access siz"..., 4096) = 4096
+18:09:35.667234 brk(0x55a5248dc000)     = 0x55a5248dc000
+18:09:35.667882 read(0, "te__((__error__(\"Unsupported acc"..., 8192) = 4096
+18:09:35.668887 read(0, "te__((__unused__)) __attribute__"..., 4096) = 4096
+18:09:35.671305 read(0, "n ((void *)0);\n if (!atomic_inc_"..., 8192) = 4096
+18:09:35.671420 read(0, "__gnu_inline__)) __attribute__(("..., 4096) = 4096
+18:09:35.674127 read(0, "on *);\n\nstatic inline __attribut"..., 8192) = 8192
+18:09:35.674718 brk(0x55a5248fd000)     = 0x55a5248fd000
+18:09:35.675443 read(0, "nu_inline__)) __attribute__((__u"..., 8192) = 4096
+18:09:35.676286 read(0, ")); })\n                         "..., 4096) = 4096
+18:09:35.678407 read(0, " rcuwait {\n struct task_struct *"..., 8192) = 4096
+18:09:35.679123 read(0, " || sizeof(*&w->task) == sizeof("..., 4096) = 4096
+18:09:35.682482 read(0, "o { u8 pto_val__ = ((u8)(((unsig"..., 8192) = 4096
+18:09:35.683559 read(0, " \"%\" \"[var]\" : [var] \"+m\" ((*sem"..., 4096) = 4096
+18:09:35.686376 brk(0x55a52491e000)     = 0x55a52491e000
+18:09:35.686964 read(0, "volatile(\"add\" \"w \" \"%[val]\" \", "..., 8192) = 4096
+18:09:35.687159 read(0, ");break; case 4: do { const int "..., 4096) = 4096
+18:09:35.692002 read(0, "n)) bool guid_equal(const guid_t"..., 8192) = 4096
+18:09:35.693811 read(0, "ude/linux/iocontext.h\" 1\n# 9 \"./"..., 4096) = 4096
+18:09:35.696339 read(0, "bute__((__gnu_inline__)) __attri"..., 8192) = 4096
+18:09:35.697611 read(0, "vfsmount *);\n\nstruct file_system"..., 4096) = 4096
+18:09:35.699713 read(0, "inux/mnt_idmapping.h\"\nstatic inl"..., 8192) = 4096
+18:09:35.701133 read(0, " 159 \"./include/uapi/linux/dqblk"..., 4096) = 4096
+18:09:35.704950 read(0, "id_t)-1;\n}\n# 49 \"./include/linux"..., 8192) = 4096
+18:09:35.705290 read(0, "e = GRPQUOTA;\n kqid.gid = gid;\n "..., 4096) = 4096
+18:09:35.706697 brk(0x55a52493f000)     = 0x55a52493f000
+18:09:35.707083 read(0, "rnlimit;\n unsigned int rt_spc_wa"..., 8192) = 4096
+18:09:35.707203 read(0, "tor_t *, struct page *,\n  unsign"..., 4096) = 4096
+18:09:35.708575 read(0, "p_rwsem); } while (0);\n}\n\nstatic"..., 8192) = 8192
+18:09:35.709393 brk(0x55a524960000)     = 0x55a524960000
+18:09:35.709803 read(0, "invalidate_lock);\n}\n\nstatic inli"..., 8192) = 4096
+18:09:35.710062 read(0, " *);\nbool opens_in_grace(struct "..., 4096) = 4096
+18:09:35.712054 read(0, "\n struct fasync_struct *fa_next;"..., 8192) = 8192
+18:09:35.712853 brk(0x55a524981000)     = 0x55a524981000
+18:09:35.713435 read(0, "{\n __sb_start_write(sb, SB_FREEZ"..., 8192) = 8192
+18:09:35.715243 read(0, "ile *file_out, loff_t pos_out,\n "..., 8192) = 8192
+18:09:35.715670 brk(0x55a5249a2000)     = 0x55a5249a2000
+18:09:35.716953 read(0, "),\n       int (*set)(struct supe"..., 8192) = 8192
+18:09:35.718527 read(0, "d long end);\n\nvoid invalidate_ma"..., 8192) = 8192
+18:09:35.718699 brk(0x55a5249c3000)     = 0x55a5249c3000
+18:09:35.719880 read(0, "ode->i_writecount) > 0;\n}\n\n\nstat"..., 8192) = 8192
+18:09:35.721672 read(0, " struct file * filp);\n\n\ntypedef "..., 8192) = 8192
+18:09:35.722000 brk(0x55a5249e4000)     = 0x55a5249e4000
+18:09:35.723453 read(0, "bute__((__gnu_inline__)) __attri"..., 8192) = 8192
+18:09:35.724759 read(0, " *vmf, pud_t orig_pud);\n\n\n\n\n\n\nvm"..., 8192) = 8192
+18:09:35.725058 brk(0x55a524a05000)     = 0x55a524a05000
+18:09:35.725799 read(0, "ned short: (signed short)0, unsi"..., 8192) = 8192
+18:09:35.726811 read(0, "ribute__((no_instrument_function"..., 8192) = 8192
+18:09:35.728025 brk(0x55a524a26000)     = 0x55a524a26000
+18:09:35.728197 read(0, " })->flags >> ((((sizeof(unsigne"..., 8192) = 8192
+18:09:35.729206 read(0, "[var]\" : [var] \"+m\" ((vm_event_s"..., 8192) = 8192
+18:09:35.729568 brk(0x55a524a47000)     = 0x55a524a47000
+18:09:35.730379 read(0, "elta) == 1 || (delta) == -1)) ? "..., 8192) = 4096
+18:09:35.730462 read(0, "__; } asm volatile(\"add\" \"l \" \"%"..., 4096) = 4096
+18:09:35.731924 read(0, ", (((const struct cpumask *)&__c"..., 8192) = 4096
+18:09:35.732474 read(0, "\n__count_numa_events(struct zone"..., 4096) = 4096
+18:09:35.734602 read(0, "page *, enum zone_stat_item);\n\nv"..., 8192) = 4096
+18:09:35.734727 read(0, "arch_local_irq_restore(flags); }"..., 4096) = 4096
+18:09:35.735968 read(0, "s, nodemask_t *nodemask);\n\n\nexte"..., 8192) = 8192
+18:09:35.737674 read(0, "tribute__((no_instrument_functio"..., 8192) = 8192
+18:09:35.738716 brk(0x55a524a68000)     = 0x55a524a68000
+18:09:35.739030 read(0, "__attribute__((__gnu_inline__)) "..., 8192) = 8192
+18:09:35.740304 read(0, "t rb_root_cached *root);\nstruct "..., 8192) = 8192
+18:09:35.741809 read(0, "a->vm_end != vm_end))\n  vma = (("..., 8192) = 8192
+18:09:35.741882 brk(0x55a524a89000)     = 0x55a524a89000
+18:09:35.743083 read(0, "__builtin_types_compatible_p(typ"..., 8192) = 8192
+18:09:35.744566 read(0, "nt_function)) void usermodehelpe"..., 8192) = 4096
+18:09:35.747882 read(0, "atic inline __attribute__((__gnu"..., 4096) = 4096
+18:09:35.748903 brk(0x55a524aaa000)     = 0x55a524aaa000
+18:09:35.750162 read(0, "*32+ 0)), ((unsigned long *)((&b"..., 8192) = 4096
+18:09:35.751211 read(0, "de/uapi/linux/elf-em.h\" 1\n# 7 \"."..., 4096) = 4096
+18:09:35.753558 read(0, "sz;\n};\n\nstruct arch_elf_state;\n\n"..., 8192) = 4096
+18:09:35.755033 read(0, "rn radix_tree_empty(&idr->idr_rt"..., 4096) = 4096
+18:09:35.757184 brk(0x55a524acb000)     = 0x55a524acb000
+18:09:35.757451 read(0, "_highbits;\n struct kernfs_syscal"..., 8192) = 8192
+18:09:35.758983 read(0, "id kernfs_init(void);\n\nstruct ke"..., 8192) = 4096
+18:09:35.759126 read(0, "ble)(struct kobject *,\n        s"..., 4096) = 4096
+18:09:35.760697 read(0, "    const struct attribute_group"..., 8192) = 4096
+18:09:35.760790 read(0, "tatic inline __attribute__((__gn"..., 4096) = 4096
+18:09:35.761392 brk(0x55a524aec000)     = 0x55a524aec000
+18:09:35.762801 read(0, " \".byte 0x0f, 0x0b\" \"\\n\" \".pushs"..., 8192) = 4096
+18:09:35.762883 read(0, "/moduleparam.h\"\nstruct kernel_pa"..., 4096) = 4096
+18:09:35.765079 brk(0x55a524b0d000)     = 0x55a524b0d000
+18:09:35.765222 read(0, "able_only;\nextern int param_set_"..., 8192) = 4096
+18:09:35.765297 read(0, "olatile typeof( _Generic((ltr->t"..., 4096) = 4096
+18:09:35.767549 read(0, "/error-injection.h\" 1\n\n\n\n\n\n# 1 \""..., 8192) = 4096
+18:09:35.769811 read(0, "s;\n tracepoint_ptr_t *tracepoint"..., 4096) = 4096
+18:09:35.771212 read(0, "rn void print_modules(void);\n\nst"..., 8192) = 4096
+18:09:35.771732 read(0, "return addr >= (unsigned long)__"..., 4096) = 4096
+18:09:35.776548 brk(0x55a524b2e000)     = 0x55a524b2e000
+18:09:35.777250 read(0, "racking_state.h\" 2\n\nstruct conte"..., 8192) = 4096
+18:09:35.778043 read(0, "ibute__((no_instrument_function)"..., 4096) = 4096
+18:09:35.781162 read(0, "while (0);break; default: __bad_"..., 8192) = 4096
+18:09:35.781331 read(0, "r(void);\nextern void rcu_nmi_exi"..., 4096) = 4096
+18:09:35.783597 read(0, "dler,\n   unsigned long irqflags,"..., 8192) = 8192
+18:09:35.783857 brk(0x55a524b4f000)     = 0x55a524b4f000
+18:09:35.785247 read(0, "(no_instrument_function)) void t"..., 8192) = 4096
+18:09:35.785351 read(0, " int len;\n};\n\nstatic bool stack_"..., 4096) = 3454
+18:09:35.785826 read(0, "", 4096)       = 0
+18:09:35.792999 newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:09:35.793553 read(0, "", 8192)       = 0
+18:09:35.793708 ioctl(0, TCGETS, 0x7ffd3456a440) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+18:09:35.793852 write(1, "__crc_stack_trace_print = 0xa45c"..., 153) = 153
+18:09:35.794008 exit_group(0)           = ?
+18:09:35.795030 +++ exited with 0 +++

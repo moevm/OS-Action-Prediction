@@ -1,0 +1,47 @@
+18:04:15.297624 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:15.297692 execve("/root/linux-5.15.0/tools/objtool//fixdep", ["/root/linux-5.15.0/tools/objtool"..., "/root/linux-5.15.0/tools/objtool"..., "/root/linux-5.15.0/tools/objtool"..., "gcc -Wp,-MD,/root/linux-5.15.0/t"...], 0x564e834bc168 /* 139 vars */) = 0
+18:04:15.297978 brk(NULL)               = 0x564b07e57000
+18:04:15.298016 arch_prctl(0x3001 /* ARCH_??? */, 0x7fff3884f6f0) = -1 EINVAL (Недопустимый аргумент)
+18:04:15.298085 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2ba2682000
+18:04:15.298133 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:15.298182 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:15.298217 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:15.298256 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2ba2667000
+18:04:15.298292 close(3)                = 0
+18:04:15.298333 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:15.298372 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:15.298406 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:15.298450 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:15.298485 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:15.298518 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:15.298555 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:15.298590 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2ba243e000
+18:04:15.298636 mprotect(0x7f2ba2466000, 2023424, PROT_NONE) = 0
+18:04:15.298672 mmap(0x7f2ba2466000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f2ba2466000
+18:04:15.298709 mmap(0x7f2ba25fb000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f2ba25fb000
+18:04:15.298744 mmap(0x7f2ba2654000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f2ba2654000
+18:04:15.298783 mmap(0x7f2ba265a000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2ba265a000
+18:04:15.298829 close(3)                = 0
+18:04:15.298864 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2ba243b000
+18:04:15.298903 arch_prctl(ARCH_SET_FS, 0x7f2ba243b740) = 0
+18:04:15.298939 set_tid_address(0x7f2ba243ba10) = 82088
+18:04:15.298968 set_robust_list(0x7f2ba243ba20, 24) = 0
+18:04:15.299009 rseq(0x7f2ba243c0e0, 0x20, 0, 0x53053053) = 0
+18:04:15.299089 mprotect(0x7f2ba2654000, 16384, PROT_READ) = 0
+18:04:15.299137 mprotect(0x564b05f95000, 4096, PROT_READ) = 0
+18:04:15.299173 mprotect(0x7f2ba26bc000, 8192, PROT_READ) = 0
+18:04:15.299227 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:15.299294 munmap(0x7f2ba2667000, 110235) = 0
+18:04:15.299366 newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:04:15.299417 getrandom("\xf4\x94\x40\xb7\xc9\x6e\x08\x4e", 8, GRND_NONBLOCK) = 8
+18:04:15.299460 brk(NULL)               = 0x564b07e57000
+18:04:15.299486 brk(0x564b07e78000)     = 0x564b07e78000
+18:04:15.299529 openat(AT_FDCWD, "/root/linux-5.15.0/tools/objtool/.fixdep.o.d", O_RDONLY) = 3
+18:04:15.299568 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4533, ...}, AT_EMPTY_PATH) = 0
+18:04:15.299607 mmap(NULL, 4533, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2ba2680000
+18:04:15.299667 write(1, "cmd_/root/linux-5.15.0/tools/obj"..., 4096) = 4096
+18:04:15.299724 munmap(0x7f2ba2680000, 4533) = 0
+18:04:15.299759 close(3)                = 0
+18:04:15.299816 write(1, "lude/stdarg.h \\\n  /usr/include/x"..., 1096) = 1096
+18:04:15.299856 exit_group(0)           = ?
+18:04:15.300014 +++ exited with 0 +++

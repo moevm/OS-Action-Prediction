@@ -1,0 +1,551 @@
+17:53:09.840555 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+17:53:09.840607 execve("/usr/bin/make", ["make", "-f", "/root/linux-5.15.0/Makefile", "syncconfig"], 0x563aee88dfb8 /* 46 vars */) = 0
+17:53:09.840792 brk(NULL)               = 0x55a89e7f4000
+17:53:09.840819 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe8d51b720) = -1 EINVAL (Недопустимый аргумент)
+17:53:09.840853 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbd0ab11000
+17:53:09.840876 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+17:53:09.840903 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+17:53:09.840923 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+17:53:09.840945 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbd0aaf6000
+17:53:09.840966 close(3)                = 0
+17:53:09.840990 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+17:53:09.841029 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+17:53:09.841051 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+17:53:09.841069 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+17:53:09.841086 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+17:53:09.841102 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+17:53:09.841124 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+17:53:09.841141 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbd0a8cd000
+17:53:09.841159 mprotect(0x7fbd0a8f5000, 2023424, PROT_NONE) = 0
+17:53:09.841182 mmap(0x7fbd0a8f5000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fbd0a8f5000
+17:53:09.841206 mmap(0x7fbd0aa8a000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fbd0aa8a000
+17:53:09.841224 mmap(0x7fbd0aae3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fbd0aae3000
+17:53:09.841245 mmap(0x7fbd0aae9000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbd0aae9000
+17:53:09.841295 close(3)                = 0
+17:53:09.841326 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbd0a8ca000
+17:53:09.841354 arch_prctl(ARCH_SET_FS, 0x7fbd0a8ca740) = 0
+17:53:09.841372 set_tid_address(0x7fbd0a8caa10) = 63445
+17:53:09.841390 set_robust_list(0x7fbd0a8caa20, 24) = 0
+17:53:09.841410 rseq(0x7fbd0a8cb0e0, 0x20, 0, 0x53053053) = 0
+17:53:09.841503 mprotect(0x7fbd0aae3000, 16384, PROT_READ) = 0
+17:53:09.841579 mprotect(0x55a89deb3000, 8192, PROT_READ) = 0
+17:53:09.841610 mprotect(0x7fbd0ab4b000, 8192, PROT_READ) = 0
+17:53:09.841647 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+17:53:09.841681 munmap(0x7fbd0aaf6000, 110235) = 0
+17:53:09.841756 getrandom("\xfd\x6c\x09\x6a\x4f\x22\xda\x32", 8, GRND_NONBLOCK) = 8
+17:53:09.841779 brk(NULL)               = 0x55a89e7f4000
+17:53:09.841797 brk(0x55a89e815000)     = 0x55a89e815000
+17:53:09.841819 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+17:53:09.841844 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+17:53:09.841868 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbd0a355000
+17:53:09.841895 close(3)                = 0
+17:53:09.841965 rt_sigaction(SIGHUP, {sa_handler=0x55a89de8acd0, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbd0a90f520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:53:09.841997 rt_sigaction(SIGQUIT, {sa_handler=0x55a89de8acd0, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbd0a90f520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:53:09.842022 rt_sigaction(SIGINT, {sa_handler=0x55a89de8acd0, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbd0a90f520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:53:09.842050 rt_sigaction(SIGTERM, {sa_handler=0x55a89de8acd0, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbd0a90f520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:53:09.842069 rt_sigaction(SIGXCPU, {sa_handler=0x55a89de8acd0, sa_mask=[XCPU], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbd0a90f520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:53:09.842087 rt_sigaction(SIGXFSZ, {sa_handler=0x55a89de8acd0, sa_mask=[XFSZ], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbd0a90f520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:53:09.842103 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbd0a90f520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:53:09.842128 fcntl(1, F_GETFL)       = 0x402 (flags O_RDWR|O_APPEND)
+17:53:09.842145 fcntl(1, F_SETFL, O_RDWR|O_APPEND) = 0
+17:53:09.842161 fcntl(2, F_GETFL)       = 0x402 (flags O_RDWR|O_APPEND)
+17:53:09.842177 fcntl(2, F_SETFL, O_RDWR|O_APPEND) = 0
+17:53:09.842192 fcntl(1, F_GETFD)       = 0
+17:53:09.842237 getcwd("/root/linux-5.15.0/debian/build/build-generic", 4096) = 46
+17:53:09.842288 ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+17:53:09.842311 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+17:53:09.842333 newfstatat(AT_FDCWD, "/root/linux-5.15.0", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+17:53:09.842355 newfstatat(AT_FDCWD, "/usr/gnu/include", 0x7ffe8d519c80, 0) = -1 ENOENT (Нет такого файла или каталога)
+17:53:09.842373 newfstatat(AT_FDCWD, "/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+17:53:09.842393 newfstatat(AT_FDCWD, "/usr/include", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+17:53:09.842412 newfstatat(AT_FDCWD, "/usr/include", {st_mode=S_IFDIR|0755, st_size=20480, ...}, 0) = 0
+17:53:09.842431 rt_sigaction(SIGCHLD, {sa_handler=0x55a89de90dc0, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbd0a90f520}, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbd0a90f520}, 8) = 0
+17:53:09.842448 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.842464 rt_sigaction(SIGUSR1, {sa_handler=0x55a89de90a90, sa_mask=[USR1], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbd0a90f520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+17:53:09.842496 openat(AT_FDCWD, "/root/linux-5.15.0/Makefile", O_RDONLY) = 3
+17:53:09.842516 fcntl(3, F_GETFD)       = 0
+17:53:09.842531 fcntl(3, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.842548 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=67238, ...}, AT_EMPTY_PATH) = 0
+17:53:09.842570 read(3, "# SPDX-License-Identifier: GPL-2"..., 4096) = 4096
+17:53:09.842620 read(3, "2, $(KBUILD_EXTMOD)), \\\n\t$(error"..., 4096) = 4096
+17:53:09.842660 read(3, "ncluded in this case either (for"..., 4096) = 4096
+17:53:09.842715 openat(AT_FDCWD, "/root/linux-5.15.0/scripts/Kbuild.include", O_RDONLY) = 4
+17:53:09.842734 fcntl(4, F_GETFD)       = 0
+17:53:09.842749 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.842764 newfstatat(4, "", {st_mode=S_IFREG|0755, st_size=10392, ...}, AT_EMPTY_PATH) = 0
+17:53:09.842784 read(4, "# SPDX-License-Identifier: GPL-2"..., 4096) = 4096
+17:53:09.842812 brk(0x55a89e836000)     = 0x55a89e836000
+17:53:09.842849 read(4, "strip $(cmd_$1))))\nelse\ncmd-chec"..., 4096) = 4096
+17:53:09.842888 read(4, "string contains a filename, it i"..., 4096) = 2200
+17:53:09.842913 read(4, "", 4096)       = 0
+17:53:09.842930 close(4)                = 0
+17:53:09.842950 openat(AT_FDCWD, "/root/linux-5.15.0/scripts/subarch.include", O_RDONLY) = 4
+17:53:09.842968 fcntl(4, F_GETFD)       = 0
+17:53:09.842983 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.842999 newfstatat(4, "", {st_mode=S_IFREG|0755, st_size=619, ...}, AT_EMPTY_PATH) = 0
+17:53:09.843020 read(4, "# SUBARCH tells the usermode bui"..., 4096) = 619
+17:53:09.843047 pipe2([5, 6], 0)        = 0
+17:53:09.843069 fcntl(6, F_GETFD)       = 0
+17:53:09.843084 fcntl(6, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.843105 fcntl(5, F_GETFD)       = 0
+17:53:09.843120 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.843135 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.843151 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.843170 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:09.843190 geteuid()               = 0
+17:53:09.843205 getegid()               = 0
+17:53:09.843220 getuid()                = 0
+17:53:09.843233 getgid()                = 0
+17:53:09.843247 access("/bin/sh", X_OK) = 0
+17:53:09.843265 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.843281 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.843300 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63446
+17:53:09.845567 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.845591 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.845608 close(6)                = 0
+17:53:09.845632 read(5, "x86\n", 200)   = 4
+17:53:09.851075 read(5, "", 196)        = 0
+17:53:09.851541 close(5)                = 0
+17:53:09.851572 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63446
+17:53:09.851620 read(4, "", 4096)       = 0
+17:53:09.851641 close(4)                = 0
+17:53:09.851668 read(3, " in compile.h\nUTS_MACHINE \t:= $("..., 4096) = 4096
+17:53:09.851714 pipe2([4, 5], 0)        = 0
+17:53:09.851744 fcntl(5, F_GETFD)       = 0
+17:53:09.851763 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.851838 fcntl(4, F_GETFD)       = 0
+17:53:09.851860 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.851878 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.851896 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.851915 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:09.851941 geteuid()               = 0
+17:53:09.851957 getegid()               = 0
+17:53:09.851972 getuid()                = 0
+17:53:09.851987 getgid()                = 0
+17:53:09.852000 access("/bin/sh", X_OK) = 0
+17:53:09.852022 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.852042 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.852062 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63449
+17:53:09.854276 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.854297 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.854317 close(5)                = 0
+17:53:09.854334 read(4, "\n", 200)      = 1
+17:53:09.856663 read(4, "", 199)        = 0
+17:53:09.856880 close(4)                = 0
+17:53:09.856915 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63449
+17:53:09.856948 pipe2([4, 5], 0)        = 0
+17:53:09.856968 fcntl(5, F_GETFD)       = 0
+17:53:09.856983 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.856998 fcntl(4, F_GETFD)       = 0
+17:53:09.857012 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.857026 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.857042 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.857057 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:09.857076 geteuid()               = 0
+17:53:09.857090 getegid()               = 0
+17:53:09.857104 getuid()                = 0
+17:53:09.857117 getgid()                = 0
+17:53:09.857130 access("/bin/sh", X_OK) = 0
+17:53:09.857147 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.857164 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.857181 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63451
+17:53:09.859466 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.859495 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.859521 close(5)                = 0
+17:53:09.859539 read(4, "\n", 200)      = 1
+17:53:09.861956 read(4, "", 199)        = 0
+17:53:09.862201 close(4)                = 0
+17:53:09.862220 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63451
+17:53:09.862251 pipe2([4, 5], 0)        = 0
+17:53:09.862272 fcntl(5, F_GETFD)       = 0
+17:53:09.862287 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.862302 fcntl(4, F_GETFD)       = 0
+17:53:09.862317 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.862332 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.862348 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.862364 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:09.862385 geteuid()               = 0
+17:53:09.862400 getegid()               = 0
+17:53:09.862413 getuid()                = 0
+17:53:09.862427 getgid()                = 0
+17:53:09.862440 access("/bin/sh", X_OK) = 0
+17:53:09.862458 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.862478 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.862497 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63453
+17:53:09.864693 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.864714 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.864736 close(5)                = 0
+17:53:09.864753 read(4, "\n", 200)      = 1
+17:53:09.867452 read(4, "", 199)        = 0
+17:53:09.867855 close(4)                = 0
+17:53:09.867897 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63453
+17:53:09.867984 read(3, "FLAGS KBUILD_HOSTLDLIBS LDFLAGS_"..., 4096) = 4096
+17:53:09.868038 pipe2([4, 5], 0)        = 0
+17:53:09.868066 fcntl(5, F_GETFD)       = 0
+17:53:09.868085 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.868103 fcntl(4, F_GETFD)       = 0
+17:53:09.868121 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.868159 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.868178 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.868197 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:09.868224 geteuid()               = 0
+17:53:09.868240 getegid()               = 0
+17:53:09.868254 getuid()                = 0
+17:53:09.868269 getgid()                = 0
+17:53:09.868283 access("/bin/sh", X_OK) = 0
+17:53:09.868303 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.868324 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.868345 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63455
+17:53:09.871705 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.871735 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.871759 close(5)                = 0
+17:53:09.871800 read(4, "gcc (Ubuntu 11.4.0-1ubuntu1~22.0"..., 200) = 42
+17:53:09.876755 read(4, "", 158)        = 0
+17:53:09.877218 close(4)                = 0
+17:53:09.877252 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63455
+17:53:09.877374 openat(AT_FDCWD, "/root/linux-5.15.0/scripts/Makefile.compiler", O_RDONLY) = 4
+17:53:09.877441 fcntl(4, F_GETFD)       = 0
+17:53:09.877465 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.877493 newfstatat(4, "", {st_mode=S_IFREG|0755, st_size=2751, ...}, AT_EMPTY_PATH) = 0
+17:53:09.877534 read(4, "# SPDX-License-Identifier: GPL-2"..., 4096) = 2751
+17:53:09.877609 read(4, "", 4096)       = 0
+17:53:09.877644 close(4)                = 0
+17:53:09.877680 openat(AT_FDCWD, "/root/linux-5.15.0/arch/x86/Makefile", O_RDONLY) = 4
+17:53:09.877711 fcntl(4, F_GETFD)       = 0
+17:53:09.877732 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.877754 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=10074, ...}, AT_EMPTY_PATH) = 0
+17:53:09.877783 read(4, "# SPDX-License-Identifier: GPL-2"..., 4096) = 4096
+17:53:09.877826 pipe2([5, 6], 0)        = 0
+17:53:09.877868 fcntl(6, F_GETFD)       = 0
+17:53:09.877891 fcntl(6, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.877913 fcntl(5, F_GETFD)       = 0
+17:53:09.877964 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.878007 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.878040 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.878066 newfstatat(AT_FDCWD, "/usr/local/sbin/uname", 0x7ffe8d519220, 0) = -1 ENOENT (Нет такого файла или каталога)
+17:53:09.878099 newfstatat(AT_FDCWD, "/usr/local/bin/uname", 0x7ffe8d519220, 0) = -1 ENOENT (Нет такого файла или каталога)
+17:53:09.878120 newfstatat(AT_FDCWD, "/usr/sbin/uname", 0x7ffe8d519220, 0) = -1 ENOENT (Нет такого файла или каталога)
+17:53:09.878141 newfstatat(AT_FDCWD, "/usr/bin/uname", {st_mode=S_IFREG|0755, st_size=35328, ...}, 0) = 0
+17:53:09.878166 geteuid()               = 0
+17:53:09.878184 getegid()               = 0
+17:53:09.878200 getuid()                = 0
+17:53:09.878218 getgid()                = 0
+17:53:09.878235 access("/usr/bin/uname", X_OK) = 0
+17:53:09.878287 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.878310 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.878330 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63458
+17:53:09.880737 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.880768 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.880800 close(6)                = 0
+17:53:09.880820 read(5, "x86_64\n", 200) = 7
+17:53:09.882386 read(5, "", 193)        = 0
+17:53:09.882411 close(5)                = 0
+17:53:09.882470 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63458
+17:53:09.882998 pipe2([5, 6], 0)        = 0
+17:53:09.883069 fcntl(6, F_GETFD)       = 0
+17:53:09.883098 fcntl(6, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.883129 fcntl(5, F_GETFD)       = 0
+17:53:09.883149 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.883178 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.883207 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.883232 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:09.883275 geteuid()               = 0
+17:53:09.883305 getegid()               = 0
+17:53:09.883372 getuid()                = 0
+17:53:09.883392 getgid()                = 0
+17:53:09.883412 access("/bin/sh", X_OK) = 0
+17:53:09.883462 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.883487 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.883531 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63459
+17:53:09.886330 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.886364 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.886386 close(6)                = 0
+17:53:09.886407 read(5, " -mpreferred-stack-boundary=4\n", 200) = 30
+17:53:09.910843 read(5, "", 170)        = 0
+17:53:09.912960 close(5)                = 0
+17:53:09.912980 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63459
+17:53:09.913058 pipe2([5, 6], 0)        = 0
+17:53:09.913081 fcntl(6, F_GETFD)       = 0
+17:53:09.913099 fcntl(6, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.913135 fcntl(5, F_GETFD)       = 0
+17:53:09.913151 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.913168 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.913185 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.913203 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:09.913230 geteuid()               = 0
+17:53:09.913246 getegid()               = 0
+17:53:09.913262 getuid()                = 0
+17:53:09.913278 getgid()                = 0
+17:53:09.913293 access("/bin/sh", X_OK) = 0
+17:53:09.913311 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.913331 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.913351 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63465
+17:53:09.915674 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.915692 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.915711 close(6)                = 0
+17:53:09.915730 read(5, "-fcf-protection=none\n", 200) = 21
+17:53:09.935956 read(5, "", 179)        = 0
+17:53:09.937759 close(5)                = 0
+17:53:09.937777 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63465
+17:53:09.937850 pipe2([5, 6], 0)        = 0
+17:53:09.937870 fcntl(6, F_GETFD)       = 0
+17:53:09.937885 fcntl(6, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.937900 fcntl(5, F_GETFD)       = 0
+17:53:09.937915 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.937930 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.937945 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.937961 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:09.937982 geteuid()               = 0
+17:53:09.937997 getegid()               = 0
+17:53:09.938011 getuid()                = 0
+17:53:09.938028 getgid()                = 0
+17:53:09.938049 access("/bin/sh", X_OK) = 0
+17:53:09.938067 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.938085 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.938104 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63471
+17:53:09.940247 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.940271 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.940294 close(6)                = 0
+17:53:09.940314 read(5, "-fcf-protection=none\n", 200) = 21
+17:53:09.959256 read(5, "", 179)        = 0
+17:53:09.961180 close(5)                = 0
+17:53:09.961199 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63471
+17:53:09.961275 pipe2([5, 6], 0)        = 0
+17:53:09.961296 fcntl(6, F_GETFD)       = 0
+17:53:09.961311 fcntl(6, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.961327 fcntl(5, F_GETFD)       = 0
+17:53:09.961341 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.961357 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.961372 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.961389 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:09.961411 geteuid()               = 0
+17:53:09.961426 getegid()               = 0
+17:53:09.961440 getuid()                = 0
+17:53:09.961453 getgid()                = 0
+17:53:09.961467 access("/bin/sh", X_OK) = 0
+17:53:09.961484 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.961502 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.961521 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63477
+17:53:09.963710 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.963730 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.963750 close(6)                = 0
+17:53:09.963772 read(5, "-falign-jumps=1\n", 200) = 16
+17:53:09.982946 read(5, "", 184)        = 0
+17:53:09.985000 close(5)                = 0
+17:53:09.985025 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63477
+17:53:09.985099 pipe2([5, 6], 0)        = 0
+17:53:09.985128 fcntl(6, F_GETFD)       = 0
+17:53:09.985148 fcntl(6, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.985168 fcntl(5, F_GETFD)       = 0
+17:53:09.985188 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:09.985208 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.985228 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:09.985249 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:09.985278 geteuid()               = 0
+17:53:09.985298 getegid()               = 0
+17:53:09.985317 getuid()                = 0
+17:53:09.985335 getgid()                = 0
+17:53:09.985352 access("/bin/sh", X_OK) = 0
+17:53:09.985375 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:09.985403 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:09.985427 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63483
+17:53:09.987629 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:09.987655 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:09.987683 close(6)                = 0
+17:53:09.987701 read(5, "-falign-loops=1\n", 200) = 16
+17:53:10.007056 read(5, "", 184)        = 0
+17:53:10.008927 close(5)                = 0
+17:53:10.008946 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63483
+17:53:10.009011 pipe2([5, 6], 0)        = 0
+17:53:10.009032 fcntl(6, F_GETFD)       = 0
+17:53:10.009048 fcntl(6, F_SETFD, FD_CLOEXEC) = 0
+17:53:10.009063 fcntl(5, F_GETFD)       = 0
+17:53:10.009078 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:10.009093 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:10.009108 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:10.009125 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:10.009145 geteuid()               = 0
+17:53:10.009162 getegid()               = 0
+17:53:10.009208 getuid()                = 0
+17:53:10.009223 getgid()                = 0
+17:53:10.009239 access("/bin/sh", X_OK) = 0
+17:53:10.009299 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:10.009318 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:10.009339 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63489
+17:53:10.011862 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:10.011891 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:10.011917 close(6)                = 0
+17:53:10.011941 read(5, "-mno-fp-ret-in-387\n", 200) = 19
+17:53:10.031513 read(5, "", 181)        = 0
+17:53:10.033407 close(5)                = 0
+17:53:10.033433 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63489
+17:53:10.033476 read(4, "align8)\n\n\t# Use -mskip-rax-setup"..., 4096) = 4096
+17:53:10.033539 pipe2([5, 6], 0)        = 0
+17:53:10.033569 fcntl(6, F_GETFD)       = 0
+17:53:10.033589 fcntl(6, F_SETFD, FD_CLOEXEC) = 0
+17:53:10.033609 fcntl(5, F_GETFD)       = 0
+17:53:10.033628 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:10.033648 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:10.033670 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:10.033690 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:10.033718 geteuid()               = 0
+17:53:10.033738 getegid()               = 0
+17:53:10.033757 getuid()                = 0
+17:53:10.033776 getgid()                = 0
+17:53:10.033794 access("/bin/sh", X_OK) = 0
+17:53:10.033818 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:10.033841 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:10.033865 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63495
+17:53:10.036077 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:10.036105 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:10.036128 close(6)                = 0
+17:53:10.036147 read(5, "-mskip-rax-setup\n", 200) = 17
+17:53:10.056794 read(5, "", 183)        = 0
+17:53:10.059177 close(5)                = 0
+17:53:10.059201 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63495
+17:53:10.059290 read(4, "oot\n\t$(Q)ln -fsn ../../x86/boot/"..., 4096) = 1882
+17:53:10.059332 read(4, "", 4096)       = 0
+17:53:10.059348 close(4)                = 0
+17:53:10.059374 read(3, "whatever> modules\", compile modu"..., 4096) = 4096
+17:53:10.059407 read(3, "= -O2\nelse ifdef CONFIG_CC_OPTIM"..., 4096) = 4096
+17:53:10.059438 read(3, "-version-y)\nKBUILD_AFLAGS\t+= -gd"..., 4096) = 4096
+17:53:10.059472 read(3, "rnings for bounds checks involvi"..., 4096) = 4096
+17:53:10.059506 read(3, "t defaults to the kernel install"..., 4096) = 4096
+17:53:10.059541 read(3, " / created.\n\nPHONY += prepare ar"..., 4096) = 4096
+17:53:10.059603 read(3, "ic\n\t$(Q)$(MAKE) $(build)=scripts"..., 4096) = 4096
+17:53:10.059702 read(3, "pare: prepare\n\t$(Q)$(MAKE) $(bui"..., 4096) = 4096
+17:53:10.059747 read(3, "@echo  '* vmlinux\t  - Build the "..., 4096) = 4096
+17:53:10.059843 read(3, " $$CHECK'\n\t@echo  '  make RECORD"..., 4096) = 4096
+17:53:10.059912 read(3, "tc.'\n\t@echo >&2 '*** to enable C"..., 4096) = 4096
+17:53:10.059954 read(3, "eck versioncheck coccicheck expo"..., 4096) = 1702
+17:53:10.060004 read(3, "", 4096)       = 0
+17:53:10.060036 close(3)                = 0
+17:53:10.060096 newfstatat(AT_FDCWD, "/root/linux-5.15.0", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+17:53:10.060155 openat(AT_FDCWD, "/root/linux-5.15.0", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+17:53:10.060198 newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+17:53:10.060247 newfstatat(AT_FDCWD, "/root/linux-5.15.0/arch/x86/Makefile", {st_mode=S_IFREG|0644, st_size=10074, ...}, 0) = 0
+17:53:10.060318 newfstatat(AT_FDCWD, "/root/linux-5.15.0/scripts/Makefile.compiler", {st_mode=S_IFREG|0755, st_size=2751, ...}, 0) = 0
+17:53:10.060363 newfstatat(AT_FDCWD, "/root/linux-5.15.0/scripts/subarch.include", {st_mode=S_IFREG|0755, st_size=619, ...}, 0) = 0
+17:53:10.060397 newfstatat(AT_FDCWD, "/root/linux-5.15.0/scripts/Kbuild.include", {st_mode=S_IFREG|0755, st_size=10392, ...}, 0) = 0
+17:53:10.060428 newfstatat(AT_FDCWD, "/root/linux-5.15.0/Makefile", {st_mode=S_IFREG|0644, st_size=67238, ...}, 0) = 0
+17:53:10.060468 newfstatat(AT_FDCWD, "syncconfig", 0x7ffe8d517a10, 0) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.060520 getdents64(3, 0x55a89e823fb0 /* 47 entries */, 32768) = 1488
+17:53:10.060631 getdents64(3, 0x55a89e823fb0 /* 0 entries */, 32768) = 0
+17:53:10.060660 close(3)                = 0
+17:53:10.060699 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+17:53:10.060734 openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+17:53:10.060768 newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+17:53:10.060992 pipe2([4, 5], 0)        = 0
+17:53:10.061060 fcntl(5, F_GETFD)       = 0
+17:53:10.061081 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:10.061103 fcntl(4, F_GETFD)       = 0
+17:53:10.061122 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:10.061153 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:10.061185 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:10.061215 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:10.061253 geteuid()               = 0
+17:53:10.061270 getegid()               = 0
+17:53:10.061287 getuid()                = 0
+17:53:10.061304 getgid()                = 0
+17:53:10.061319 access("/bin/sh", X_OK) = 0
+17:53:10.061355 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:10.061395 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:10.061443 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63501
+17:53:10.064865 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:10.064905 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:10.064936 close(5)                = 0
+17:53:10.064973 read(4, "gcc (Ubuntu 11.4.0-1ubuntu1~22.0"..., 200) = 42
+17:53:10.070220 read(4, "", 158)        = 0
+17:53:10.070544 close(4)                = 0
+17:53:10.070568 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63501
+17:53:10.070628 pipe2([4, 5], 0)        = 0
+17:53:10.070655 fcntl(5, F_GETFD)       = 0
+17:53:10.070675 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:10.070694 fcntl(4, F_GETFD)       = 0
+17:53:10.070713 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:10.070732 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:10.070752 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:10.070777 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:10.070803 geteuid()               = 0
+17:53:10.070822 getegid()               = 0
+17:53:10.070840 getuid()                = 0
+17:53:10.070858 getgid()                = 0
+17:53:10.070875 access("/bin/sh", X_OK) = 0
+17:53:10.070898 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:10.070920 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:10.070942 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63504
+17:53:10.073847 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:10.073875 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:10.073898 close(5)                = 0
+17:53:10.073931 read(4, "--btf_gen_floats --skip_encoding"..., 200) = 44
+17:53:10.095847 read(4, "", 156)        = 0
+17:53:10.096093 close(4)                = 0
+17:53:10.096117 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63504
+17:53:10.096181 pipe2([4, 5], 0)        = 0
+17:53:10.096207 fcntl(5, F_GETFD)       = 0
+17:53:10.096226 fcntl(5, F_SETFD, FD_CLOEXEC) = 0
+17:53:10.096245 fcntl(4, F_GETFD)       = 0
+17:53:10.096262 fcntl(4, F_SETFD, FD_CLOEXEC) = 0
+17:53:10.096281 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:10.096301 prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+17:53:10.096321 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:10.096347 geteuid()               = 0
+17:53:10.096365 getegid()               = 0
+17:53:10.096383 getuid()                = 0
+17:53:10.096400 getgid()                = 0
+17:53:10.096416 access("/bin/sh", X_OK) = 0
+17:53:10.096438 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:10.096460 rt_sigprocmask(SIG_BLOCK, ~[], [CHLD], 8) = 0
+17:53:10.096482 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63512
+17:53:10.099344 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:10.099386 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:53:10.099414 close(5)                = 0
+17:53:10.099439 read(4, "", 200)        = 0
+17:53:10.103357 close(4)                = 0
+17:53:10.103378 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 63512
+17:53:10.103409 rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+17:53:10.103430 newfstatat(AT_FDCWD, "/bin/sh", {st_mode=S_IFREG|0755, st_size=125688, ...}, 0) = 0
+17:53:10.103454 geteuid()               = 0
+17:53:10.103470 getegid()               = 0
+17:53:10.103487 getuid()                = 0
+17:53:10.103502 getgid()                = 0
+17:53:10.103517 access("/bin/sh", X_OK) = 0
+17:53:10.103536 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbd0ab08000
+17:53:10.103555 rt_sigprocmask(SIG_BLOCK, ~[], [HUP INT QUIT TERM CHLD XCPU XFSZ], 8) = 0
+17:53:10.103575 clone3({flags=CLONE_VM|CLONE_VFORK, exit_signal=SIGCHLD, stack=0x7fbd0ab08000, stack_size=0x9000}, 88) = 63514
+17:53:10.106161 munmap(0x7fbd0ab08000, 36864) = 0
+17:53:10.106186 rt_sigprocmask(SIG_SETMASK, [HUP INT QUIT TERM CHLD XCPU XFSZ], NULL, 8) = 0
+17:53:10.106205 rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+17:53:10.106229 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], 0, NULL) = 63514
+17:53:10.108092 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 4
+17:53:10.108115 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2996, ...}, AT_EMPTY_PATH) = 0
+17:53:10.108137 read(4, "# Locale name alias data base.\n#"..., 4096) = 2996
+17:53:10.108191 read(4, "", 4096)       = 0
+17:53:10.108208 close(4)                = 0
+17:53:10.108247 openat(AT_FDCWD, "/usr/share/locale/ru_RU.UTF-8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108267 openat(AT_FDCWD, "/usr/share/locale/ru_RU.utf8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108291 openat(AT_FDCWD, "/usr/share/locale/ru_RU/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108312 openat(AT_FDCWD, "/usr/share/locale/ru.UTF-8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108331 openat(AT_FDCWD, "/usr/share/locale/ru.utf8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108349 openat(AT_FDCWD, "/usr/share/locale/ru/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108367 openat(AT_FDCWD, "/usr/share/locale-langpack/ru_RU.UTF-8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108385 openat(AT_FDCWD, "/usr/share/locale-langpack/ru_RU.utf8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108404 openat(AT_FDCWD, "/usr/share/locale-langpack/ru_RU/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108423 openat(AT_FDCWD, "/usr/share/locale-langpack/ru.UTF-8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108442 openat(AT_FDCWD, "/usr/share/locale-langpack/ru.utf8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+17:53:10.108460 openat(AT_FDCWD, "/usr/share/locale-langpack/ru/LC_MESSAGES/make.mo", O_RDONLY) = 4
+17:53:10.108479 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=56647, ...}, AT_EMPTY_PATH) = 0
+17:53:10.108499 mmap(NULL, 56647, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7fbd0ab03000
+17:53:10.108519 close(4)                = 0
+17:53:10.108542 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 4
+17:53:10.108562 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+17:53:10.108582 mmap(NULL, 27002, PROT_READ, MAP_SHARED, 4, 0) = 0x7fbd0aafc000
+17:53:10.108600 close(4)                = 0
+17:53:10.108618 futex(0x7fbd0aae8a6c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+17:53:10.108638 write(2, "make[3]: *** [/root/linux-5.15.0"..., 78) = 78
+17:53:10.108660 rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+17:53:10.108685 rt_sigprocmask(SIG_UNBLOCK, [HUP INT QUIT TERM XCPU XFSZ], NULL, 8) = 0
+17:53:10.108704 chdir("/root/linux-5.15.0/debian/build/build-generic") = 0
+17:53:10.108724 close(1)                = 0
+17:53:10.108744 exit_group(2)           = ?
+17:53:10.108900 +++ exited with 2 +++

@@ -1,0 +1,44 @@
+17:52:21.269706 set_robust_list(0x7fbe43cb1a20, 24) = 0
+17:52:21.269743 getpid()                = 63125
+17:52:21.269761 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+17:52:21.269784 rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, 8) = 0
+17:52:21.269804 rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, 8) = 0
+17:52:21.269821 rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, 8) = 0
+17:52:21.269848 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, 8) = 0
+17:52:21.269885 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, 8) = 0
+17:52:21.269918 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbe43cf6520}, {sa_handler=0x55d85c03cd10, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbe43cf6520}, 8) = 0
+17:52:21.269943 rt_sigaction(SIGINT, {sa_handler=0x55d85c069410, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, 8) = 0
+17:52:21.269970 rt_sigaction(SIGCHLD, {sa_handler=0x55d85c03cd10, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbe43cf6520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fbe43cf6520}, 8) = 0
+17:52:21.269995 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+17:52:21.270030 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+17:52:21.270059 close(3)                = 0
+17:52:21.270076 dup2(4, 1)              = 1
+17:52:21.270092 close(4)                = 0
+17:52:21.270121 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+17:52:21.270146 pipe2([3, 4], 0)        = 0
+17:52:21.270208 rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+17:52:21.270225 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+17:52:21.270241 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fbe43cb1a10) = 63127
+17:52:21.270342 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:52:21.270367 close(4)                = 0
+17:52:21.270396 close(4)                = -1 EBADF (Неправильный дескриптор файла)
+17:52:21.270423 rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+17:52:21.270461 rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+17:52:21.270491 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fbe43cb1a10) = 63128
+17:52:21.270592 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:52:21.270634 close(3)                = 0
+17:52:21.270684 rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+17:52:21.270739 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:52:21.270782 rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+17:52:21.270812 rt_sigaction(SIGINT, {sa_handler=0x55d85c03edc0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, {sa_handler=0x55d85c069410, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, 8) = 0
+17:52:21.270859 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63127
+17:52:21.496336 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 63128
+17:52:23.439706 rt_sigaction(SIGINT, {sa_handler=0x55d85c069410, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, {sa_handler=0x55d85c03edc0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbe43cf6520}, 8) = 0
+17:52:23.439754 rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+17:52:23.439783 close(3)                = -1 EBADF (Неправильный дескриптор файла)
+17:52:23.439811 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+17:52:23.439832 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=63127, si_uid=0, si_status=0, si_utime=0, si_stime=3} ---
+17:52:23.439855 wait4(-1, 0x7ffd9099c790, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+17:52:23.439881 rt_sigreturn({mask=[]}) = 0
+17:52:23.439930 exit_group(0)           = ?
+17:52:23.440024 +++ exited with 0 +++

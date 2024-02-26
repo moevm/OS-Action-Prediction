@@ -1,0 +1,53 @@
+18:09:47.022624 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:09:47.022719 execve("/usr/bin/cat", ["cat", "arch/x86/platform/iris/modules.o"...], 0x5618f3e68bc8 /* 129 vars */) = 0
+18:09:47.023036 brk(NULL)               = 0x558177787000
+18:09:47.023099 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe257bdd30) = -1 EINVAL (Недопустимый аргумент)
+18:09:47.023168 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efcbc8b0000
+18:09:47.023228 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:09:47.023287 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:09:47.023367 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:09:47.023436 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efcbc895000
+18:09:47.023502 close(3)                = 0
+18:09:47.023574 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:09:47.023640 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:09:47.023711 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:09:47.023790 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:09:47.023879 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:09:47.023943 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:09:47.024009 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:09:47.024076 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efcbc66c000
+18:09:47.024142 mprotect(0x7efcbc694000, 2023424, PROT_NONE) = 0
+18:09:47.024213 mmap(0x7efcbc694000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7efcbc694000
+18:09:47.024313 mmap(0x7efcbc829000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7efcbc829000
+18:09:47.024377 mmap(0x7efcbc882000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7efcbc882000
+18:09:47.024442 mmap(0x7efcbc888000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7efcbc888000
+18:09:47.024498 close(3)                = 0
+18:09:47.024552 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efcbc669000
+18:09:47.024608 arch_prctl(ARCH_SET_FS, 0x7efcbc669740) = 0
+18:09:47.024696 set_tid_address(0x7efcbc669a10) = 100273
+18:09:47.024777 set_robust_list(0x7efcbc669a20, 24) = 0
+18:09:47.024844 rseq(0x7efcbc66a0e0, 0x20, 0, 0x53053053) = 0
+18:09:47.024969 mprotect(0x7efcbc882000, 16384, PROT_READ) = 0
+18:09:47.025052 mprotect(0x5581771a9000, 4096, PROT_READ) = 0
+18:09:47.025120 mprotect(0x7efcbc8ea000, 8192, PROT_READ) = 0
+18:09:47.025190 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:09:47.025295 munmap(0x7efcbc895000, 110235) = 0
+18:09:47.025405 getrandom("\x8f\xbd\x39\x1d\x2b\x0c\xcf\xda", 8, GRND_NONBLOCK) = 8
+18:09:47.025468 brk(NULL)               = 0x558177787000
+18:09:47.025503 brk(0x5581777a8000)     = 0x5581777a8000
+18:09:47.025570 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+18:09:47.025651 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+18:09:47.025724 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efcbc0f4000
+18:09:47.025796 close(3)                = 0
+18:09:47.025884 newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:09:47.025935 openat(AT_FDCWD, "arch/x86/platform/iris/modules.order", O_RDONLY) = 3
+18:09:47.025981 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:09:47.026029 fadvise64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+18:09:47.026073 mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efcbc0d2000
+18:09:47.026141 read(3, "", 131072)     = 0
+18:09:47.026201 munmap(0x7efcbc0d2000, 139264) = 0
+18:09:47.026266 close(3)                = 0
+18:09:47.026328 close(1)                = 0
+18:09:47.026374 close(2)                = 0
+18:09:47.026418 exit_group(0)           = ?
+18:09:47.026555 +++ exited with 0 +++

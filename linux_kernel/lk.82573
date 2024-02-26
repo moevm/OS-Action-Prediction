@@ -1,0 +1,46 @@
+18:04:21.321961 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:21.322020 execve("/root/linux-5.15.0/tools/objtool//fixdep", ["/root/linux-5.15.0/tools/objtool"..., "/root/linux-5.15.0/tools/objtool"..., "/root/linux-5.15.0/tools/objtool"..., "gcc -Wp,-MD,/root/linux-5.15.0/t"...], 0x5580afc7efc8 /* 137 vars */) = 0
+18:04:21.322245 brk(NULL)               = 0x55f2acfc1000
+18:04:21.322289 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc5d932f10) = -1 EINVAL (Недопустимый аргумент)
+18:04:21.322335 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbc45a25000
+18:04:21.322375 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:21.322415 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:21.322455 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:21.322497 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbc45a0a000
+18:04:21.322537 close(3)                = 0
+18:04:21.322572 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:21.322611 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:21.322652 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:21.322696 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:21.322738 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:21.322778 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:21.322820 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:21.322859 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbc457e1000
+18:04:21.322898 mprotect(0x7fbc45809000, 2023424, PROT_NONE) = 0
+18:04:21.322944 mmap(0x7fbc45809000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fbc45809000
+18:04:21.322985 mmap(0x7fbc4599e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fbc4599e000
+18:04:21.323020 mmap(0x7fbc459f7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fbc459f7000
+18:04:21.323054 mmap(0x7fbc459fd000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbc459fd000
+18:04:21.323097 close(3)                = 0
+18:04:21.323135 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbc457de000
+18:04:21.323165 arch_prctl(ARCH_SET_FS, 0x7fbc457de740) = 0
+18:04:21.323197 set_tid_address(0x7fbc457dea10) = 82573
+18:04:21.323237 set_robust_list(0x7fbc457dea20, 24) = 0
+18:04:21.323270 rseq(0x7fbc457df0e0, 0x20, 0, 0x53053053) = 0
+18:04:21.323343 mprotect(0x7fbc459f7000, 16384, PROT_READ) = 0
+18:04:21.323384 mprotect(0x55f2aca5b000, 4096, PROT_READ) = 0
+18:04:21.323420 mprotect(0x7fbc45a5f000, 8192, PROT_READ) = 0
+18:04:21.323472 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:21.323513 munmap(0x7fbc45a0a000, 110235) = 0
+18:04:21.323588 newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:04:21.323635 getrandom("\x68\x05\x64\xfe\x2a\xbe\x41\x5f", 8, GRND_NONBLOCK) = 8
+18:04:21.323673 brk(NULL)               = 0x55f2acfc1000
+18:04:21.323708 brk(0x55f2acfe2000)     = 0x55f2acfe2000
+18:04:21.323744 openat(AT_FDCWD, "/root/linux-5.15.0/tools/objtool/.librbtree.o.d", O_RDONLY) = 3
+18:04:21.323814 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2274, ...}, AT_EMPTY_PATH) = 0
+18:04:21.323859 mmap(NULL, 2274, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbc45a5e000
+18:04:21.323909 munmap(0x7fbc45a5e000, 2274) = 0
+18:04:21.323944 close(3)                = 0
+18:04:21.323979 write(1, "cmd_/root/linux-5.15.0/tools/obj"..., 3590) = 3590
+18:04:21.324036 exit_group(0)           = ?
+18:04:21.324134 +++ exited with 0 +++

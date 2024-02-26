@@ -1,0 +1,104 @@
+18:04:21.697209 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:21.697256 execve("/usr/bin/sh", ["sh", "scripts/atomic/check-atomics.sh"], 0x55c6576fe698 /* 129 vars */) = 0
+18:04:21.697463 brk(NULL)               = 0x5623f1e94000
+18:04:21.697496 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdc7854c80) = -1 EINVAL (Недопустимый аргумент)
+18:04:21.697538 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f48e51c3000
+18:04:21.697562 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:21.697591 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:21.697619 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:21.697646 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f48e51a8000
+18:04:21.697668 close(3)                = 0
+18:04:21.697697 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:21.697719 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:21.697747 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:21.697772 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:21.697796 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:21.697822 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:21.697845 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:21.697868 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f48e4f7f000
+18:04:21.697891 mprotect(0x7f48e4fa7000, 2023424, PROT_NONE) = 0
+18:04:21.697920 mmap(0x7f48e4fa7000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f48e4fa7000
+18:04:21.697952 mmap(0x7f48e513c000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f48e513c000
+18:04:21.697976 mmap(0x7f48e5195000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f48e5195000
+18:04:21.698004 mmap(0x7f48e519b000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f48e519b000
+18:04:21.698037 close(3)                = 0
+18:04:21.698069 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f48e4f7c000
+18:04:21.698095 arch_prctl(ARCH_SET_FS, 0x7f48e4f7c740) = 0
+18:04:21.698117 set_tid_address(0x7f48e4f7ca10) = 82620
+18:04:21.698138 set_robust_list(0x7f48e4f7ca20, 24) = 0
+18:04:21.698157 rseq(0x7f48e4f7d0e0, 0x20, 0, 0x53053053) = 0
+18:04:21.698226 mprotect(0x7f48e5195000, 16384, PROT_READ) = 0
+18:04:21.698275 mprotect(0x5623f0762000, 8192, PROT_READ) = 0
+18:04:21.698298 mprotect(0x7f48e51fd000, 8192, PROT_READ) = 0
+18:04:21.698334 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:21.698373 munmap(0x7f48e51a8000, 110235) = 0
+18:04:21.698430 getuid()                = 0
+18:04:21.698452 getgid()                = 0
+18:04:21.698473 getpid()                = 82620
+18:04:21.698501 rt_sigaction(SIGCHLD, {sa_handler=0x5623f0758aa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f48e4fc1520}, NULL, 8) = 0
+18:04:21.698527 geteuid()               = 0
+18:04:21.698550 getrandom("\x48\x49\x8f\x80\xcb\xfd\xd2\xb3", 8, GRND_NONBLOCK) = 8
+18:04:21.698574 brk(NULL)               = 0x5623f1e94000
+18:04:21.698596 brk(0x5623f1eb5000)     = 0x5623f1eb5000
+18:04:21.698639 getppid()               = 82619
+18:04:21.698671 newfstatat(AT_FDCWD, "/root/linux-5.15.0", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:04:21.698706 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:04:21.698741 openat(AT_FDCWD, "scripts/atomic/check-atomics.sh", O_RDONLY) = 3
+18:04:21.698770 fcntl(3, F_DUPFD, 10)   = 10
+18:04:21.698790 close(3)                = 0
+18:04:21.698814 fcntl(10, F_SETFD, FD_CLOEXEC) = 0
+18:04:21.698834 geteuid()               = 0
+18:04:21.698860 getegid()               = 0
+18:04:21.698884 rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:04:21.698910 rt_sigaction(SIGINT, {sa_handler=0x5623f0758aa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f48e4fc1520}, NULL, 8) = 0
+18:04:21.698939 rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:04:21.698964 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f48e4fc1520}, NULL, 8) = 0
+18:04:21.698989 rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:04:21.699013 rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f48e4fc1520}, NULL, 8) = 0
+18:04:21.699035 read(10, "#!/bin/sh\n# SPDX-License-Identif"..., 8192) = 742
+18:04:21.699070 pipe2([3, 4], 0)        = 0
+18:04:21.699099 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f48e4f7ca10) = 82621
+18:04:21.699259 close(4)                = 0
+18:04:21.699310 read(3, "scripts/atomic\n", 128) = 15
+18:04:21.701539 read(3, "", 128)        = 0
+18:04:21.701585 close(3)                = 0
+18:04:21.701627 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82621
+18:04:21.701731 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82621, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:21.701756 rt_sigreturn({mask=[]}) = 82621
+18:04:21.701793 wait4(-1, 0x7ffdc785476c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:04:21.701857 pipe2([3, 4], 0)        = 0
+18:04:21.701906 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f48e4f7ca10) = 82622
+18:04:21.702079 close(4)                = 0
+18:04:21.702134 newfstatat(AT_FDCWD, "/usr/local/sbin/sha1sum", 0x7ffdc78549f0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:21.702188 newfstatat(AT_FDCWD, "/usr/local/bin/sha1sum", 0x7ffdc78549f0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:21.702226 newfstatat(AT_FDCWD, "/usr/sbin/sha1sum", 0x7ffdc78549f0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:21.702279 newfstatat(AT_FDCWD, "/usr/bin/sha1sum", {st_mode=S_IFREG|0755, st_size=43424, ...}, 0) = 0
+18:04:21.702319 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f48e4f7ca10) = 82623
+18:04:21.702490 close(3)                = 0
+18:04:21.702551 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82622, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:21.702585 rt_sigreturn({mask=[]}) = 0
+18:04:21.702642 close(-1)               = -1 EBADF (Неправильный дескриптор файла)
+18:04:21.702675 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82622
+18:04:21.702722 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82623
+18:04:21.705376 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82623, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:21.705397 rt_sigreturn({mask=[]}) = 82623
+18:04:21.705423 wait4(-1, 0x7ffdc785494c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:04:21.705495 newfstatat(AT_FDCWD, "/usr/local/sbin/cat", 0x7ffdc78549f0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:21.705523 newfstatat(AT_FDCWD, "/usr/local/bin/cat", 0x7ffdc78549f0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:21.705547 newfstatat(AT_FDCWD, "/usr/sbin/cat", 0x7ffdc78549f0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:21.705571 newfstatat(AT_FDCWD, "/usr/bin/cat", {st_mode=S_IFREG|0755, st_size=35280, ...}, 0) = 0
+18:04:21.705598 pipe2([3, 4], 0)        = 0
+18:04:21.705629 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f48e4f7ca10) = 82624
+18:04:21.705801 close(4)                = 0
+18:04:21.705826 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f48e4f7ca10) = 82625
+18:04:21.705990 close(3)                = 0
+18:04:21.706037 close(-1)               = -1 EBADF (Неправильный дескриптор файла)
+18:04:21.706084 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82624
+18:04:21.710186 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82624, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:21.710242 rt_sigreturn({mask=[]}) = 82624
+18:04:21.710313 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82625
+18:04:21.744046 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82625, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:21.744064 rt_sigreturn({mask=[]}) = 82625
+18:04:21.744109 wait4(-1, 0x7ffdc785494c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:04:21.744151 exit_group(0)           = ?
+18:04:21.744272 +++ exited with 0 +++

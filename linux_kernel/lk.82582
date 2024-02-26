@@ -1,0 +1,47 @@
+18:04:21.413150 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:21.413201 execve("/root/linux-5.15.0/tools/bpf/resolve_btfids//fixdep", ["/root/linux-5.15.0/tools/bpf/res"..., "/root/linux-5.15.0/tools/bpf/res"..., "/root/linux-5.15.0/tools/bpf/res"..., "gcc -Wp,-MD,/root/linux-5.15.0/t"...], 0x5620003773d8 /* 135 vars */) = 0
+18:04:21.413387 brk(NULL)               = 0x55626ce91000
+18:04:21.413436 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe9c3808b0) = -1 EINVAL (Недопустимый аргумент)
+18:04:21.413487 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6cc81a4000
+18:04:21.413517 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:21.413556 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:21.413588 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:21.413631 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6cc8189000
+18:04:21.413666 close(3)                = 0
+18:04:21.413701 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:21.413735 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:21.413764 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:21.413792 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:21.413817 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:21.413849 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:21.413888 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:21.413915 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6cc7f60000
+18:04:21.413950 mprotect(0x7f6cc7f88000, 2023424, PROT_NONE) = 0
+18:04:21.413983 mmap(0x7f6cc7f88000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f6cc7f88000
+18:04:21.414014 mmap(0x7f6cc811d000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f6cc811d000
+18:04:21.414046 mmap(0x7f6cc8176000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f6cc8176000
+18:04:21.414096 mmap(0x7f6cc817c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6cc817c000
+18:04:21.414136 close(3)                = 0
+18:04:21.414174 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6cc7f5d000
+18:04:21.414207 arch_prctl(ARCH_SET_FS, 0x7f6cc7f5d740) = 0
+18:04:21.414235 set_tid_address(0x7f6cc7f5da10) = 82582
+18:04:21.414266 set_robust_list(0x7f6cc7f5da20, 24) = 0
+18:04:21.414299 rseq(0x7f6cc7f5e0e0, 0x20, 0, 0x53053053) = 0
+18:04:21.414371 mprotect(0x7f6cc8176000, 16384, PROT_READ) = 0
+18:04:21.414418 mprotect(0x55626c11a000, 4096, PROT_READ) = 0
+18:04:21.414456 mprotect(0x7f6cc81de000, 8192, PROT_READ) = 0
+18:04:21.414501 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:21.414552 munmap(0x7f6cc8189000, 110235) = 0
+18:04:21.414604 newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:04:21.414646 getrandom("\x9d\x46\x5a\xe8\x03\xed\x0d\xa7", 8, GRND_NONBLOCK) = 8
+18:04:21.414685 brk(NULL)               = 0x55626ce91000
+18:04:21.414775 brk(0x55626ceb2000)     = 0x55626ceb2000
+18:04:21.414827 openat(AT_FDCWD, "/root/linux-5.15.0/tools/bpf/resolve_btfids/.main.o.d", O_RDONLY) = 3
+18:04:21.414882 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6036, ...}, AT_EMPTY_PATH) = 0
+18:04:21.414922 mmap(NULL, 6036, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6cc81a2000
+18:04:21.414971 write(1, "cmd_/root/linux-5.15.0/tools/bpf"..., 4096) = 4096
+18:04:21.415035 munmap(0x7f6cc81a2000, 6036) = 0
+18:04:21.415072 close(3)                = 0
+18:04:21.415118 write(1, "/x86_64-linux-gnu/sys/stat.h \\\n "..., 2788) = 2788
+18:04:21.415168 exit_group(0)           = ?
+18:04:21.415251 +++ exited with 0 +++

@@ -1,0 +1,50 @@
+18:08:23.676528 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:08:23.676603 execve("/usr/bin/rm", ["rm", "-f", "kernel/bpf/.ringbuf.o.d"], 0x562ed93e8698 /* 129 vars */) = 0
+18:08:23.677054 brk(NULL)               = 0x558c4161c000
+18:08:23.677135 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe16a67bb0) = -1 EINVAL (Недопустимый аргумент)
+18:08:23.677220 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4e498f8000
+18:08:23.677288 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:08:23.677358 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:08:23.677416 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:08:23.677510 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4e498dd000
+18:08:23.677575 close(3)                = 0
+18:08:23.677648 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:08:23.677719 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:08:23.677785 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:08:23.677879 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:08:23.677931 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:08:23.677977 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:08:23.678027 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:08:23.678073 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4e496b4000
+18:08:23.678134 mprotect(0x7f4e496dc000, 2023424, PROT_NONE) = 0
+18:08:23.678193 mmap(0x7f4e496dc000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f4e496dc000
+18:08:23.678248 mmap(0x7f4e49871000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f4e49871000
+18:08:23.678292 mmap(0x7f4e498ca000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f4e498ca000
+18:08:23.678348 mmap(0x7f4e498d0000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4e498d0000
+18:08:23.678423 close(3)                = 0
+18:08:23.678486 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4e496b1000
+18:08:23.678537 arch_prctl(ARCH_SET_FS, 0x7f4e496b1740) = 0
+18:08:23.678581 set_tid_address(0x7f4e496b1a10) = 97476
+18:08:23.678626 set_robust_list(0x7f4e496b1a20, 24) = 0
+18:08:23.678672 rseq(0x7f4e496b20e0, 0x20, 0, 0x53053053) = 0
+18:08:23.678784 mprotect(0x7f4e498ca000, 16384, PROT_READ) = 0
+18:08:23.678882 mprotect(0x558c40b9b000, 4096, PROT_READ) = 0
+18:08:23.678953 mprotect(0x7f4e49932000, 8192, PROT_READ) = 0
+18:08:23.679023 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:08:23.679084 munmap(0x7f4e498dd000, 110235) = 0
+18:08:23.679195 getrandom("\x51\xcf\x4c\x70\x43\x46\x88\xc8", 8, GRND_NONBLOCK) = 8
+18:08:23.679243 brk(NULL)               = 0x558c4161c000
+18:08:23.679302 brk(0x558c4163d000)     = 0x558c4163d000
+18:08:23.679361 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+18:08:23.679453 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+18:08:23.679521 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4e4913c000
+18:08:23.679602 close(3)                = 0
+18:08:23.679705 ioctl(0, TCGETS, 0x7ffe16a67a50) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+18:08:23.679764 newfstatat(AT_FDCWD, "kernel/bpf/.ringbuf.o.d", {st_mode=S_IFREG|0644, st_size=21295, ...}, AT_SYMLINK_NOFOLLOW) = 0
+18:08:23.679860 unlinkat(AT_FDCWD, "kernel/bpf/.ringbuf.o.d", 0) = 0
+18:08:23.679988 lseek(0, 0, SEEK_CUR)   = -1 ESPIPE (Недопустимая операция смещения)
+18:08:23.680032 close(0)                = 0
+18:08:23.680075 close(1)                = 0
+18:08:23.680127 close(2)                = 0
+18:08:23.680189 exit_group(0)           = ?
+18:08:23.680359 +++ exited with 0 +++

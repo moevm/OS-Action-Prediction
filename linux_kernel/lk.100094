@@ -1,0 +1,41 @@
+18:09:43.212281 set_robust_list(0x7f13bcf10a20, 24) = 0
+18:09:43.212420 rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f13bcf55520}, NULL, 8) = 0
+18:09:43.212471 rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f13bcf55520}, NULL, 8) = 0
+18:09:43.212517 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f13bcf55520}, NULL, 8) = 0
+18:09:43.212560 rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f13bcf55520}, NULL, 8) = 0
+18:09:43.212604 rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f13bcf55520}, NULL, 8) = 0
+18:09:43.212648 close(3)                = 0
+18:09:43.212695 dup2(4, 1)              = 1
+18:09:43.212752 close(4)                = 0
+18:09:43.212837 write(1, "#include <linux/kernel.h>\n", 26) = 26
+18:09:43.212897 write(1, "#include <asm/asm-prototypes.h>\n", 32) = 32
+18:09:43.213004 newfstatat(AT_FDCWD, "/usr/local/sbin/gcc", 0x7ffcd640fc30, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:09:43.213140 newfstatat(AT_FDCWD, "/usr/local/bin/gcc", 0x7ffcd640fc30, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:09:43.213243 newfstatat(AT_FDCWD, "/usr/sbin/gcc", 0x7ffcd640fc30, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:09:43.213335 newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+18:09:43.213443 pipe2([3, 4], 0)        = 0
+18:09:43.213691 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f13bcf10a10) = 100097
+18:09:43.214147 close(4)                = 0
+18:09:43.214272 pipe2([4, 5], 0)        = 0
+18:09:43.214435 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f13bcf10a10) = 100098
+18:09:43.214863 close(3)                = 0
+18:09:43.214944 close(5)                = 0
+18:09:43.215032 newfstatat(AT_FDCWD, "/usr/local/sbin/sed", 0x7ffcd640fc30, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:09:43.215168 newfstatat(AT_FDCWD, "/usr/local/bin/sed", 0x7ffcd640fc30, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:09:43.215324 newfstatat(AT_FDCWD, "/usr/sbin/sed", 0x7ffcd640fc30, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:09:43.215511 newfstatat(AT_FDCWD, "/usr/bin/sed", {st_mode=S_IFREG|0755, st_size=113224, ...}, 0) = 0
+18:09:43.215733 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f13bcf10a10) = 100099
+18:09:43.216291 close(4)                = 0
+18:09:43.216442 close(-1)               = -1 EBADF (Неправильный дескриптор файла)
+18:09:43.216651 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 100097
+18:09:43.295594 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=100097, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:09:43.295658 rt_sigreturn({mask=[]}) = 100097
+18:09:43.295712 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 100098
+18:09:43.296215 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=100098, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:09:43.296267 rt_sigreturn({mask=[]}) = 100098
+18:09:43.296325 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 100099
+18:09:43.296895 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=100099, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:09:43.296925 rt_sigreturn({mask=[]}) = 100099
+18:09:43.296971 wait4(-1, 0x7ffcd640fb8c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:09:43.297055 exit_group(0)           = ?
+18:09:43.297208 +++ exited with 0 +++

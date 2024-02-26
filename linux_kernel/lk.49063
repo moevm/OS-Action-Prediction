@@ -1,0 +1,120 @@
+16:00:05.642088 set_robust_list(0x7fd431079e60, 24) = 0
+16:00:05.642145 close(5)                = 0
+16:00:05.642165 dup2(4, 1)              = 1
+16:00:05.642182 close(4)                = 0
+16:00:05.642198 close(3)                = 0
+16:00:05.642247 rt_sigaction(SIGFPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd4310f7520}, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd4310f7520}, 8) = 0
+16:00:05.642281 execve("/usr/local/sbin/dpkg", ["dpkg", "--print-architecture"], 0x561c27b149f0 /* 21 vars */) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.642328 execve("/usr/local/bin/dpkg", ["dpkg", "--print-architecture"], 0x561c27b149f0 /* 21 vars */) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.642356 execve("/usr/sbin/dpkg", ["dpkg", "--print-architecture"], 0x561c27b149f0 /* 21 vars */) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.642383 execve("/usr/bin/dpkg", ["dpkg", "--print-architecture"], 0x561c27b149f0 /* 21 vars */) = 0
+16:00:05.642644 brk(NULL)               = 0x555acd2af000
+16:00:05.642669 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffdbd932d10) = -1 EINVAL (Недопустимый аргумент)
+16:00:05.642697 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9f18787000
+16:00:05.642718 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.642743 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.642762 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=109215, ...}, AT_EMPTY_PATH) = 0
+16:00:05.642780 mmap(NULL, 109215, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9f1876c000
+16:00:05.642796 close(3)                = 0
+16:00:05.642817 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.642835 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+16:00:05.642853 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+16:00:05.642878 mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9f18740000
+16:00:05.642897 mprotect(0x7f9f18746000, 139264, PROT_NONE) = 0
+16:00:05.642918 mmap(0x7f9f18746000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f9f18746000
+16:00:05.642937 mmap(0x7f9f18760000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f9f18760000
+16:00:05.642955 mmap(0x7f9f18768000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f9f18768000
+16:00:05.642975 mmap(0x7f9f1876a000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9f1876a000
+16:00:05.642996 close(3)                = 0
+16:00:05.643013 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.643032 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+16:00:05.643050 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+16:00:05.643073 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+16:00:05.643090 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+16:00:05.643106 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+16:00:05.643125 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+16:00:05.643141 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9f18517000
+16:00:05.643157 mprotect(0x7f9f1853f000, 2023424, PROT_NONE) = 0
+16:00:05.643176 mmap(0x7f9f1853f000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f9f1853f000
+16:00:05.643194 mmap(0x7f9f186d4000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f9f186d4000
+16:00:05.643210 mmap(0x7f9f1872d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f9f1872d000
+16:00:05.643235 mmap(0x7f9f18733000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9f18733000
+16:00:05.643259 close(3)                = 0
+16:00:05.643279 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.643299 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+16:00:05.643316 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+16:00:05.643336 mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9f18480000
+16:00:05.643354 mmap(0x7f9f18482000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f9f18482000
+16:00:05.643375 mmap(0x7f9f184ed000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7f9f184ed000
+16:00:05.643393 mmap(0x7f9f18515000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7f9f18515000
+16:00:05.643416 close(3)                = 0
+16:00:05.643439 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9f1847e000
+16:00:05.643457 arch_prctl(ARCH_SET_FS, 0x7f9f1847ec40) = 0
+16:00:05.643472 set_tid_address(0x7f9f1847ef10) = 49063
+16:00:05.643487 set_robust_list(0x7f9f1847ef20, 24) = 0
+16:00:05.643502 rseq(0x7f9f1847f5e0, 0x20, 0, 0x53053053) = 0
+16:00:05.643554 mprotect(0x7f9f1872d000, 16384, PROT_READ) = 0
+16:00:05.643574 mprotect(0x7f9f18515000, 4096, PROT_READ) = 0
+16:00:05.643616 mprotect(0x7f9f18768000, 4096, PROT_READ) = 0
+16:00:05.643661 mprotect(0x555acbc63000, 12288, PROT_READ) = 0
+16:00:05.643681 mprotect(0x7f9f187c1000, 8192, PROT_READ) = 0
+16:00:05.643708 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+16:00:05.643732 munmap(0x7f9f1876c000, 109215) = 0
+16:00:05.643768 statfs("/sys/fs/selinux", 0x7ffdbd932d50) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.643816 statfs("/selinux", 0x7ffdbd932d50) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.643838 getrandom("\xf3\x8a\xec\x9f\x96\xe8\x1f\x39", 8, GRND_NONBLOCK) = 8
+16:00:05.643857 brk(NULL)               = 0x555acd2af000
+16:00:05.643872 brk(0x555acd2d0000)     = 0x555acd2d0000
+16:00:05.643893 openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.643915 newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+16:00:05.643934 read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 414
+16:00:05.643963 read(3, "", 1024)       = 0
+16:00:05.643979 close(3)                = 0
+16:00:05.643997 access("/etc/selinux/config", F_OK) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.644030 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.644049 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+16:00:05.644067 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9f17f09000
+16:00:05.644092 close(3)                = 0
+16:00:05.644128 ioctl(1, TCGETS, 0x7ffdbd932cc0) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+16:00:05.644145 umask(022)              = 022
+16:00:05.644167 openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+16:00:05.644186 newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+16:00:05.644206 getdents64(3, 0x555acd2b0b30 /* 3 entries */, 32768) = 96
+16:00:05.644231 getdents64(3, 0x555acd2b0b30 /* 0 entries */, 32768) = 0
+16:00:05.644246 close(3)                = 0
+16:00:05.644263 openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg.d/pkg-config-hook-config", O_RDONLY) = 3
+16:00:05.644281 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=204, ...}, AT_EMPTY_PATH) = 0
+16:00:05.644301 read(3, "post-invoke=if { test \"$DPKG_HOO"..., 4096) = 204
+16:00:05.644319 read(3, "", 4096)       = 0
+16:00:05.644335 close(3)                = 0
+16:00:05.644351 openat(AT_FDCWD, "/etc/dpkg/dpkg.cfg", O_RDONLY) = 3
+16:00:05.644368 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=446, ...}, AT_EMPTY_PATH) = 0
+16:00:05.644389 read(3, "# dpkg configuration file\n#\n# Th"..., 4096) = 446
+16:00:05.644407 read(3, "", 4096)       = 0
+16:00:05.644423 close(3)                = 0
+16:00:05.644438 openat(AT_FDCWD, "/root/.dpkg.cfg", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.644457 getuid()                = 0
+16:00:05.644472 setgid(0)               = 0
+16:00:05.644490 newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+16:00:05.644509 write(1, "amd64\n", 6)  = 6
+16:00:05.644531 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+16:00:05.644558 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2996, ...}, AT_EMPTY_PATH) = 0
+16:00:05.644578 read(3, "# Locale name alias data base.\n#"..., 4096) = 2996
+16:00:05.644602 read(3, "", 4096)       = 0
+16:00:05.644617 close(3)                = 0
+16:00:05.644654 openat(AT_FDCWD, "/usr/share/locale/ru_RU.UTF-8/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.644672 openat(AT_FDCWD, "/usr/share/locale/ru_RU.utf8/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.644690 openat(AT_FDCWD, "/usr/share/locale/ru_RU/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.644707 openat(AT_FDCWD, "/usr/share/locale/ru.UTF-8/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.644724 openat(AT_FDCWD, "/usr/share/locale/ru.utf8/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+16:00:05.644740 openat(AT_FDCWD, "/usr/share/locale/ru/LC_MESSAGES/dpkg.mo", O_RDONLY) = 3
+16:00:05.644757 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=156985, ...}, AT_EMPTY_PATH) = 0
+16:00:05.644774 mmap(NULL, 156985, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9f17ee2000
+16:00:05.644791 close(3)                = 0
+16:00:05.644821 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+16:00:05.644840 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27002, ...}, AT_EMPTY_PATH) = 0
+16:00:05.644859 mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x7f9f18780000
+16:00:05.644876 close(3)                = 0
+16:00:05.644892 futex(0x7f9f18732a6c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+16:00:05.644926 exit_group(0)           = ?
+16:00:05.645005 +++ exited with 0 +++

@@ -1,0 +1,47 @@
+18:04:15.860815 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:15.860882 execve("/root/linux-5.15.0/tools/objtool//fixdep", ["/root/linux-5.15.0/tools/objtool"..., "/root/linux-5.15.0/tools/objtool"..., "/root/linux-5.15.0/tools/objtool"..., "gcc -Wp,-MD,/root/linux-5.15.0/t"...], 0x5574966dfee8 /* 137 vars */) = 0
+18:04:15.861128 brk(NULL)               = 0x55a3182b6000
+18:04:15.861173 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd45593870) = -1 EINVAL (Недопустимый аргумент)
+18:04:15.861218 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb36d471000
+18:04:15.861255 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:15.861294 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:15.861333 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:15.861377 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb36d456000
+18:04:15.861413 close(3)                = 0
+18:04:15.861448 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:15.861486 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:15.861524 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:15.861571 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:15.861610 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:15.861649 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:15.861690 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:15.861729 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb36d22d000
+18:04:15.861765 mprotect(0x7fb36d255000, 2023424, PROT_NONE) = 0
+18:04:15.861802 mmap(0x7fb36d255000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fb36d255000
+18:04:15.861838 mmap(0x7fb36d3ea000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fb36d3ea000
+18:04:15.861871 mmap(0x7fb36d443000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fb36d443000
+18:04:15.861912 mmap(0x7fb36d449000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb36d449000
+18:04:15.861950 close(3)                = 0
+18:04:15.861987 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb36d22a000
+18:04:15.862020 arch_prctl(ARCH_SET_FS, 0x7fb36d22a740) = 0
+18:04:15.862078 set_tid_address(0x7fb36d22aa10) = 82188
+18:04:15.862110 set_robust_list(0x7fb36d22aa20, 24) = 0
+18:04:15.862146 rseq(0x7fb36d22b0e0, 0x20, 0, 0x53053053) = 0
+18:04:15.862219 mprotect(0x7fb36d443000, 16384, PROT_READ) = 0
+18:04:15.862268 mprotect(0x55a316604000, 4096, PROT_READ) = 0
+18:04:15.862307 mprotect(0x7fb36d4ab000, 8192, PROT_READ) = 0
+18:04:15.862356 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:15.862406 munmap(0x7fb36d456000, 110235) = 0
+18:04:15.862480 newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:04:15.862529 getrandom("\x02\x43\x53\xb5\xa5\x0e\xd3\x8f", 8, GRND_NONBLOCK) = 8
+18:04:15.862566 brk(NULL)               = 0x55a3182b6000
+18:04:15.862597 brk(0x55a3182d7000)     = 0x55a3182d7000
+18:04:15.862636 openat(AT_FDCWD, "/root/linux-5.15.0/tools/objtool/arch/x86/.special.o.d", O_RDONLY) = 3
+18:04:15.862674 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=6509, ...}, AT_EMPTY_PATH) = 0
+18:04:15.862761 mmap(NULL, 6509, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb36d46f000
+18:04:15.862822 write(1, "cmd_/root/linux-5.15.0/tools/obj"..., 4096) = 4096
+18:04:15.862879 munmap(0x7fb36d46f000, 6509) = 0
+18:04:15.862919 close(3)                = 0
+18:04:15.862955 write(1, "e.h \\\n  /root/linux-5.15.0/tools"..., 3883) = 3883
+18:04:15.863005 exit_group(0)           = ?
+18:04:15.863084 +++ exited with 0 +++

@@ -1,0 +1,176 @@
+18:06:16.349041 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:06:16.349137 execve("/usr/bin/gcc", ["gcc", "-Wp,-MMD,arch/x86/mm/.extable.o."..., "-nostdinc", "-isystem", "/usr/lib/gcc/x86_64-linux-gnu/11"..., "-I./arch/x86/include", "-I./arch/x86/include/generated", "-I./include", "-I./arch/x86/include/uapi", "-I./arch/x86/include/generated/u"..., "-I./include/uapi", "-I./include/generated/uapi", "-include", "./include/linux/compiler-version"..., "-include", "./include/linux/kconfig.h", "-I./ubuntu/include", "-include", "./include/linux/compiler_types.h", "-D__KERNEL__", "-fmacro-prefix-map=./=", "-Wall", "-Wundef", "-Werror=strict-prototypes", "-Wno-trigraphs", "-fno-strict-aliasing", "-fno-common", "-fshort-wchar", "-fno-PIE", "-Werror=implicit-function-declar"..., "-Werror=implicit-int", "-Werror=return-type", ...], 0x55e67af266a8 /* 129 vars */) = 0
+18:06:16.349481 brk(NULL)               = 0x20d9000
+18:06:16.349540 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffefb56ea90) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.349629 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd3fffd0000
+18:06:16.349685 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.349739 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:06:16.349793 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:06:16.349954 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd3fffb5000
+18:06:16.350026 close(3)                = 0
+18:06:16.350088 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:06:16.350162 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:06:16.350229 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:06:16.350278 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:06:16.350360 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:06:16.350449 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:06:16.350524 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:06:16.350600 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd3ffd8c000
+18:06:16.350664 mprotect(0x7fd3ffdb4000, 2023424, PROT_NONE) = 0
+18:06:16.350747 mmap(0x7fd3ffdb4000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fd3ffdb4000
+18:06:16.350852 mmap(0x7fd3fff49000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fd3fff49000
+18:06:16.350958 mmap(0x7fd3fffa2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fd3fffa2000
+18:06:16.351037 mmap(0x7fd3fffa8000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd3fffa8000
+18:06:16.351151 close(3)                = 0
+18:06:16.351244 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd3ffd89000
+18:06:16.351327 arch_prctl(ARCH_SET_FS, 0x7fd3ffd89740) = 0
+18:06:16.351392 set_tid_address(0x7fd3ffd89a10) = 87899
+18:06:16.351468 set_robust_list(0x7fd3ffd89a20, 24) = 0
+18:06:16.351558 rseq(0x7fd3ffd8a0e0, 0x20, 0, 0x53053053) = 0
+18:06:16.351698 mprotect(0x7fd3fffa2000, 16384, PROT_READ) = 0
+18:06:16.351752 mprotect(0x4e0000, 8192, PROT_READ) = 0
+18:06:16.351878 mprotect(0x7fd40000a000, 8192, PROT_READ) = 0
+18:06:16.351957 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:06:16.352027 munmap(0x7fd3fffb5000, 110235) = 0
+18:06:16.352144 getrandom("\xde\xe1\xe9\x87\xe7\x1b\x81\x67", 8, GRND_NONBLOCK) = 8
+18:06:16.352213 brk(NULL)               = 0x20d9000
+18:06:16.352300 brk(0x20fa000)          = 0x20fa000
+18:06:16.352390 brk(0x211c000)          = 0x211c000
+18:06:16.352666 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+18:06:16.352755 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+18:06:16.352830 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd3ff814000
+18:06:16.352919 close(3)                = 0
+18:06:16.353049 openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+18:06:16.353104 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2996, ...}, AT_EMPTY_PATH) = 0
+18:06:16.353168 read(3, "# Locale name alias data base.\n#"..., 4096) = 2996
+18:06:16.353243 read(3, "", 4096)       = 0
+18:06:16.353319 close(3)                = 0
+18:06:16.353433 openat(AT_FDCWD, "/usr/share/locale/ru_RU.UTF-8/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.353492 openat(AT_FDCWD, "/usr/share/locale/ru_RU.utf8/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.353540 openat(AT_FDCWD, "/usr/share/locale/ru_RU/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.353601 openat(AT_FDCWD, "/usr/share/locale/ru.UTF-8/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.353688 openat(AT_FDCWD, "/usr/share/locale/ru.utf8/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.353759 openat(AT_FDCWD, "/usr/share/locale/ru/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.353822 openat(AT_FDCWD, "/usr/share/locale-langpack/ru_RU.UTF-8/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.353876 openat(AT_FDCWD, "/usr/share/locale-langpack/ru_RU.utf8/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.353931 openat(AT_FDCWD, "/usr/share/locale-langpack/ru_RU/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.353979 openat(AT_FDCWD, "/usr/share/locale-langpack/ru.UTF-8/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.354034 openat(AT_FDCWD, "/usr/share/locale-langpack/ru.utf8/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.354127 openat(AT_FDCWD, "/usr/share/locale-langpack/ru/LC_MESSAGES/gcc-11.mo", O_RDONLY) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.354198 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+18:06:16.354254 ioctl(0, TIOCGWINSZ, 0x7ffefb56e9b8) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+18:06:16.354301 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+18:06:16.354369 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+18:06:16.354425 rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:06:16.354486 rt_sigaction(SIGINT, {sa_handler=0x413cd1, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, 8) = 0
+18:06:16.354544 rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:06:16.354647 rt_sigaction(SIGHUP, {sa_handler=0x413cd1, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, 8) = 0
+18:06:16.354706 rt_sigaction(SIGTERM, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:06:16.354768 rt_sigaction(SIGTERM, {sa_handler=0x413cd1, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, 8) = 0
+18:06:16.354845 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:06:16.355015 rt_sigaction(SIGPIPE, {sa_handler=0x413cd1, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, 8) = 0
+18:06:16.355157 rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd3ffdce520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:06:16.355243 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:06:16.355302 prlimit64(0, RLIMIT_STACK, {rlim_cur=65536*1024, rlim_max=RLIM64_INFINITY}, NULL) = 0
+18:06:16.355374 access("/usr/local/sbin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.355456 access("/usr/local/bin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.355541 access("/usr/sbin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.355595 access("/usr/bin/gcc", X_OK) = 0
+18:06:16.355671 newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+18:06:16.355770 readlink("/usr", 0x7ffefb56ced0, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.355890 readlink("/usr/bin", 0x7ffefb56ced0, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.355982 readlink("/usr/bin/gcc", "gcc-11", 1023) = 6
+18:06:16.356074 readlink("/usr/bin/gcc-11", "x86_64-linux-gnu-gcc-11", 1023) = 23
+18:06:16.356131 readlink("/usr/bin/x86_64-linux-gnu-gcc-11", 0x7ffefb56ced0, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.356184 access("/usr/local/sbin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.356286 access("/usr/local/bin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.356337 access("/usr/sbin/gcc", X_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.356389 access("/usr/bin/gcc", X_OK) = 0
+18:06:16.356468 newfstatat(AT_FDCWD, "/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=928584, ...}, 0) = 0
+18:06:16.356554 readlink("/usr", 0x7ffefb56ced0, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.356623 readlink("/usr/bin", 0x7ffefb56ced0, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.356712 readlink("/usr/bin/gcc", "gcc-11", 1023) = 6
+18:06:16.356769 readlink("/usr/bin/gcc-11", "x86_64-linux-gnu-gcc-11", 1023) = 23
+18:06:16.356866 readlink("/usr/bin/x86_64-linux-gnu-gcc-11", 0x7ffefb56ced0, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.356963 getcwd("/root/linux-5.15.0", 1024) = 19
+18:06:16.357020 readlink("/root/linux-5.15.0/arch", 0x7ffefb56d040, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.357121 readlink("/root/linux-5.15.0/arch/x86", 0x7ffefb56d040, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.357197 readlink("/root/linux-5.15.0/arch/x86/mm", 0x7ffefb56d040, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.357281 readlink("/root/linux-5.15.0/arch/x86/mm/extable.c", 0x7ffefb56d040, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.357335 getcwd("/root/linux-5.15.0", 1024) = 19
+18:06:16.357423 readlink("/root/linux-5.15.0/arch", 0x7ffefb56d040, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.357493 readlink("/root/linux-5.15.0/arch/x86", 0x7ffefb56d040, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.357547 readlink("/root/linux-5.15.0/arch/x86/mm", 0x7ffefb56d040, 1023) = -1 EINVAL (Недопустимый аргумент)
+18:06:16.357605 readlink("/root/linux-5.15.0/arch/x86/mm/extable.o", 0x7ffefb56d040, 1023) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.357761 access("/usr/lib/gcc/x86_64-linux-gnu/11/", X_OK) = 0
+18:06:16.357816 access("/usr/lib/gcc/x86_64-linux-gnu/11/", X_OK) = 0
+18:06:16.357916 access("/usr/lib/gcc/x86_64-linux-gnu/11/specs", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.358013 access("/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/specs", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.358096 access("/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/specs", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.358180 access("/usr/lib/gcc/x86_64-linux-gnu/specs", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:06:16.358280 access("/usr/lib/gcc/x86_64-linux-gnu/11/", X_OK) = 0
+18:06:16.360058 access("/tmp", R_OK|W_OK|X_OK) = 0
+18:06:16.360156 openat(AT_FDCWD, "/tmp/ccLs08U6.s", O_RDWR|O_CREAT|O_EXCL, 0600) = 3
+18:06:16.360264 close(3)                = 0
+18:06:16.360331 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/cc1", {st_mode=S_IFREG|0755, st_size=25952992, ...}, 0) = 0
+18:06:16.360402 access("/usr/lib/gcc/x86_64-linux-gnu/11/cc1", X_OK) = 0
+18:06:16.360486 pipe2([3, 4], O_CLOEXEC) = 0
+18:06:16.360540 vfork()                 = 87902
+18:06:16.361030 close(4)                = 0
+18:06:16.361084 read(3, "", 16)         = 0
+18:06:16.361143 close(3)                = 0
+18:06:16.361205 wait4(87902, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 87902
+18:06:17.980474 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=87902, si_uid=0, si_status=0, si_utime=112, si_stime=15} ---
+18:06:17.980635 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/x86_64-linux-gnu-as", 0x7ffefb56e6e0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.980709 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/as", 0x7ffefb56e730, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.980756 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/x86_64-linux-gnu-as", 0x7ffefb56e6e0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.980820 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/as", 0x7ffefb56e730, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.980870 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/x86_64-linux-gnu-as", 0x7ffefb56e6e0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.980930 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/as", 0x7ffefb56e730, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981002 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/x86_64-linux-gnu-as", 0x7ffefb56e6e0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981065 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/as", 0x7ffefb56e730, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981117 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/x86_64-linux-gnu-as", 0x7ffefb56e6e0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981160 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/as", 0x7ffefb56e730, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981230 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/11/x86_64-linux-gnu-as", 0x7ffefb56e6e0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981277 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/11/as", 0x7ffefb56e730, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981323 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/x86_64-linux-gnu-as", 0x7ffefb56e6e0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981392 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/as", 0x7ffefb56e730, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981441 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu-as", 0x7ffefb56e6e0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981485 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/as", 0x7ffefb56e730, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:17.981547 pipe2([3, 4], O_CLOEXEC) = 0
+18:06:17.981616 vfork()                 = 87927
+18:06:17.982571 close(4)                = 0
+18:06:17.982629 read(3, "", 16)         = 0
+18:06:17.982685 close(3)                = 0
+18:06:17.982761 wait4(87927, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 87927
+18:06:18.056225 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=87927, si_uid=0, si_status=0, si_utime=4, si_stime=0} ---
+18:06:18.056308 fcntl(3, F_GETFD)       = -1 EBADF (Неправильный дескриптор файла)
+18:06:18.056384 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:06:18.056455 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:06:18.056519 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:06:18.056583 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:06:18.056652 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:06:18.056719 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/11/.", 0x7ffefb56e670, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:18.056818 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/.", 0x7ffefb56e670, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:18.056881 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/.", 0x7ffefb56e670, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:18.056947 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:06:18.057013 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/.", 0x7ffefb56e670, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:18.057114 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/.", 0x7ffefb56e670, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:18.057185 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/../lib/.", 0x7ffefb56e670, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:18.057261 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/11/.", 0x7ffefb56e670, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:18.057323 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=155648, ...}, 0) = 0
+18:06:18.057405 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/.", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+18:06:18.057480 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/11/.", 0x7ffefb56e670, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:18.057546 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=155648, ...}, 0) = 0
+18:06:18.057609 newfstatat(AT_FDCWD, "/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+18:06:18.057700 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/11/.", 0x7ffefb56e670, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:18.057774 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=155648, ...}, 0) = 0
+18:06:18.057844 newfstatat(AT_FDCWD, "/usr/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+18:06:18.057907 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/.", 0x7ffefb56e670, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:06:18.057975 newfstatat(AT_FDCWD, "/usr/lib/gcc/x86_64-linux-gnu/11/../../../.", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+18:06:18.058048 newfstatat(AT_FDCWD, "/lib/.", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+18:06:18.058116 newfstatat(AT_FDCWD, "/usr/lib/.", {st_mode=S_IFDIR|0755, st_size=12288, ...}, 0) = 0
+18:06:18.058252 newfstatat(AT_FDCWD, "/tmp/ccLs08U6.s", {st_mode=S_IFREG|0600, st_size=831040, ...}, 0) = 0
+18:06:18.058332 unlink("/tmp/ccLs08U6.s") = 0
+18:06:18.058641 exit_group(0)           = ?
+18:06:18.059017 +++ exited with 0 +++

@@ -1,0 +1,59 @@
+18:04:25.286391 set_robust_list(0x7f7ff0285a20, 24) = 0
+18:04:25.286467 close(10)               = 0
+18:04:25.286503 close(3)                = 0
+18:04:25.286527 dup2(4, 1)              = 1
+18:04:25.286591 close(4)                = 0
+18:04:25.286673 execve("/usr/bin/cat", ["cat", "./usr/default_cpio_list"], 0x55ead942c038 /* 129 vars */) = 0
+18:04:25.286926 brk(NULL)               = 0x55abc9a97000
+18:04:25.286967 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe5047a5e0) = -1 EINVAL (Недопустимый аргумент)
+18:04:25.287007 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fca8a031000
+18:04:25.287058 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:25.287094 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:25.287126 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:25.287157 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fca8a016000
+18:04:25.287178 close(3)                = 0
+18:04:25.287215 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:25.287245 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:25.287272 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:25.287302 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:25.287342 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:25.287375 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:25.287423 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:25.287461 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fca89ded000
+18:04:25.287509 mprotect(0x7fca89e15000, 2023424, PROT_NONE) = 0
+18:04:25.287545 mmap(0x7fca89e15000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fca89e15000
+18:04:25.287585 mmap(0x7fca89faa000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fca89faa000
+18:04:25.287629 mmap(0x7fca8a003000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fca8a003000
+18:04:25.287668 mmap(0x7fca8a009000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fca8a009000
+18:04:25.287719 close(3)                = 0
+18:04:25.287757 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fca89dea000
+18:04:25.287802 arch_prctl(ARCH_SET_FS, 0x7fca89dea740) = 0
+18:04:25.287846 set_tid_address(0x7fca89deaa10) = 82896
+18:04:25.287887 set_robust_list(0x7fca89deaa20, 24) = 0
+18:04:25.287923 rseq(0x7fca89deb0e0, 0x20, 0, 0x53053053) = 0
+18:04:25.288013 mprotect(0x7fca8a003000, 16384, PROT_READ) = 0
+18:04:25.288075 mprotect(0x55abc9831000, 4096, PROT_READ) = 0
+18:04:25.288115 mprotect(0x7fca8a06b000, 8192, PROT_READ) = 0
+18:04:25.288160 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:25.288210 munmap(0x7fca8a016000, 110235) = 0
+18:04:25.288281 getrandom("\x88\xe7\x82\x7b\xe2\x22\x79\x0a", 8, GRND_NONBLOCK) = 8
+18:04:25.288321 brk(NULL)               = 0x55abc9a97000
+18:04:25.288352 brk(0x55abc9ab8000)     = 0x55abc9ab8000
+18:04:25.288385 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+18:04:25.288424 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5721376, ...}, AT_EMPTY_PATH) = 0
+18:04:25.288463 mmap(NULL, 5721376, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fca89875000
+18:04:25.288502 close(3)                = 0
+18:04:25.288565 newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:04:25.288610 openat(AT_FDCWD, "./usr/default_cpio_list", O_RDONLY) = 3
+18:04:25.288639 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=153, ...}, AT_EMPTY_PATH) = 0
+18:04:25.288673 fadvise64(3, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+18:04:25.288702 mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fca89853000
+18:04:25.288737 read(3, "# SPDX-License-Identifier: GPL-2"..., 131072) = 153
+18:04:25.288772 write(1, "# SPDX-License-Identifier: GPL-2"..., 153) = 153
+18:04:25.288814 read(3, "", 131072)     = 0
+18:04:25.288848 munmap(0x7fca89853000, 139264) = 0
+18:04:25.288880 close(3)                = 0
+18:04:25.288931 close(1)                = 0
+18:04:25.288963 close(2)                = 0
+18:04:25.288995 exit_group(0)           = ?
+18:04:25.289111 +++ exited with 0 +++

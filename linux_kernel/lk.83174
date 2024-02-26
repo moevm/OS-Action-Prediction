@@ -1,0 +1,165 @@
+18:04:29.048226 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:29.048278 execve("scripts/basic/fixdep", ["scripts/basic/fixdep", "arch/x86/entry/vdso/.vdsox32.lds"..., "arch/x86/entry/vdso/vdsox32.lds", "gcc -E -Wp,-MMD,arch/x86/entry/v"...], 0x559ab28c70f8 /* 129 vars */) = 0
+18:04:29.048487 brk(NULL)               = 0x5623884f4000
+18:04:29.048523 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd8f2ea960) = -1 EINVAL (Недопустимый аргумент)
+18:04:29.048562 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcc8166e000
+18:04:29.048602 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:29.048631 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:29.048653 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:29.048688 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fcc81653000
+18:04:29.048713 close(3)                = 0
+18:04:29.048744 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:29.048768 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:29.048811 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:29.048835 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:29.048858 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:29.048881 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:29.048908 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:29.048932 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fcc8142a000
+18:04:29.048959 mprotect(0x7fcc81452000, 2023424, PROT_NONE) = 0
+18:04:29.048989 mmap(0x7fcc81452000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fcc81452000
+18:04:29.049014 mmap(0x7fcc815e7000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fcc815e7000
+18:04:29.049040 mmap(0x7fcc81640000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fcc81640000
+18:04:29.049071 mmap(0x7fcc81646000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcc81646000
+18:04:29.049106 close(3)                = 0
+18:04:29.049138 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcc81427000
+18:04:29.049173 arch_prctl(ARCH_SET_FS, 0x7fcc81427740) = 0
+18:04:29.049195 set_tid_address(0x7fcc81427a10) = 83174
+18:04:29.049215 set_robust_list(0x7fcc81427a20, 24) = 0
+18:04:29.049238 rseq(0x7fcc814280e0, 0x20, 0, 0x53053053) = 0
+18:04:29.049309 mprotect(0x7fcc81640000, 16384, PROT_READ) = 0
+18:04:29.049343 mprotect(0x562386b07000, 4096, PROT_READ) = 0
+18:04:29.049372 mprotect(0x7fcc816a8000, 8192, PROT_READ) = 0
+18:04:29.049415 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:29.049453 munmap(0x7fcc81653000, 110235) = 0
+18:04:29.049522 newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:04:29.049558 getrandom("\x61\x97\x3e\x61\x28\xa6\x96\xb5", 8, GRND_NONBLOCK) = 8
+18:04:29.049584 brk(NULL)               = 0x5623884f4000
+18:04:29.049611 brk(0x562388515000)     = 0x562388515000
+18:04:29.049640 openat(AT_FDCWD, "arch/x86/entry/vdso/.vdsox32.lds.d", O_RDONLY) = 3
+18:04:29.049664 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1002, ...}, AT_EMPTY_PATH) = 0
+18:04:29.049691 read(3, "vdsox32.lds.o: arch/x86/entry/vd"..., 1002) = 1002
+18:04:29.049723 close(3)                = 0
+18:04:29.049747 openat(AT_FDCWD, "arch/x86/entry/vdso/vdsox32.lds.S", O_RDONLY) = 3
+18:04:29.049776 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=498, ...}, AT_EMPTY_PATH) = 0
+18:04:29.049803 read(3, "/* SPDX-License-Identifier: GPL-"..., 498) = 498
+18:04:29.049827 close(3)                = 0
+18:04:29.049850 openat(AT_FDCWD, "include/linux/compiler-version.h", O_RDONLY) = 3
+18:04:29.049883 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=517, ...}, AT_EMPTY_PATH) = 0
+18:04:29.049911 read(3, "/* SPDX-License-Identifier: GPL-"..., 517) = 517
+18:04:29.049935 close(3)                = 0
+18:04:29.049963 openat(AT_FDCWD, "include/linux/kconfig.h", O_RDONLY) = 3
+18:04:29.049988 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2691, ...}, AT_EMPTY_PATH) = 0
+18:04:29.050017 read(3, "/* SPDX-License-Identifier: GPL-"..., 2691) = 2691
+18:04:29.050042 close(3)                = 0
+18:04:29.050068 openat(AT_FDCWD, "arch/x86/entry/vdso/vdso-layout.lds.S", O_RDONLY) = 3
+18:04:29.050095 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2671, ...}, AT_EMPTY_PATH) = 0
+18:04:29.050122 read(3, "/* SPDX-License-Identifier: GPL-"..., 2671) = 2671
+18:04:29.050168 close(3)                = 0
+18:04:29.050192 openat(AT_FDCWD, "arch/x86/include/asm/vdso.h", O_RDONLY) = 3
+18:04:29.050219 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1391, ...}, AT_EMPTY_PATH) = 0
+18:04:29.050250 read(3, "/* SPDX-License-Identifier: GPL-"..., 1391) = 1391
+18:04:29.050275 close(3)                = 0
+18:04:29.050299 openat(AT_FDCWD, "arch/x86/include/asm/page_types.h", O_RDONLY) = 3
+18:04:29.050325 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2262, ...}, AT_EMPTY_PATH) = 0
+18:04:29.050353 read(3, "/* SPDX-License-Identifier: GPL-"..., 2262) = 2262
+18:04:29.050379 close(3)                = 0
+18:04:29.050404 openat(AT_FDCWD, "include/linux/const.h", O_RDONLY) = 3
+18:04:29.050430 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=421, ...}, AT_EMPTY_PATH) = 0
+18:04:29.050458 read(3, "#ifndef _LINUX_CONST_H\n#define _"..., 421) = 421
+18:04:29.050484 close(3)                = 0
+18:04:29.050507 openat(AT_FDCWD, "include/vdso/const.h", O_RDONLY) = 3
+18:04:29.050534 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=196, ...}, AT_EMPTY_PATH) = 0
+18:04:29.050562 read(3, "/* SPDX-License-Identifier: GPL-"..., 196) = 196
+18:04:29.050587 close(3)                = 0
+18:04:29.050610 openat(AT_FDCWD, "include/uapi/linux/const.h", O_RDONLY) = 3
+18:04:29.050637 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1006, ...}, AT_EMPTY_PATH) = 0
+18:04:29.050666 read(3, "/* SPDX-License-Identifier: GPL-"..., 1006) = 1006
+18:04:29.050693 close(3)                = 0
+18:04:29.050717 openat(AT_FDCWD, "include/linux/types.h", O_RDONLY) = 3
+18:04:29.050749 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5771, ...}, AT_EMPTY_PATH) = 0
+18:04:29.050776 read(3, "/* SPDX-License-Identifier: GPL-"..., 5771) = 5771
+18:04:29.050803 close(3)                = 0
+18:04:29.050828 openat(AT_FDCWD, "include/uapi/linux/types.h", O_RDONLY) = 3
+18:04:29.050854 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1682, ...}, AT_EMPTY_PATH) = 0
+18:04:29.050880 read(3, "/* SPDX-License-Identifier: GPL-"..., 1682) = 1682
+18:04:29.050907 close(3)                = 0
+18:04:29.050935 openat(AT_FDCWD, "arch/x86/include/generated/uapi/asm/types.h", O_RDONLY) = 3
+18:04:29.050962 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=31, ...}, AT_EMPTY_PATH) = 0
+18:04:29.050990 read(3, "#include <asm-generic/types.h>\n", 31) = 31
+18:04:29.051016 close(3)                = 0
+18:04:29.051040 openat(AT_FDCWD, "include/uapi/asm-generic/types.h", O_RDONLY) = 3
+18:04:29.051067 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=233, ...}, AT_EMPTY_PATH) = 0
+18:04:29.051095 read(3, "/* SPDX-License-Identifier: GPL-"..., 233) = 233
+18:04:29.051121 close(3)                = 0
+18:04:29.051145 openat(AT_FDCWD, "include/asm-generic/int-ll64.h", O_RDONLY) = 3
+18:04:29.051173 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=863, ...}, AT_EMPTY_PATH) = 0
+18:04:29.051201 read(3, "/* SPDX-License-Identifier: GPL-"..., 863) = 863
+18:04:29.051223 close(3)                = 0
+18:04:29.051245 openat(AT_FDCWD, "include/uapi/asm-generic/int-ll64.h", O_RDONLY) = 3
+18:04:29.051271 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=879, ...}, AT_EMPTY_PATH) = 0
+18:04:29.051299 read(3, "/* SPDX-License-Identifier: GPL-"..., 879) = 879
+18:04:29.051324 close(3)                = 0
+18:04:29.051349 openat(AT_FDCWD, "arch/x86/include/uapi/asm/bitsperlong.h", O_RDONLY) = 3
+18:04:29.051383 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=321, ...}, AT_EMPTY_PATH) = 0
+18:04:29.051412 read(3, "/* SPDX-License-Identifier: GPL-"..., 321) = 321
+18:04:29.051434 close(3)                = 0
+18:04:29.051458 openat(AT_FDCWD, "include/asm-generic/bitsperlong.h", O_RDONLY) = 3
+18:04:29.051486 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1207, ...}, AT_EMPTY_PATH) = 0
+18:04:29.051514 read(3, "/* SPDX-License-Identifier: GPL-"..., 1207) = 1207
+18:04:29.051541 close(3)                = 0
+18:04:29.051562 openat(AT_FDCWD, "include/uapi/asm-generic/bitsperlong.h", O_RDONLY) = 3
+18:04:29.051593 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=579, ...}, AT_EMPTY_PATH) = 0
+18:04:29.051621 read(3, "/* SPDX-License-Identifier: GPL-"..., 579) = 579
+18:04:29.051648 close(3)                = 0
+18:04:29.051672 openat(AT_FDCWD, "include/linux/mem_encrypt.h", O_RDONLY) = 3
+18:04:29.051694 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=885, ...}, AT_EMPTY_PATH) = 0
+18:04:29.051724 read(3, "/* SPDX-License-Identifier: GPL-"..., 885) = 885
+18:04:29.051751 close(3)                = 0
+18:04:29.051789 openat(AT_FDCWD, "arch/x86/include/asm/page_64_types.h", O_RDONLY) = 3
+18:04:29.051828 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3139, ...}, AT_EMPTY_PATH) = 0
+18:04:29.051858 read(3, "/* SPDX-License-Identifier: GPL-"..., 3139) = 3139
+18:04:29.051885 close(3)                = 0
+18:04:29.051911 openat(AT_FDCWD, "include/linux/linkage.h", O_RDONLY) = 3
+18:04:29.051939 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=9799, ...}, AT_EMPTY_PATH) = 0
+18:04:29.051969 read(3, "/* SPDX-License-Identifier: GPL-"..., 9799) = 9799
+18:04:29.052001 close(3)                = 0
+18:04:29.052027 openat(AT_FDCWD, "include/linux/compiler_types.h", O_RDONLY) = 3
+18:04:29.052054 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=11117, ...}, AT_EMPTY_PATH) = 0
+18:04:29.052082 read(3, "/* SPDX-License-Identifier: GPL-"..., 11117) = 11117
+18:04:29.052109 close(3)                = 0
+18:04:29.052135 openat(AT_FDCWD, "include/linux/stringify.h", O_RDONLY) = 3
+18:04:29.052161 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=341, ...}, AT_EMPTY_PATH) = 0
+18:04:29.052188 read(3, "#ifndef __LINUX_STRINGIFY_H\n#def"..., 341) = 341
+18:04:29.052214 close(3)                = 0
+18:04:29.052237 openat(AT_FDCWD, "include/linux/export.h", O_RDONLY) = 3
+18:04:29.052265 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5394, ...}, AT_EMPTY_PATH) = 0
+18:04:29.052294 read(3, "/* SPDX-License-Identifier: GPL-"..., 5394) = 5394
+18:04:29.052322 close(3)                = 0
+18:04:29.052348 openat(AT_FDCWD, "arch/x86/include/asm/linkage.h", O_RDONLY) = 3
+18:04:29.052375 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1084, ...}, AT_EMPTY_PATH) = 0
+18:04:29.052403 read(3, "/* SPDX-License-Identifier: GPL-"..., 1084) = 1084
+18:04:29.052429 close(3)                = 0
+18:04:29.052455 openat(AT_FDCWD, "include/linux/init.h", O_RDONLY) = 3
+18:04:29.052482 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=11663, ...}, AT_EMPTY_PATH) = 0
+18:04:29.052511 read(3, "/* SPDX-License-Identifier: GPL-"..., 11663) = 11663
+18:04:29.052538 close(3)                = 0
+18:04:29.052565 openat(AT_FDCWD, "include/linux/compiler.h", O_RDONLY) = 3
+18:04:29.052592 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7969, ...}, AT_EMPTY_PATH) = 0
+18:04:29.052620 read(3, "/* SPDX-License-Identifier: GPL-"..., 7969) = 7969
+18:04:29.052646 close(3)                = 0
+18:04:29.052672 openat(AT_FDCWD, "arch/x86/include/generated/asm/rwonce.h", O_RDONLY) = 3
+18:04:29.052700 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=32, ...}, AT_EMPTY_PATH) = 0
+18:04:29.052729 read(3, "#include <asm-generic/rwonce.h>\n", 32) = 32
+18:04:29.052754 close(3)                = 0
+18:04:29.052778 openat(AT_FDCWD, "include/asm-generic/rwonce.h", O_RDONLY) = 3
+18:04:29.052804 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2932, ...}, AT_EMPTY_PATH) = 0
+18:04:29.052831 read(3, "/* SPDX-License-Identifier: GPL-"..., 2932) = 2932
+18:04:29.052857 close(3)                = 0
+18:04:29.052890 openat(AT_FDCWD, "arch/x86/include/asm/vvar.h", O_RDONLY) = 3
+18:04:29.052918 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1591, ...}, AT_EMPTY_PATH) = 0
+18:04:29.052946 read(3, "/* SPDX-License-Identifier: GPL-"..., 1591) = 1591
+18:04:29.052973 close(3)                = 0
+18:04:29.053008 write(1, "cmd_arch/x86/entry/vdso/vdsox32."..., 3791) = 3791
+18:04:29.053057 exit_group(0)           = ?
+18:04:29.053159 +++ exited with 0 +++

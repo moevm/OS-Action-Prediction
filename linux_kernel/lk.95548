@@ -1,0 +1,77 @@
+18:07:33.893106 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:07:33.893212 execve("scripts/basic/fixdep", ["scripts/basic/fixdep", "arch/x86/crypto/.sha1_avx2_x86_6"..., "arch/x86/crypto/sha1_avx2_x86_64"..., "gcc -Wp,-MMD,arch/x86/crypto/.sh"...], 0x5560d537d578 /* 129 vars */) = 0
+18:07:33.893577 brk(NULL)               = 0x55663bf06000
+18:07:33.893655 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe93a95e20) = -1 EINVAL (Недопустимый аргумент)
+18:07:33.893763 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb2e4358000
+18:07:33.893830 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:07:33.893901 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:07:33.893962 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:07:33.894030 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb2e433d000
+18:07:33.894101 close(3)                = 0
+18:07:33.894162 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:07:33.894240 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:07:33.894296 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:07:33.894361 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:07:33.894409 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:07:33.894460 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:07:33.894523 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:07:33.894614 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb2e4114000
+18:07:33.894677 mprotect(0x7fb2e413c000, 2023424, PROT_NONE) = 0
+18:07:33.894747 mmap(0x7fb2e413c000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fb2e413c000
+18:07:33.894815 mmap(0x7fb2e42d1000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7fb2e42d1000
+18:07:33.894872 mmap(0x7fb2e432a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7fb2e432a000
+18:07:33.894952 mmap(0x7fb2e4330000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb2e4330000
+18:07:33.895028 close(3)                = 0
+18:07:33.895105 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb2e4111000
+18:07:33.895193 arch_prctl(ARCH_SET_FS, 0x7fb2e4111740) = 0
+18:07:33.895261 set_tid_address(0x7fb2e4111a10) = 95548
+18:07:33.895352 set_robust_list(0x7fb2e4111a20, 24) = 0
+18:07:33.895415 rseq(0x7fb2e41120e0, 0x20, 0, 0x53053053) = 0
+18:07:33.895543 mprotect(0x7fb2e432a000, 16384, PROT_READ) = 0
+18:07:33.895615 mprotect(0x55663b6f9000, 4096, PROT_READ) = 0
+18:07:33.895687 mprotect(0x7fb2e4392000, 8192, PROT_READ) = 0
+18:07:33.895770 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:07:33.895871 munmap(0x7fb2e433d000, 110235) = 0
+18:07:33.895974 newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_EMPTY_PATH) = 0
+18:07:33.896056 getrandom("\xec\xb9\x5e\x84\x6a\x42\x5d\x29", 8, GRND_NONBLOCK) = 8
+18:07:33.896133 brk(NULL)               = 0x55663bf06000
+18:07:33.896195 brk(0x55663bf27000)     = 0x55663bf27000
+18:07:33.896267 openat(AT_FDCWD, "arch/x86/crypto/.sha1_avx2_x86_64_asm.o.d", O_RDONLY) = 3
+18:07:33.896341 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=296, ...}, AT_EMPTY_PATH) = 0
+18:07:33.896410 read(3, "sha1_avx2_x86_64_asm.o: arch/x86"..., 296) = 296
+18:07:33.896471 close(3)                = 0
+18:07:33.896536 openat(AT_FDCWD, "arch/x86/crypto/sha1_avx2_x86_64_asm.S", O_RDONLY) = 3
+18:07:33.896587 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14288, ...}, AT_EMPTY_PATH) = 0
+18:07:33.896655 read(3, "/*\n *\tImplement fast SHA-1 with "..., 14288) = 14288
+18:07:33.896721 close(3)                = 0
+18:07:33.896776 openat(AT_FDCWD, "include/linux/compiler-version.h", O_RDONLY) = 3
+18:07:33.896863 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=517, ...}, AT_EMPTY_PATH) = 0
+18:07:33.896961 read(3, "/* SPDX-License-Identifier: GPL-"..., 517) = 517
+18:07:33.897024 close(3)                = 0
+18:07:33.897086 openat(AT_FDCWD, "include/linux/kconfig.h", O_RDONLY) = 3
+18:07:33.897147 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2691, ...}, AT_EMPTY_PATH) = 0
+18:07:33.897207 read(3, "/* SPDX-License-Identifier: GPL-"..., 2691) = 2691
+18:07:33.897264 close(3)                = 0
+18:07:33.897326 openat(AT_FDCWD, "include/linux/linkage.h", O_RDONLY) = 3
+18:07:33.897388 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=9799, ...}, AT_EMPTY_PATH) = 0
+18:07:33.897452 read(3, "/* SPDX-License-Identifier: GPL-"..., 9799) = 9799
+18:07:33.897519 close(3)                = 0
+18:07:33.897573 openat(AT_FDCWD, "include/linux/compiler_types.h", O_RDONLY) = 3
+18:07:33.897641 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=11117, ...}, AT_EMPTY_PATH) = 0
+18:07:33.897705 read(3, "/* SPDX-License-Identifier: GPL-"..., 11117) = 11117
+18:07:33.897767 close(3)                = 0
+18:07:33.897825 openat(AT_FDCWD, "include/linux/stringify.h", O_RDONLY) = 3
+18:07:33.897898 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=341, ...}, AT_EMPTY_PATH) = 0
+18:07:33.898008 read(3, "#ifndef __LINUX_STRINGIFY_H\n#def"..., 341) = 341
+18:07:33.898080 close(3)                = 0
+18:07:33.898134 openat(AT_FDCWD, "include/linux/export.h", O_RDONLY) = 3
+18:07:33.898203 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5394, ...}, AT_EMPTY_PATH) = 0
+18:07:33.898272 read(3, "/* SPDX-License-Identifier: GPL-"..., 5394) = 5394
+18:07:33.898357 close(3)                = 0
+18:07:33.898417 openat(AT_FDCWD, "arch/x86/include/asm/linkage.h", O_RDONLY) = 3
+18:07:33.898481 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1084, ...}, AT_EMPTY_PATH) = 0
+18:07:33.898563 read(3, "/* SPDX-License-Identifier: GPL-"..., 1084) = 1084
+18:07:33.898613 close(3)                = 0
+18:07:33.898692 write(1, "cmd_arch/x86/crypto/sha1_avx2_x8"..., 1985) = 1985
+18:07:33.898773 exit_group(0)           = ?
+18:07:33.898920 +++ exited with 0 +++

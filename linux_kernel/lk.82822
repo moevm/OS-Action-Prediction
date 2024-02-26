@@ -1,0 +1,28 @@
+18:04:24.752821 set_robust_list(0x7fc00bb8da20, 24) = 0
+18:04:24.752901 close(10)               = 0
+18:04:24.752973 close(3)                = 0
+18:04:24.753013 dup2(4, 1)              = 1
+18:04:24.753054 close(4)                = 0
+18:04:24.753130 newfstatat(AT_FDCWD, "/usr/local/sbin/whoami", 0x7ffd2bc318b0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:24.753173 newfstatat(AT_FDCWD, "/usr/local/bin/whoami", 0x7ffd2bc318b0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:24.753210 newfstatat(AT_FDCWD, "/usr/sbin/whoami", 0x7ffd2bc318b0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:24.753248 newfstatat(AT_FDCWD, "/usr/bin/whoami", {st_mode=S_IFREG|0755, st_size=31232, ...}, 0) = 0
+18:04:24.753283 pipe2([3, 4], 0)        = 0
+18:04:24.753317 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fc00bb8da10) = 82824
+18:04:24.753496 close(4)                = 0
+18:04:24.753554 newfstatat(AT_FDCWD, "/usr/local/sbin/sed", 0x7ffd2bc318b0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:24.753586 newfstatat(AT_FDCWD, "/usr/local/bin/sed", 0x7ffd2bc318b0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:24.753613 newfstatat(AT_FDCWD, "/usr/sbin/sed", 0x7ffd2bc318b0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:24.753658 newfstatat(AT_FDCWD, "/usr/bin/sed", {st_mode=S_IFREG|0755, st_size=113224, ...}, 0) = 0
+18:04:24.753706 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fc00bb8da10) = 82825
+18:04:24.753847 close(3)                = 0
+18:04:24.753874 close(-1)               = -1 EBADF (Неправильный дескриптор файла)
+18:04:24.753927 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82824
+18:04:24.756692 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82824, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:24.756723 rt_sigreturn({mask=[]}) = 82824
+18:04:24.756775 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 82825
+18:04:24.757862 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=82825, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+18:04:24.757904 rt_sigreturn({mask=[]}) = 82825
+18:04:24.757983 wait4(-1, 0x7ffd2bc3180c, WNOHANG, NULL) = -1 ECHILD (Нет дочерних процессов)
+18:04:24.758066 exit_group(0)           = ?
+18:04:24.758180 +++ exited with 0 +++

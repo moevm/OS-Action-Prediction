@@ -1,0 +1,67 @@
+18:04:15.935754 rt_sigprocmask(SIG_SETMASK, [], ~[KILL STOP RTMIN RT_1], 8) = 0
+18:04:15.935831 execve("/usr/bin/which", ["which", "etags"], 0x559b19bc5d98 /* 133 vars */) = 0
+18:04:15.936057 brk(NULL)               = 0x5645e6757000
+18:04:15.936108 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe58dfd810) = -1 EINVAL (Недопустимый аргумент)
+18:04:15.936164 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f06dc951000
+18:04:15.936212 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+18:04:15.936254 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+18:04:15.936306 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=110235, ...}, AT_EMPTY_PATH) = 0
+18:04:15.936339 mmap(NULL, 110235, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f06dc936000
+18:04:15.936388 close(3)                = 0
+18:04:15.936426 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+18:04:15.936474 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+18:04:15.936507 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:15.936542 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+18:04:15.936576 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\302\211\332Pq\2439\235\350\223\322\257\201\326\243\f"..., 68, 896) = 68
+18:04:15.936608 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+18:04:15.936649 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+18:04:15.936680 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f06dc70d000
+18:04:15.936712 mprotect(0x7f06dc735000, 2023424, PROT_NONE) = 0
+18:04:15.936764 mmap(0x7f06dc735000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f06dc735000
+18:04:15.936806 mmap(0x7f06dc8ca000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f06dc8ca000
+18:04:15.936838 mmap(0x7f06dc923000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f06dc923000
+18:04:15.936875 mmap(0x7f06dc929000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f06dc929000
+18:04:15.936918 close(3)                = 0
+18:04:15.936963 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f06dc70a000
+18:04:15.937004 arch_prctl(ARCH_SET_FS, 0x7f06dc70a740) = 0
+18:04:15.937029 set_tid_address(0x7f06dc70aa10) = 82202
+18:04:15.937059 set_robust_list(0x7f06dc70aa20, 24) = 0
+18:04:15.937094 rseq(0x7f06dc70b0e0, 0x20, 0, 0x53053053) = 0
+18:04:15.937168 mprotect(0x7f06dc923000, 16384, PROT_READ) = 0
+18:04:15.937214 mprotect(0x5645e6557000, 8192, PROT_READ) = 0
+18:04:15.937248 mprotect(0x7f06dc98b000, 8192, PROT_READ) = 0
+18:04:15.937289 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+18:04:15.937340 munmap(0x7f06dc936000, 110235) = 0
+18:04:15.937398 getuid()                = 0
+18:04:15.937438 getgid()                = 0
+18:04:15.937477 getpid()                = 82202
+18:04:15.937515 rt_sigaction(SIGCHLD, {sa_handler=0x5645e654daa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f06dc74f520}, NULL, 8) = 0
+18:04:15.937550 geteuid()               = 0
+18:04:15.937590 getrandom("\xeb\xf4\x26\xf8\x70\x16\x3c\x6f", 8, GRND_NONBLOCK) = 8
+18:04:15.937627 brk(NULL)               = 0x5645e6757000
+18:04:15.937664 brk(0x5645e6778000)     = 0x5645e6778000
+18:04:15.937720 getppid()               = 82201
+18:04:15.937762 newfstatat(AT_FDCWD, "/root/linux-5.15.0/tools/lib/bpf", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:04:15.937816 newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+18:04:15.937847 openat(AT_FDCWD, "/usr/bin/which", O_RDONLY) = 3
+18:04:15.937883 fcntl(3, F_DUPFD, 10)   = 10
+18:04:15.937929 close(3)                = 0
+18:04:15.937957 fcntl(10, F_SETFD, FD_CLOEXEC) = 0
+18:04:15.937986 geteuid()               = 0
+18:04:15.938019 getegid()               = 0
+18:04:15.938056 rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:04:15.938094 rt_sigaction(SIGINT, {sa_handler=0x5645e654daa0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f06dc74f520}, NULL, 8) = 0
+18:04:15.938152 rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:04:15.938183 rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f06dc74f520}, NULL, 8) = 0
+18:04:15.938220 rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+18:04:15.938267 rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7f06dc74f520}, NULL, 8) = 0
+18:04:15.938303 read(10, "#! /bin/sh\nset -ef\n\nif test -n \""..., 8192) = 946
+18:04:15.938416 newfstatat(AT_FDCWD, "/usr/local/sbin/etags", 0x7ffe58dfcee0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:15.938458 newfstatat(AT_FDCWD, "/usr/local/bin/etags", 0x7ffe58dfcee0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:15.938509 newfstatat(AT_FDCWD, "/usr/sbin/etags", 0x7ffe58dfcee0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:15.938543 newfstatat(AT_FDCWD, "/usr/bin/etags", 0x7ffe58dfcee0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:15.938587 newfstatat(AT_FDCWD, "/sbin/etags", 0x7ffe58dfcee0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:15.938622 newfstatat(AT_FDCWD, "/bin/etags", 0x7ffe58dfcee0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:15.938655 newfstatat(AT_FDCWD, "/snap/bin/etags", 0x7ffe58dfcee0, 0) = -1 ENOENT (Нет такого файла или каталога)
+18:04:15.938690 exit_group(1)           = ?
+18:04:15.938789 +++ exited with 1 +++
